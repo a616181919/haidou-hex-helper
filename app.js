@@ -17,7 +17,7 @@ const FALLBACK_ICON = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg
 const REF_BASE = "assets/ref/";
 function refFixUrls(obj) {
   // 深度遍历: 所有以 assets/ 开头的字符串 → 本地镜像路径
-  if (typeof obj === "string") return obj.startsWith("assets/") ? REF_BASE + obj : obj;
+  if (typeof obj === "string") return obj.startsWith("assets/") ? obj.replace("assets/", REF_BASE) : obj;
   if (Array.isArray(obj)) return obj.map(refFixUrls);
   if (obj && typeof obj === "object") {
     const out = {};

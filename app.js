@@ -7,7 +7,7 @@ const state = {
   currentHero: null,
   search: "",
   rankFilter: "all",        // all | prismatic | gold | silver
-  relations: null, guides: null, builds: null,
+  relations: null, guides: null, builds: null, changelogs: null, generalNotes: null,
 };
 
 const RARITY_CN = { prismatic: "棱彩", gold: "黄金", silver: "白银" };
@@ -17,7 +17,7 @@ async function loadJSON(p) { const r = await fetch(p); return r.json(); }
 
 async function init() {
   $app.innerHTML = '<div class="loading">召唤师数据载入中…</div>';
-  const [heroes, augments, items, rates, enums, relations, guides, builds] = await Promise.all([
+  const [heroes, augments, items, rates, enums, relations, guides, builds, changelogs, generalNotes] = await Promise.all([
     loadJSON("data/heroes.json"),
     loadJSON("data/augments.json"),
     loadJSON("data/items.json"),
@@ -26,10 +26,13 @@ async function init() {
     loadJSON("data/hero-relations.json").catch(() => ({})),
     loadJSON("data/strategy-guides.json").catch(() => null),
     loadJSON("data/hero-builds.json").catch(() => ({})),
+    loadJSON("data/lol-changelogs.json").catch(() => ({})),
+    loadJSON("data/general-notes.json").catch(() => ({})),
   ]);
   state.heroes = heroes; state.augments = augments; state.items = items;
   state.rates = rates; state.enums = enums;
   state.relations = relations; state.guides = guides; state.builds = builds;
+  state.changelogs = changelogs; state.generalNotes = generalNotes;
   // 在线刷新胜率(静默, 失败用快照)
   if (rates) {
     fetch(LIVE_RATES).then(r => r.json()).then(j => {
@@ -46,6 +49,7 @@ function header() {
     <nav>
       <button class="${state.view === "heroes" || state.view === "hero" ? "active" : ""}" data-nav="heroes">英雄推荐</button>
       <button class="${state.view === "augments" ? "active" : ""}" data-nav="augments">海克斯图鉴</button>
+      <button class="${state.view === "feed" ? "active" : ""}" data-nav="feed">攻略·公告</button>
     </nav>
   </header>`;
 }
@@ -53,7 +57,7 @@ function header() {
 function bindNav() {
   $app.querySelectorAll("[data-nav]").forEach(b => b.onclick = () => {
     state.view = b.dataset.nav; state.currentHero = null;
-    state.view === "augments" ? renderAugments() : renderHeroes();
+    state.view === "augments" ? renderAugments() : state.view === "feed" ? renderFeed() : renderHeroes();
   });
 }
 
@@ -100,6 +104,65 @@ function buildTips(rel) {
     <h3>💡 玩法心得</h3>
     ${tips.map(a => `<div class="chg"><b>【${a.name}】</b>${a.tips}</div>`).join("")}
   </section>`;
+}
+
+
+/* ---------- 攻略·公告 ---------- */
+function renderFeed() {
+  const guides = state.guides?.data ? Object.values(state.guides.data) : (Array.isArray(state.guides) ? state.guides : []);
+  const changelogs = state.changelogs ? Object.values(state.changelogs) : [];
+  const gn = state.generalNotes || {};
+  const gnKeys = Object.keys(gn);
+  $app.innerHTML = header() + `
+    <section>
+      <h3>🎯 海克斯联动玩法攻略（${guides.length}）</h3>
+      <div class="feed-list">
+        ${guides.map(g => `
+          <details class="feed-card">
+            <summary><b>${g.name}</b><span class="meta">${g.last_update || ""}</span></summary>
+            <div class="feed-body">
+              <p>${g.description || ""}</p>
+              ${(g.augments || []).length ? `<div class="aug-list" style="margin-top:8px">
+                ${g.augments.map(a => `
+                  <div class="aug-item" style="padding:8px 10px">
+                    <div class="inf">
+                      <div class="nm">${a.core ? "⭐" : "·"} ${a.name} ${a.core ? '<span class="tag">核心</span>' : ""}</div>
+                      ${a.reason ? `<div class="ds">${a.reason}</div>` : ""}
+                    </div>
+                  </div>`).join("")}
+              </div>` : ""}
+              ${g.tips ? `<div class="chg" style="margin-top:8px">💡 ${g.tips}</div>` : ""}
+            </div>
+          </details>`).join("")}
+      </div>
+    </section>
+    <section>
+      <h3>📢 官方版本公告（${changelogs.length}）</h3>
+      <div class="feed-list">
+        ${changelogs.map(c => `
+          <details class="feed-card">
+            <summary><b>${c.title}</b><span class="meta">${c.section || ""}</span></summary>
+            <div class="feed-body">
+              ${(c.data || []).map(d => `
+                <div class="chg" style="margin:6px 0"><b>${d.name || d.title || ""}</b><br>${d.changesHtml || d.content || ""}</div>`).join("")}
+            </div>
+          </details>`).join("")}
+      </div>
+    </section>
+    <section>
+      <h3>🧩 通用方案海克斯联动说明（${gnKeys.length}）</h3>
+      <div class="feed-list">
+        ${gnKeys.map(k => `
+          <details class="feed-card">
+            <summary><b>${k}</b></summary>
+            <div class="feed-body">
+              ${Object.entries(gn[k] || {}).map(([aug, note]) => `<div class="chg" style="margin:4px 0"><b>${aug}</b>：${note}</div>`).join("")}
+            </div>
+          </details>`).join("")}
+      </div>
+    </section>
+    <div class="meta">共 ${guides.length} 篇攻略 · ${changelogs.length} 条公告 · ${gnKeys.length} 套方案说明</div>`;
+  bindNav();
 }
 
 /* ---------- 英雄列表 ---------- */

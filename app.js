@@ -7,7 +7,7 @@ const state = {
   view: "heroes", heroes: null, augments: null, items: null, rates: null, enums: null,
   currentHero: null, search: "", rankFilter: "all",
   relations: null, guides: null, builds: null, changelogs: null, generalNotes: null, listScroll: 0,
-  heroStyles: null, styleFilter: "all",
+  heroStyles: null, styleFilter: "all", styleBuilds: null, currentStyle: "",
 };
 const RARITY_CN = { prismatic: "棱彩", gold: "黄金", silver: "白银" };
 const LIVE_RATES = "https://lolhaidou.cn/data/hero_augment_rates.json";
@@ -20,16 +20,19 @@ async function loadJSON(p) {
 
 async function init() {
   $app.innerHTML = '<div class="loading">召唤师数据载入中…</div>';
-  const [heroes, augments, items, rates, enums, relations, guides, builds, changelogs, generalNotes, heroStyles] = await Promise.all([
+  const [heroes, augments, items, rates, enums, relations, guides, builds, changelogs, generalNotes, heroStyles, styleBuilds] = await Promise.all([
     loadJSON("data/heroes.json"), loadJSON("data/augments.json"), loadJSON("data/items.json"),
     loadJSON("data/augment-rates-snapshot.json").catch(() => null), loadJSON("data/enums.json").catch(() => ({})),
     loadJSON("data/hero-relations.json").catch(() => ({})), loadJSON("data/strategy-guides.json").catch(() => null),
     loadJSON("data/hero-builds.json").catch(() => ({})), loadJSON("data/lol-changelogs.json").catch(() => ({})),
     loadJSON("data/general-notes.json").catch(() => ({})), loadJSON("data/hero-styles.json").catch(() => ({})),
+    loadJSON("data/hero-style-builds.json").catch(() => ({})),
   ]);
-  Object.assign(state, { heroes, augments, items, rates, enums, relations, guides, builds, changelogs, generalNotes, heroStyles });
+  Object.assign(state, { heroes, augments, items, rates, enums, relations, guides, builds, changelogs, generalNotes, heroStyles, styleBuilds });
   if (rates) fetch(LIVE_RATES).then(r => r.json()).then(j => { if (j && j.heroCount) { state.rates = j; if (state.view === "heroes") renderHeroes(); } }).catch(() => {});
   const urlHero = new URLSearchParams(location.search).get("hero");
+  const urlStyle = new URLSearchParams(location.search).get("style");
+  if (urlStyle) state.currentStyle = urlStyle;
   const urlView = new URLSearchParams(location.search).get("view");
   if (urlHero && heroes[urlHero]) openHero(urlHero);
   else if (urlView === "feed") renderFeed();
@@ -151,10 +154,22 @@ function openHero(name, scroll = true) {
   const specials = (build.specialAugments || []).map(x => ({ ...x, ...(state.augments[x.name] || {}) }));
   const traps = (build.trapAugments || []).map(x => ({ ...x, ...(state.augments[x.name] || {}) }));
   const items = Object.entries(state.items).slice(0, 10).map(([k, v]) => ({ name: v.name || k, icon: v.icon, total: v.total }));
+  // 流派视图: currentStyle 为空=综合
+  const sb = (state.styleBuilds || {})[name] || { styles: [], byStyle: {} };
+  if (!state.currentStyle || !sb.styles.includes(state.currentStyle)) state.currentStyle = "";
+  const sv = state.currentStyle ? (sb.byStyle[state.currentStyle] || {}) : {};
+  const viewRecs = (state.currentStyle ? (sv.top || []).map(x => ({ ...x, ...(state.augments[x.name] || {}) })) : (build.recommendations || []).map(x => ({ ...x, ...(state.augments[x.name] || {}) })));
+  const sCountOf = (arr) => arr.filter(x => x.level === "S").length;
+  const aCountOf = (arr) => arr.filter(x => x.level === "A").length;
+  const view = state.currentStyle
+    ? { sCount: sCountOf(sv.top || []), aCount: aCountOf(sv.top || []), total: (sv.top || []).length }
+    : { sCount: build.sCount || 0, aCount: build.aCount || 0, total: build.total || 0 };
+  const viewSpecials = (build.specialAugments || []).map(x => ({ ...x, ...(state.augments[x.name] || {}) }));
+  const viewTraps = (build.trapAugments || []).map(x => ({ ...x, ...(state.augments[x.name] || {}) }));
+  const viewIG = state.currentStyle ? (sv.itemGuide || []) : (build.itemGuide || []);
   // 装备指南
   const ig = build.itemGuide || [];
   $app.innerHTML = header() + `
-
     <div class="hero-switcher">
       <div class="hs-scroll">
         ${Object.entries(state.heroes).map(([n, hh]) => `
@@ -164,71 +179,95 @@ function openHero(name, scroll = true) {
           </div>`).join("")}
       </div>
     </div>
-    <button class="back-btn" id="backBtn">← 返回英雄列表</button>
-    <div class="hero-header">
-      <img class="hero-avatar" src="${h.avatar}" onerror="this.src='${FALLBACK_ICON}'">
-      <div style="flex:1;min-width:0">
-        <div class="hero-name">${name}</div>
-        <div class="hero-alias">${(h.alias || []).join(" / ")}</div>
-        <div class="tags" style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px">
-          ${(h.position || []).map(t => `<span class="aug-tag" style="background:rgba(56,189,248,.12);color:#38bdf8;height:auto;padding:2px 8px">${t}</span>`).join("")}
+    <div class="detail-layout">
+      <aside class="detail-pool">
+        <div class="pool-title">🎭 流派构筑</div>
+        <div class="pool-styles">
+          <div class="style-card ${state.currentStyle === "" ? "active" : ""}" data-dstyle="">
+            <div class="style-name">综合推荐</div>
+            <div class="style-count">${build.total || 0}</div>
+          </div>
+          ${(sb.styles || []).map(s => `
+            <div class="style-card ${state.currentStyle === s ? "active" : ""}" data-dstyle="${s}">
+              <div class="style-name">${s}</div>
+              <div class="style-count">${((state.styleBuilds || {})[name] || {}).byStyle?.[s]?.top?.length || 0}</div>
+            </div>`).join("")}
         </div>
-        ${(state.heroStyles?.heroStyles?.[name] || []).length ? `<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;align-items:center">
-          <span style="font-size:11px;color:#8a93ad">适玩流派:</span>
-          ${state.heroStyles.heroStyles[name].map(s => `<span class="aug-tag" data-style-link="${s}" style="background:rgba(200,170,110,.12);color:#c8aa6e;height:auto;padding:2px 8px;cursor:pointer">${s}</span>`).join("")}
-        </div>` : ""}
-      </div>
-      <div class="wr-big">
-        <div class="num">${h.winRate != null ? h.winRate.toFixed(1) + "%" : "—"}</div>
-        <div class="lbl">大乱斗胜率 ${changePct(h.winRateChange)}</div>
-        <div class="build-stats"><span class="aug-tag lvl-tag lvl-s">S ${build.sCount || 0}</span><span class="aug-tag lvl-tag lvl-a">A ${build.aCount || 0}</span><span class="aug-tag" style="background:rgba(148,163,184,.12);color:#94a3b8">共 ${build.total || 0}</span></div>
+        <div class="pool-divider"></div>
+        <div class="pool-title">⚔️ 全部英雄</div>
+        <div class="pool-hero-list">
+          ${Object.entries(state.heroes).map(([n, hh]) => `
+            <div class="pool-hero ${n === name ? "current" : ""}" data-goto2="${n}">
+              <img src="${hh.avatar}" loading="lazy" onerror="this.src='${FALLBACK_ICON}'"><span>${n}</span>
+            </div>`).join("")}
+        </div>
+      </aside>
+      <div class="detail-main">
+        <div class="hero-header">
+          <img class="hero-avatar" src="${h.avatar}" onerror="this.src='${FALLBACK_ICON}'">
+          <div style="flex:1;min-width:0">
+            <div class="hero-name">${name}</div>
+            <div class="hero-alias">${(h.alias || []).join(" / ")}</div>
+            <div class="tags" style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px">
+              ${(h.position || []).map(t => `<span class="aug-tag" style="background:rgba(56,189,248,.12);color:#38bdf8;height:auto;padding:2px 8px">${t}</span>`).join("")}
+            </div>
+            ${(sb.styles || []).length ? `<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;align-items:center">
+              <span style="font-size:11px;color:#8a93ad">适玩流派:</span>
+              ${sb.styles.map(s => `<span class="aug-tag" data-dstyle="${s}" style="background:rgba(200,170,110,.12);color:#c8aa6e;height:auto;padding:2px 8px;cursor:pointer">${s}</span>`).join("")}
+            </div>` : ""}
+          </div>
+          <div class="wr-big">
+            <div class="num">${h.winRate != null ? h.winRate.toFixed(1) + "%" : "—"}</div>
+            <div class="lbl">大乱斗胜率 ${changePct(h.winRateChange)}</div>
+            <div class="build-stats"><span class="aug-tag lvl-tag lvl-s">S ${view.sCount}</span><span class="aug-tag lvl-tag lvl-a">A ${view.aCount}</span><span class="aug-tag" style="background:rgba(148,163,184,.12);color:#94a3b8">共 ${view.total}</span></div>
+          </div>
+        </div>
+        <section>
+          <div class="section-header">${state.currentStyle ? "🎭 " + state.currentStyle + " · 流派构筑" : "🎯 综合推荐海克斯"} <small>原版算法评分 · ${view.sCount}S/${view.aCount}A</small></div>
+          ${viewRecs.map((a, i) => augCard(a)).join("")}
+          ${!viewRecs.length ? '<div class="loading">暂无数据</div>' : ""}
+        </section>
+        ${viewSpecials.length ? `<section>
+          <div class="section-header">💎 特殊海克斯联动 <small>拿到强度爆炸</small></div>
+          ${viewSpecials.map(x => augCard({ ...x, special: true })).join("")}
+        </section>` : ""}
+        ${viewTraps.length ? `<section>
+          <div class="section-header">⚠️ 陷阱海克斯 <small>避坑</small></div>
+          ${viewTraps.map(x => augCard({ ...x, trap: true })).join("")}
+        </section>` : ""}
+        ${viewIG.length ? `<section>
+          <div class="section-header">🛡️ 搭配装备指南 <small>${viewIG.filter(x => !x.trap).length} 推荐 / ${viewIG.filter(x => x.trap).length} 避坑</small></div>
+          <div class="item-guide-grid">
+            ${viewIG.map(it => `
+              <div class="item-guide-card ${it.trap ? "trap" : ""}">
+                <div style="min-width:0">
+                  <div class="ig-name">${it.trap ? "⛔" : "✅"} ${it.name}</div>
+                  <div class="ig-reason">${it.reason || ""}${it.from ? " · " + it.from : ""}</div>
+                </div>
+              </div>`).join("")}
+          </div>
+        </section>` : ""}
+        <section>
+          <div class="section-header">⚔️ 热门装备</div>
+          <div class="item-guide-grid" style="grid-template-columns:repeat(auto-fill,minmax(160px,1fr))">
+            ${items.map(x => `
+              <div class="item-guide-card">
+                <img src="${x.icon || FALLBACK_ICON}" style="width:36px;height:36px;border-radius:6px" loading="lazy" onerror="this.src='${FALLBACK_ICON}'">
+                <div><div class="ig-name">${x.name}</div><div class="ig-reason">${x.total ? "💰 " + x.total : ""}</div></div>
+              </div>`).join("")}
+          </div>
+        </section>
+        ${(h.changes || []).length ? `<section>
+          <div class="section-header">📋 版本改动</div>
+          ${h.changes.map(c => `<div class="chg-box"><span class="aug-tag" style="background:rgba(56,189,248,.12);color:#38bdf8">${c.version}</span> <span style="font-size:12px;color:#8a93ad">${c.changesHtml || ""}</span></div>`).join("")}
+        </section>` : ""}
+        <div class="meta">数据来源: 海斗公开数据 · ${state.rates?.update || "本地快照"}</div>
       </div>
     </div>
-    <section>
-      <div class="section-header">🎯 推荐海克斯 <small>原版算法评分 · S/A 级优先</small></div>
-      ${recs.map((a, i) => augCard(a)).join("")}
-      ${!recs.length ? '<div class="loading">暂无数据</div>' : ""}
-    </section>
-    ${specials.length ? `<section>
-      <div class="section-header">💎 特殊海克斯联动 <small>拿到强度爆炸</small></div>
-      ${specials.map(x => augCard({ ...x, special: true })).join("")}
-    </section>` : ""}
-    ${traps.length ? `<section>
-      <div class="section-header">⚠️ 陷阱海克斯 <small>避坑</small></div>
-      ${traps.map(x => augCard({ ...x, trap: true })).join("")}
-    </section>` : ""}
-    ${ig.length ? `<section>
-      <div class="section-header">🛡️ 搭配装备指南 <small>${ig.filter(x => !x.trap).length} 推荐 / ${ig.filter(x => x.trap).length} 避坑</small></div>
-      <div class="item-guide-grid">
-        ${ig.map(it => `
-          <div class="item-guide-card ${it.trap ? "trap" : ""}">
-            <div style="min-width:0">
-              <div class="ig-name">${it.trap ? "⛔" : "✅"} ${it.name}</div>
-              <div class="ig-reason">${it.reason || ""}${it.from ? " · " + it.from : ""}</div>
-            </div>
-          </div>`).join("")}
-      </div>
-    </section>` : ""}
-    <section>
-      <div class="section-header">⚔️ 热门装备</div>
-      <div class="item-guide-grid" style="grid-template-columns:repeat(auto-fill,minmax(160px,1fr))">
-        ${items.map(x => `
-          <div class="item-guide-card">
-            <img src="${x.icon || FALLBACK_ICON}" style="width:36px;height:36px;border-radius:6px" loading="lazy" onerror="this.src='${FALLBACK_ICON}'">
-            <div><div class="ig-name">${x.name}</div><div class="ig-reason">${x.total ? "💰 " + x.total : ""}</div></div>
-          </div>`).join("")}
-      </div>
-    </section>
-    ${(h.changes || []).length ? `<section>
-      <div class="section-header">📋 版本改动</div>
-      ${h.changes.map(c => `<div class="chg-box"><span class="aug-tag" style="background:rgba(56,189,248,.12);color:#38bdf8">${c.version}</span> <span style="font-size:12px;color:#8a93ad">${c.changesHtml || ""}</span></div>`).join("")}
-    </section>` : ""}
-    <div class="meta">数据来源: 海斗公开数据 · ${state.rates?.update || "本地快照"}</div>
     <button class="to-top" id="toTop" title="回到顶部">↑</button>`;
-  document.getElementById("backBtn").onclick = () => { state.view = "heroes"; renderHeroes(); };
   $app.querySelectorAll("[data-goto]").forEach(el2 => el2.onclick = () => openHero(el2.dataset.goto));
-  bindNav();
-  $app.querySelectorAll("[data-style-link]").forEach(el3 => el3.onclick = () => { state.styleFilter = el3.dataset.styleLink; state.view = "heroes"; renderHeroes(); });
+  $app.querySelectorAll("[data-goto2]").forEach(el2 => el2.onclick = () => openHero(el2.dataset.goto2));
+  $app.querySelectorAll("[data-dstyle]").forEach(el2 => el2.onclick = () => { state.currentStyle = el2.dataset.dstyle; openHero(name, false); });
   const tt = document.getElementById("toTop");
   if (tt) tt.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
   if (scroll) window.scrollTo({ top: 0 });

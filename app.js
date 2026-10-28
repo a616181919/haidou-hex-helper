@@ -14,9 +14,9 @@ const RARITY_CN = { prismatic: "棱彩", gold: "黄金", silver: "白银" };
 const LIVE_RATES = "https://lolhaidou.cn/data/hero_augment_rates.json";
 const FALLBACK_ICON = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect fill='%2316213a' width='40' height='40'/></svg>";
 
-const REF_BASE = "https://1725287913.github.io/lol-aram-augments/";
+const REF_BASE = "assets/ref/";
 function refFixUrls(obj) {
-  // 深度遍历: 所有以 assets/ 开头的字符串 → 参照站绝对 URL
+  // 深度遍历: 所有以 assets/ 开头的字符串 → 本地镜像路径
   if (typeof obj === "string") return obj.startsWith("assets/") ? REF_BASE + obj : obj;
   if (Array.isArray(obj)) return obj.map(refFixUrls);
   if (obj && typeof obj === "object") {
@@ -196,7 +196,7 @@ async function openHero(name, scroll = true) {
   const sb = (state.styleBuilds || {})[name] || { styles: [], byStyle: {} };
   // 先渲染骨架(立刻可见), ref 数据到了再填充
   const refIdx = (state.refIndex || []).find(x => x.slug === slug);
-  if (refIdx && refIdx.icon && !refIdx.icon.startsWith("http")) refIdx.icon = REF_BASE + refIdx.icon;
+  if (refIdx && refIdx.icon && refIdx.icon.startsWith("assets/")) refIdx.icon = REF_BASE + refIdx.icon;
   const hasRef = !!refIdx;
   const items = Object.entries(state.items).slice(0, 10).map(([k, v]) => ({ name: v.name || k, icon: v.icon, total: v.total }));
   const ig = build.itemGuide || [];

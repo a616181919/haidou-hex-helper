@@ -64,3 +64,8 @@ a{color:var(--blue)}
 
 .aug-item.trap{border-color:#5a2a2a;background:#1f1414}
 .trap-item{border-color:#5a2a2a}
+
+.lvl{font-size:10px;font-weight:800;padding:1px 7px;border-radius:8px}
+.lvl-s{background:#3d2a00;color:#ffb84d;border:1px solid #b8860b}
+.lvl-a{background:#1e3a5f;color:#7ec8ff;border:1px solid #2a6db5}
+.hot{font-size:10px;color:#ff8c69;background:#3a1f14;padding:1px 7px;border-radius:8px}

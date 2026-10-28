@@ -7,7 +7,7 @@ const state = {
   currentHero: null,
   search: "",
   rankFilter: "all",        // all | prismatic | gold | silver
-  relations: null, guides: null,
+  relations: null, guides: null, builds: null,
 };
 
 const RARITY_CN = { prismatic: "棱彩", gold: "黄金", silver: "白银" };
@@ -17,7 +17,7 @@ async function loadJSON(p) { const r = await fetch(p); return r.json(); }
 
 async function init() {
   $app.innerHTML = '<div class="loading">召唤师数据载入中…</div>';
-  const [heroes, augments, items, rates, enums, relations, guides] = await Promise.all([
+  const [heroes, augments, items, rates, enums, relations, guides, builds] = await Promise.all([
     loadJSON("data/heroes.json"),
     loadJSON("data/augments.json"),
     loadJSON("data/items.json"),
@@ -25,10 +25,11 @@ async function init() {
     loadJSON("data/enums.json").catch(() => ({})),
     loadJSON("data/hero-relations.json").catch(() => ({})),
     loadJSON("data/strategy-guides.json").catch(() => null),
+    loadJSON("data/hero-builds.json").catch(() => ({})),
   ]);
   state.heroes = heroes; state.augments = augments; state.items = items;
   state.rates = rates; state.enums = enums;
-  state.relations = relations; state.guides = guides;
+  state.relations = relations; state.guides = guides; state.builds = builds;
   // 在线刷新胜率(静默, 失败用快照)
   if (rates) {
     fetch(LIVE_RATES).then(r => r.json()).then(j => {
@@ -135,14 +136,13 @@ function openHero(name) {
   if (!h) return;
   state.currentHero = name;
   state.view = "hero";
-  const rates = (state.rates?.data || {})[name] || [];
-  // 合并: 胜率接口的推荐 + 海克斯库详情
-  const augDB = state.augments;
-  const merged = rates.map(r => ({ ...r, ...(augDB[r.name] || {}) }));
-  merged.sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0) || (b.pickRate ?? 0) - (a.pickRate ?? 0));
+  // 使用预计算的构筑卡(原版评分算法离线生成)
+  const build = (state.builds || {})[name] || {};
+  const rel2 = build;
+  const merged = (build.recommendations || []).map(x => ({ ...x, ...(state.augments[x.name] || {}) }));
   // 装备: 与该英雄别名相关的出装(简单关联: 从 items 全集展示常用分类)
   const items = Object.entries(state.items).slice(0, 12).map(([k, v]) => ({ name: v.name || k, icon: v.icon, total: v.total }));
-  const rel = (state.relations || {})[name] || {};
+  const rel = { specialAugments: build.specialAugments || [], trapAugments: build.trapAugments || [] };
   $app.innerHTML = header() + `
     <button class="back" id="backBtn">← 返回英雄列表</button>
     <div class="detail-hero">
@@ -155,6 +155,7 @@ function openHero(name) {
       <div class="wr-big">
         <div class="num">${h.winRate != null ? h.winRate.toFixed(1) + "%" : "—"}</div>
         <div class="lbl">大乱斗胜率 ${changePct(h.winRateChange)}</div>
+        <div class="lbl" style="margin-top:4px"><span class="lvl lvl-s">S</span> ${build.sCount || 0} · <span class="lvl lvl-a">A</span> ${build.aCount || 0} · 共 ${build.total || 0} 海克斯</div>
       </div>
     </div>
     <section>
@@ -165,11 +166,13 @@ function openHero(name) {
             <img src="${a.icon || ""}" loading="lazy" onerror="this.style.visibility='hidden'">
             <div class="inf">
               <div class="nm">${i + 1}. ${a.name}
+                ${a.level ? `<span class="lvl lvl-${a.level.toLowerCase()}">${a.level}</span>` : ""}
+                ${a.hot ? `<span class="hot">🔥热门</span>` : ""}
                 ${a.rarity ? `<span class="rarity r-${a.rarity}">${RARITY_CN[a.rarity] || a.rarity}</span>` : ""}
               </div>
               ${a.description ? `<div class="ds">${a.description}</div>` : ""}
             </div>
-            <div class="pct"><b>${a.winRate != null ? a.winRate.toFixed(1) + "%" : "—"}</b><span>选取 ${a.pickRate != null ? a.pickRate.toFixed(1) + "%" : "—"}</span></div>
+            <div class="pct"><b>${a.winRate != null ? a.winRate.toFixed(1) + "%" : "—"}</b><span>选取 ${a.pickRate != null ? a.pickRate.toFixed(1) + "%" : "—"} ${a.score ? "· 评" + a.score : ""}</span></div>
           </div>`).join("") : '<div class="loading">暂无该英雄的海克斯数据</div>'}
       </div>
     </section>

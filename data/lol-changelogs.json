@@ -1,0 +1,4780 @@
+{
+ "15.22版本公告-斯卡纳&沃利贝尔调整，机神系列皮肤登陆召唤师峡谷": {
+  "section": "海克斯大乱斗",
+  "title": "15.22版本公告-斯卡纳&沃利贝尔调整，机神系列皮肤登陆召唤师峡谷",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37071522.html#n5",
+  "data": [
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "亮出你的剑",
+      "changesHtml": "●额外攻击力：35% → 30%<br>●额外生命值：35% → 30%<br>●额外生命偷取：25% → 20%"
+     },
+     {
+      "name": "双刀流",
+      "changesHtml": "●总计攻击速度：25% → 20%"
+     },
+     {
+      "name": "至高天诺言",
+      "changesHtml": "●治疗护盾强度：10% → 15%<br>●冷却时间：40 → 30"
+     },
+     {
+      "name": "玻璃大炮",
+      "changesHtml": "●造成额外伤害：12% → 15%"
+     },
+     {
+      "name": "激光治疗",
+      "changesHtml": "●激光宽度：175 → 215<br>●治疗效果：100 - 380 (基于等级) → 150 - 430 (基于等级) (收益率未改动)<br>●伤害：50 - 300 (基于等级) → 100 - 350 (基于等级) (收益率未改动)"
+     },
+     {
+      "name": "物法皆修",
+      "changesHtml": "●增益时长：4 → 5"
+     },
+     {
+      "name": "海洋龙魂",
+      "changesHtml": "●基础治疗：150 → 100"
+     },
+     {
+      "name": "无休回复",
+      "changesHtml": "●治疗效果：0.2 - 1.2 (基于等级) (+ 0.02%最大生命值) → 0.2-1.2 (基于等级) (+ 0.01%最大生命值)"
+     },
+     {
+      "name": "一板一眼",
+      "changesHtml": "●已获取的攻击力：0.75攻击力每1%攻击速度 → 25 (+ 0.75攻击力每1%攻击速度)"
+     },
+     {
+      "name": "雪球扭蛋机",
+      "changesHtml": "●[新增]雪球获得100技能急速。"
+     },
+     {
+      "name": "踢踏舞",
+      "changesHtml": "●现在命中小兵和野怪也会叠加增益层数。"
+     },
+     {
+      "name": "快中求稳",
+      "changesHtml": "●护盾时长：3 → 2<br>●护盾值：100 - 450 (基于等级) (+ 100%额外攻击力) (+ 40%法术强度) → 65 - 290 (基于等级) (+ 65%攻击力) (+ 26%法术强度)"
+     },
+     {
+      "name": "终极唤醒",
+      "changesHtml": "●[新增]终极技能获得30技能急速。"
+     },
+     {
+      "name": "升级：收集者",
+      "changesHtml": "●处决阈值提升：每收集者处决0.25% → 每收集者处决0.5%"
+     },
+     {
+      "name": "升级：弯刀",
+      "changesHtml": "●伤害增幅：15% → 25%"
+     },
+     {
+      "name": "升级：米凯尔的祝福",
+      "changesHtml": "●冷却时间：60 → 45<br>●不再提供1000金币，而是改为提供【米凯尔的祝福】。<br>●若你已拥有【米凯尔的祝福】，将获得2300金币。<br>●若你的背包已满，将出现提示文字，卖出任意装备后即可获得奖励装备。"
+     },
+     {
+      "name": "防护面纱",
+      "changesHtml": "●冷却时间：15 → 30（更新后存在BUG导致不刷新，将于后续版本修复）"
+     }
+    ]
+   },
+   {
+    "category": "品质级改动",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "比尔吉沃特 能量花卉：现在会回复你最大生命值的 6%。"
+     },
+     {
+      "name": null,
+      "changesHtml": "比尔吉沃特 加农炮：玩家在落地时获得一个持续5秒的护盾，护盾值为70-350 (基于等级) (+ 0.05%最大生命值)。"
+     },
+     {
+      "name": null,
+      "changesHtml": "比尔吉沃特 加农炮：玩家与目标的击飞时间减少0.25秒。"
+     },
+     {
+      "name": null,
+      "changesHtml": "莲华栈桥：团队移除了河道区域的一些水元素，为奇亚娜玩家减少干扰。这会有效避免无法拾取土元素，或者终极技能没有按照预期制造土元素伤害的情况。"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：杰斯、奈德丽等可变形英雄在变形时会额外获得生命值。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：克烈、蔚、易、悠米和赛恩在施放【激光治疗】时会被中断。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【急急小子】会导致移动速度为负。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【夜狩】显示空白说明文本。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【慢炖】说明文本中显示错误伤害数值。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：佛耶戈在占据其他英雄时可以刷新【夺金】的冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：妮蔻在变形为其他单位时，【夺金】特效仍在本体上显示。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：当【夜之锋刃】的法术护盾被芮尔的Q打破时，会拥有错误的冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：玩家在拥有雪球强化符文时，仍会被提供【闪闪现现】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【升级：雪球】在雪球击杀目标时缺少范围伤害效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【火上浇油】可以在防御塔上叠加效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【心灵净化】无法在助攻时触发。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【战争交响乐】可通过攻击小兵延长持续时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【史上最大雪球!】击飞效果未正确标记为击飞类型的问题(现在亚索可以在大雪球命中后接上大招了)。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【山脉龙魂】和【蛋白粉奶昔】在文字提示中缺少其名称。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：凯尔在【亮出你的剑】后仍保持远程攻击形态。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【精怪魔法】会因【杀戮时间到了】印记消失而被错误触发。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：当攻击者同时拥有【杀戮时间到了】和【精怪魔法】时，玩家会被非终极技能变形。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【王中王，靴中靴】未能正确追踪【水银之靴】的狂暴状态。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：佛耶戈可同时获得多双【嘉文一世】靴子。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【王中王，靴中靴】的任务在未拥有鞋子时也能完成。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【钢化你心】在任务完成后未正确提供额外生命值。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【炼狱导管】会导致兰博的E技能没有冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：拥有【虚幻武器】的菲兹会无限触发其W技能的灼烧效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【神射法师】伤害会无视免疫伤害效果(例如凯尔的R、基兰的R，以及艾尼维亚的被动技能)。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【回力OK镖】的伤害会无视免疫伤害效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【双刀流】在符文摘要中重复显示“攻击特效”说明。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【黎明使者的坚决】能够连续多次触发。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：阿兹尔的士兵能在远超预期的距离触发【台风】效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "悠米现在可以在附身于队友时施放【激光治疗】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "杀戮时间到了：爆炸伤害类型从物理伤害改为真实伤害。"
+     }
+    ]
+   }
+  ],
+  "time": "2025-11-05 18:05:46",
+  "last_update": "2026-3-30"
+ },
+ "15.23版本公告-亚恒登陆召唤师峡谷，双城之战周年庆活动正式上线": {
+  "section": "海克斯大乱斗",
+  "title": "15.23版本公告-亚恒登陆召唤师峡谷，双城之战周年庆活动正式上线",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37072148.html#n9",
+  "data": [
+   {
+    "category": "系统",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "现在，白银阶强化符文在第一轮强化符文选取时的出现频率降低。"
+     },
+     {
+      "name": null,
+      "changesHtml": "第一轮和第二轮强化符文选择不再有可能接连出现白银阶强化符文了。"
+     },
+     {
+      "name": null,
+      "changesHtml": "【莲华栈桥】的传送门从触碰传送更新为传统的点击传送，并且可以瞬间施放，适用于【极地大乱斗】和【海克斯大乱斗】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "新增【属性锻造器】，每件售价750金币，可在9级之后购买。提供白银、黄金、棱彩三种，不包含“碎片增幅碎片”。此外，每个锻造器都自带一顶帽子!"
+     },
+     {
+      "name": null,
+      "changesHtml": "为避免后期出现僵局，移除了双超级兵机制。"
+     },
+     {
+      "name": null,
+      "changesHtml": "调整了被动经验值与金币获取，避免对局结束得过快。"
+     }
+    ]
+   },
+   {
+    "category": "强化符文改动",
+    "list": [
+     {
+      "name": "大力",
+      "changesHtml": "●攻击力：15% → 20%"
+     },
+     {
+      "name": "砍伤",
+      "changesHtml": "●额外获得50%攻击速度。<br>●非英文语言版本的相关说明文本中存在拼写错误，未能赶在本次更新中修复，将在日后的版本中更正。"
+     },
+     {
+      "name": "闪电打击",
+      "changesHtml": "●提供加成的攻击速度阈值：4 → 3.5"
+     },
+     {
+      "name": "蛋白粉奶昔",
+      "changesHtml": "●基础治疗和护盾强度：20% → 25%<br>●护甲和魔抗转化率：30% → 35%"
+     },
+     {
+      "name": "自我毁灭",
+      "changesHtml": "●[新增]每25秒，在自己身上吸附一枚炸弹，爆炸时造成伤害并将敌人击飞。"
+     },
+     {
+      "name": "雪球扭蛋机",
+      "changesHtml": "●[新增]当雪球击中敌方目标时，随机对该目标施放一个有负面效果的召唤师技能或随机对自己施放一个有正面效果的召唤师技能。使用雪球突进时，随机对自己施放一个有正面效果的召唤师技能。"
+     },
+     {
+      "name": "钢化你心",
+      "changesHtml": "●层数要求：350 → 300"
+     },
+     {
+      "name": "退敌力场",
+      "changesHtml": "●[新增]当生命值低于35%时，击退周围敌人并对其施加持续1.5秒的90%减速。(25秒冷却或阵亡时刷新)"
+     },
+     {
+      "name": "海牛阿福的勇士",
+      "changesHtml": "●需要的参与击杀次数：22 → 18"
+     }
+    ]
+   },
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "科加斯",
+      "changesHtml": "●承受伤害：100% → 95%"
+     },
+     {
+      "name": "茂凯",
+      "changesHtml": "●承受伤害：110% → 100%<br>●造成伤害：85% → 95%"
+     },
+     {
+      "name": "内瑟斯",
+      "changesHtml": "●造成伤害：90% → 100%"
+     },
+     {
+      "name": "诺提勒斯",
+      "changesHtml": "●承受伤害：110% → 100%<br>●造成伤害：95% → 100%"
+     },
+     {
+      "name": "萨勒芬妮",
+      "changesHtml": "●技能急速：-20 → 0"
+     },
+     {
+      "name": "斯卡纳",
+      "changesHtml": "●承受伤害：100% → 95%<br>●造成伤害：100% → 105%<br>●E冷却时间：22 / 21 / 20 / 19 / 18 → 18 / 17 / 16 / 15 / 14"
+     },
+     {
+      "name": "塔姆",
+      "changesHtml": "●承受伤害：105% → 100%"
+     },
+     {
+      "name": "锤石",
+      "changesHtml": "●承受伤害：105% → 100%"
+     },
+     {
+      "name": "沃利贝尔",
+      "changesHtml": "●E护盾值：11%最大生命值 → 14%最大生命值"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果你的复制体阵亡，可以触发【罪恶快感】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：妮蔻在假扮成近战英雄并选择【亮出你的剑】时，不会失去攻击距离。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：处于僵尸状态的英雄在拥有【作弊：我能回城!】强化符文时可获得额外的强化符文。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：佛耶戈有【作弊：我能回城!】强化符文时，附身其他英雄期间可以出售装备。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【作弊：我能回城!】强化符文会回复除法力值和能量之外的其他资源。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：基兰R配合【吸血习性】会导致英雄以0生命值复活，并且无法被敌人攻击。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：普朗克拥有【炼狱导管】可以让他的E拥有0冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：扎克在因被动变成小块形态时，仍然可以通过【死亡之环】造成伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【升级：收集者】会让收集者处决生命值低于15%的敌人。"
+     }
+    ]
+   }
+  ],
+  "time": "2025-11-19 18:14:07",
+  "last_update": "2026-3-30"
+ },
+ "15.24版本公告-S15最后一个版本，冬季多个系列皮肤正式上线": {
+  "section": "海克斯大乱斗",
+  "title": "15.24版本公告-S15最后一个版本，冬季多个系列皮肤正式上线",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37072785.html#n10",
+  "data": [
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "大地苏醒",
+      "changesHtml": "●新增"
+     },
+     {
+      "name": "轨道镭射",
+      "changesHtml": "●新增"
+     },
+     {
+      "name": "精准奇才",
+      "changesHtml": "●新增"
+     },
+     {
+      "name": "地狱三头犬",
+      "changesHtml": "●新增"
+     },
+     {
+      "name": "潘朵拉的盒子",
+      "changesHtml": "●新增"
+     },
+     {
+      "name": "终极唤醒",
+      "changesHtml": "●新增"
+     }
+    ]
+   },
+   {
+    "category": "新装备",
+    "list": [
+     {
+      "name": "海克斯科技枪刃",
+      "changesHtml": "●新增"
+     },
+     {
+      "name": "花晓之剑",
+      "changesHtml": "●新增"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "至高天诺言",
+      "changesHtml": "●施放距离：1600 → 2000"
+     },
+     {
+      "name": "感受燃烧",
+      "changesHtml": "●施放距离：600 → 800<br>●技能施法方式从“选定施法”改为“自我施法”，你无需再选择目标即可施放该技能。"
+     },
+     {
+      "name": "升级：中娅",
+      "changesHtml": "●中娅冷却：90秒 → 45秒"
+     },
+     {
+      "name": "升级：雪球",
+      "changesHtml": "●基础减速幅度：40% → 50%<br>●基础伤害：100 → 200"
+     },
+     {
+      "name": "一板一眼",
+      "changesHtml": "●1%攻击速度转换：0.75攻击力 → 1攻击力"
+     }
+    ]
+   },
+   {
+    "category": "系统",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "当暴击几率超过100%时，溢出的暴击几率将以75%转化为自适应之力，前提是你没有其他暴击转换效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "【莲华栈桥】海克斯飞门的选择范围缩小至与物体本身大小一致，以减少误点。"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了【自我毁灭】无法将敌人击飞的问题。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了【自我毁灭】说明文本的语法问题。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【心灵净化】未清晰显示对周围敌人造成的伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【雪球扭蛋机】的说明文本未正确说明其功能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【雪球扭蛋机】在装备【史上最大雪球!】符文时无法正常生效。"
+     }
+    ]
+   }
+  ],
+  "time": "2025-12-03 19:33:13",
+  "last_update": "2026-3-30"
+ },
+ "26.1版本公告-战略点和野区调整，全新装备更新，欢迎来到新赛季！": {
+  "section": "海克斯大乱斗",
+  "title": "26.1版本公告-战略点和野区调整，全新装备更新，欢迎来到新赛季！",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37074870.html#n20",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "艾翁",
+      "changesHtml": "●造成伤害：95% → 100%<br>●产生护盾：80% → 100%"
+     },
+     {
+      "name": "迦娜",
+      "changesHtml": "●造成伤害：95% → 100%<br>●承受伤害：105% → 100%<br>●治疗效果：90% → 100%<br>●护盾效果：95% → 100%"
+     },
+     {
+      "name": "卡尔玛",
+      "changesHtml": "●RQ额外伤害：40 / 90 / 140 / 190 → 40 / 100 / 160 / 220"
+     },
+     {
+      "name": "米利欧",
+      "changesHtml": "●治疗效果：95% → 100%<br>●护盾效果：90% → 100%<br>●技能急速：-10 → 0"
+     },
+     {
+      "name": "娜美",
+      "changesHtml": "●造成伤害：95% → 100%<br>●承受伤害：105% → 100%"
+     },
+     {
+      "name": "烈娜塔",
+      "changesHtml": "●造成伤害：95% → 100%<br>●护盾效果：80% → 100%"
+     },
+     {
+      "name": "娑娜",
+      "changesHtml": "●W治疗收益率：20% → 30%<br>●W护盾收益率：20% → 25%<br>●Q冷却时间：10秒 → 8秒"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "雪球扭蛋机",
+      "changesHtml": "●强化符文位阶：棱彩 → 黄金"
+     },
+     {
+      "name": "杀戮时间到了",
+      "changesHtml": "●不再储存所有来源的伤害，现转为仅储存强化符文拥有者的伤害。"
+     },
+     {
+      "name": "闪现向前",
+      "changesHtml": "●不再每180秒刷新1次充能，现转为每120秒刷新全部3次充能。"
+     },
+     {
+      "name": "钢化你心",
+      "changesHtml": "●团队更新了奖励的功能机制。现在起，未来获得的层数也将一起变为3倍(而非当前的仅将完成时拥有的层数变为3倍)。<br>●说明文本中暗示了这一点，但它的运作方式却没有跟上。因此，团队这次会让它按照大家预期的方式发挥作用，让【心之钢】直接起飞。"
+     },
+     {
+      "name": "海牛阿福的勇士",
+      "changesHtml": "●【金铲铲】属性：<br>●攻击力：60 → 90<br>●法术强度：80 → 110<br>●移动速度：5% → 10%<br>●【献祭】距离：300 → 400"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【终极唤醒】的增益条显示了错误的技能急速。"
+     },
+     {
+      "name": null,
+      "changesHtml": "为【终极唤醒】增添了冷却时间追踪器。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【裁决使】与雷恩加尔的基础技能无法配合使用。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【轨道镭射】的地面伤害效果对小兵造成了错误的伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【轨道镭射】会追踪对小兵造成的伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：与队友同时使用【夺金】时，其无法正确发挥效果。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-01-07 19:52:01",
+  "last_update": "2026-3-30"
+ },
+ "5月14日凌晨1点停机版本更新公告": {
+  "section": "版本更新提取",
+  "title": "5月14日凌晨1点停机版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37085528.html#n8",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "铁血狼母 安蓓萨",
+      "changesHtml": "Q - 暗袭/裂斩<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>目标最大生命值伤害：</strong>2 / 3 / 4 / 5 / 6% ⇒ <strong>4 / 4.5 / 5 / 5.5 / 6%</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>额外野怪伤害：</strong>125 ⇒ <strong>75</strong><br>R - 公开处刑<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>治疗百分比：</strong>10 / 12.5 / 20% ⇒ <strong>15 / 17.5 / 20%</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>对野怪治疗效果：</strong>40%⇒ <strong>25%</strong>"
+     },
+     {
+      "name": "冰晶凤凰 艾尼维亚",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础属性</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>基础护甲：</strong>21 ⇒ <strong>19</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>成长护甲</strong>：4.5 ⇒ <strong>4.1</strong>"
+     },
+     {
+      "name": "寒冰射手 艾希",
+      "changesHtml": "Q - 射手的专注<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>伤害总和： </strong>110 / 117.5 / 125 / 132.5 / 140%攻击力 ⇒ <strong>110 / 115 / 120 / 125 / 130%攻击力</strong>"
+     },
+     {
+      "name": "正义巨像 加里奥",
+      "changesHtml": "Q - 战争罡风<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>法力消耗：</strong>70 / 75 / 80 / 85 / 90 ⇒ <strong>60 / 65 / 70 / 75 / 80</strong><br>E - 正义冲拳<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>伤害总和： </strong>90 / 130 / 170 / 210 / 250 (+90%法术强度) ⇒ <strong>100 / 135 / 170 / 205 / 240 (+100%法术强度)</strong><br>R - 英雄登场<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>[新]伤害总和：</strong>现在会受益于100%额外魔法抗性"
+     },
+     {
+      "name": "盲僧 李青",
+      "changesHtml": "W - 金钟罩<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>护盾值：</strong>70 / 115 / 160 / 205 / 250 (+80%法术强度) ⇒ <strong>60 / 105 / 150 / 195 / 240 (+ 80%法术强度)</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>固定冷却时间：</strong>对非英雄单位使用时为12秒，对英雄使用时为6秒 ⇒ 全部7秒<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>[新]对非英雄单位的护盾：</strong>李青跳向小兵或守卫时会获得护盾<br>E - 天雷破<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>魔法伤害：</strong>35 / 60 / 85 / 110 / 135 (+100%攻击力) ⇒ <strong>35 / 60 / 85 / 110 / 135 (+90%攻击力)</strong><br>R - 猛龙摆尾<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>[新]一飞到底：</strong>即使在飞行途中被击杀，英雄的身体仍会继续飞行、击飞并造成伤害"
+     },
+     {
+      "name": "百裂冥犬 纳亚菲利",
+      "changesHtml": "<strong>Q - 暗裔犬牙</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>最小额外物理伤害：</strong>30 / 45 / 60 / 75 / 90（+ 40%额外攻击力）⇒ <strong>30 / 42.5 / 55 / 67.5 / 80（+ 40%额外攻击力)</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>最大额外物理伤害：</strong>60 / 90 / 120 / 450 / 180（+ 140%额外攻击力）⇒ <strong>60 / 85 / 110 / 135 / 160（+ 140%额外攻击力)</strong><br>R - 猎狗血性<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>物理伤害</strong>：150 / 250 / 350（+120%额外攻击力）+ 每名同伴15 / 25 / 35（+12%额外攻击力） ⇒ <strong>150 / 225 / 300（+120%额外攻击力）+ 每名同伴15 / 22.5 / 30（+12%额外攻击力）</strong>"
+     },
+     {
+      "name": "德玛西亚之翼 奎因",
+      "changesHtml": "被动技能 - 侵扰<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>[新]额外野怪伤害：</strong>50<br>Q - 炫目攻势<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>[新]额外野怪伤害：</strong>现在对野怪造成的伤害提升50%<br>R - 深入敌后<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>法力消耗：</strong>100 / 50 / 0 ⇒ <strong>50 / 25 / 0</strong>"
+     },
+     {
+      "name": "龙血武姬 希瓦娜",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础属性</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>每级生命值：</strong>100 ⇒ <strong>95</strong><br>W - 烈火圣盾<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>冷却时间</strong>：13 / 12 / 11 / 10 / 9 ⇒ <strong>13 / 12.25 / 11.5 / 10.75 / 10</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>护盾值：</strong>75 / 95 / 115 / 135 / 155（+12%额外生命值） ⇒ <strong>60 / 80 / 100 / 120 / 140（+12%额外生命值）</strong>"
+     },
+     {
+      "name": "炽炎雏龙 斯莫德",
+      "changesHtml": "Q - 超级灼热龙息<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>伤害</strong>：65 / 80 / 95 / 110 / 125 (+130%额外攻击力）⇒ <strong>60 / 75 / 90 / 105 / 120 (+130%额外攻击力)</strong><br>W - 阿嚏！<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>爆炸物理伤害</strong>：10 - 110 (+65%额外攻击力）（+80%法术强度） ⇒ <strong>10 - 110 (+50%额外攻击力) (+80%法术强度)</strong>"
+     },
+     {
+      "name": "齐天大圣 孙悟空",
+      "changesHtml": "W - 真假猴王&nbsp;<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>分身伤害：</strong>30 / 35 / 40 / 45 / 50% ⇒ <strong>40 / 45 / 50 / 55 / 60%</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>分身时长：</strong>3.25 ⇒ <strong>4</strong><br>E - 腾云突击<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>额外攻击速度：</strong>35 / 40 / 45 / 50 / 55% ⇒ <strong>40 / 45 / 50 / 55 / 60%</strong>"
+     },
+     {
+      "name": "影流之主 劫",
+      "changesHtml": "被动技能 - 影忍法！灭魂劫<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>最大生命值伤害：</strong>6 / 8 / 10% ⇒ <strong>5 / 7.5 / 10%</strong><br>E - 影奥义！鬼斩<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>伤害</strong>：70 / 95 / 120 / 145 / 170（+80%额外攻击力）⇒ <strong>70 / 92.5 / 115 / 137.5 / 160（+70%额外攻击力)</strong>"
+     },
+     {
+      "name": "祖安花火 泽丽",
+      "changesHtml": "Q - 电火迸射<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>基础伤害：</strong>21 / 24 / 27 / 30 / 33 ⇒ <strong>22 / 26 / 30 / 34 / 38</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>溢出攻击速度转化为攻击力 :</strong>50% ⇒ <strong>60%</strong><br>R - 超限爆闪<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong>[BUG修复]<strong>过载状态持续时长：</strong>在R技能持续期间进行攻击会使R技能持续时间延长1.5秒。将其更改为2.5秒，以匹配新的极限超载移速层数持续时间。"
+     },
+     {
+      "name": "维克托",
+      "changesHtml": "<strong>　　●造成伤害：</strong>95% ⇒ 100%<br>●<strong>承受伤害：</strong>105% ⇒ 100%<br>●每次击杀的被动层数：<br>●英雄：20 ⇒ 8<br>●炮车：10 ⇒ 5<br><strong>[新]</strong><br>●在大乱斗地图中，维克托每5秒获得1层。"
+     }
+    ]
+   },
+   {
+    "category": "装备",
+    "list": [
+     {
+      "name": "多兰之弓",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;攻击力</strong>：6 ⇒ <strong>8</strong>"
+     },
+     {
+      "name": "多兰之盔",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;生命值：</strong>110 ⇒ <strong>140</strong>"
+     },
+     {
+      "name": "暴食胫甲",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;总花费：</strong>950金币 ⇒ <strong>1000金币</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>杀戮 - 每层全能吸血：</strong>每次参与击杀提供1%，最多可叠加6层 ⇒ <strong>每次参与击杀提供0.6%，最多可叠加10层</strong>"
+     },
+     {
+      "name": "巫妖之祸",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;法强收益率：</strong>40%法术强度 ⇒ <strong>45%法术强度</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>移动速度：</strong>4% ⇒ <strong>6%</strong>"
+     },
+     {
+      "name": "电震涡流剑",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;总花费：</strong>2900金币 ⇒ <strong>3000金币</strong>"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "超强大脑",
+      "changesHtml": "●[新]在复活时或每70秒刷新"
+     },
+     {
+      "name": "连拨击锤",
+      "changesHtml": "●不再对小兵触发"
+     },
+     {
+      "name": "狂徒豪气",
+      "changesHtml": "[新]层数现在会根据15秒持续时间重置，而不是一个固定的计时器<br>●层数会显示在增益栏"
+     },
+     {
+      "name": "升级：中娅",
+      "changesHtml": "●[新]在凝滞期间获得50%额外移速"
+     }
+    ]
+   },
+   {
+    "category": "系统改动",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "比尔吉沃特加农炮品质级提升"
+     },
+     {
+      "name": null,
+      "changesHtml": "未乘坐加农炮导致的移动锁定：2秒 ⇒ 0.5秒"
+     },
+     {
+      "name": null,
+      "changesHtml": "乘坐加农炮落地后的移动锁定：已移除"
+     }
+    ]
+   },
+   {
+    "category": "海克斯大乱斗BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在特定情况下击杀敌人后，【飞身踢】可能会导致该敌人永久显形。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：奇亚娜在对墙体使用W时会获得水元素。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：使用【比尔吉沃特加农炮】飞越医疗包时会触发医疗包。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：用雪球击杀单位时有时无法触发【升级：雪球】的效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：阿兹尔的士兵无法触发【神射法师】。（注：暂未修复，将于后续版本修复）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：每张地图的独特传送方式会叠加【狂徒豪气】的坚韧层数。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：普朗克在连环引爆炸药桶时会获得叠乘数额的伤害削减或提升。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：雪球会受装备伤害加成影响。（注：暂未修复，将于后续版本修复）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：拥有【一板一眼】的英雄的分身未受到攻击速度上限限制。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【魄罗之王的弹跳】会穿过法术护盾。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：某些雪球强化会重置非雪球召唤师技能的冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【激光治疗】会错误地重置本应保持封印状态的技能冷却时间，例如锐雯的终极技能或兰博过热时的技能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【终极唤醒】会错误地重置本应保持封印状态的技能冷却时间。（注：暂未修复，将于后续版本修复）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【飞身踢】会对所有低于处决阈值的单位造成额外伤害，而不仅仅是英雄。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：贝蕾亚在与她的R技能同时使用雪球时，雪球可能会被永久禁用。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了多个强化符文中存在的一个BUG，该BUG曾导致：重置弹药技能冷却时，会比最大可用充能数多获得1次充能。（注：暂未修复，将于后续版本修复）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：妮蔻会将【科学狂人】的体型变化效果叠加到她的分身两次。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【坦克引擎】在说明文本中显示的所提供生命值错误。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-05-13 18:12:43",
+  "last_update": "2026-5-14"
+ },
+ "5月28日凌晨1点停机版本更新公告": {
+  "section": "版本更新提取",
+  "title": "5月28日凌晨1点停机版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37086884.html#n5",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "复仇焰魂 布兰德",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础护甲：27 → 24"
+     },
+     {
+      "name": "皎月女神 黛安娜",
+      "changesHtml": "被动-月银之刃<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;野怪伤害：230% → 270%<br>W - 苍白之瀑<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;额外生命值：9% → 11%"
+     },
+     {
+      "name": "时间刺客 艾克",
+      "changesHtml": "被动 - Z型驱动共振<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;对每个敌人的冷却时间：5秒 → 4秒"
+     },
+     {
+      "name": "大发明家 黑默丁格",
+      "changesHtml": "Q - H-28G进化炮台<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;防御塔攻击距离：530 → 550<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;防御塔视野距离：585 → 650<strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong>[新增]炮台距离：如果炮台的攻击范围内没有其他目标，那么炮台对小兵的攻击距离将额外增加50。（注：暂未生效，将于后续版本修复）<br>E - CH-2电子风暴手雷<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;目标位置的视野：1秒 → 1.25秒"
+     },
+     {
+      "name": "虚空行者 卡萨丁",
+      "changesHtml": "Q - 虚无法球<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;冷却时间：10 / 9.5 / 9 / 8.5 / 8 → 9 / 8.5 / 8 / 7.5 / 7<br>W - 虚空之刃<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础魔法伤害：20 (+10%法术强度) → 25 (+10%法术强度)"
+     },
+     {
+      "name": "德玛西亚之翼 奎因",
+      "changesHtml": "被动 - 侵扰<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;野怪伤害：50 → 75<br>Q - 炫目攻势<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;野怪伤害：150% → 200%"
+     },
+     {
+      "name": "炽炎雏龙 斯莫德",
+      "changesHtml": "被动 - 龙之研习<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Q技能额外魔法伤害：40% *（1 +（暴击几率 * 0.5 *（1 + 暴击伤害加成））被动层数（100%暴击时为60%，拥有【无尽之刃】时为66%） → 25% *（1 +（暴击几率 * 1.2 *（1 + 暴击伤害加成））)被动层数<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;E技能额外魔法伤害：12%被动层数 → 8% * (1 + (暴击几率 * 0.6 * (1 + 额外暴击伤害))) 被动层数"
+     },
+     {
+      "name": "迅捷斥候 提莫",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;成长护甲：4.95每级 → 4.5每级<br>E - 毒性射击<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;命中/每段中毒伤害的收益方式：（+10%额外攻击力/+20%额外攻击力） → （+5%额外攻击力/+10%额外攻击力）"
+     },
+     {
+      "name": "德邦总管 赵信",
+      "changesHtml": "被动技能 - 果决<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;额外伤害：15 / 30 / 45 / 60%额外攻击力（1 / 6 / 11 / 16级） → 15 / 30 / 45 / 60%额外攻击力（+5 / 10 / 15 / 20%法术强度）（1 / 6 / 11 / 16级）<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;治疗量：3 / 4 / 5%最大生命值 (+50 / 65 / 90%法术强度) (1 / 6 / 11级) → 3 / 4 / 5%最大生命值 (+45 / 55 / 80%法术强度) (1 / 6 / 11级)"
+     },
+     {
+      "name": "格温",
+      "changesHtml": "<li>造成伤害：102% → 100%</li>"
+     },
+     {
+      "name": "薇恩",
+      "changesHtml": "<li>造成伤害：105% → 100%</li><li>承受伤害：95% → 100%</li>"
+     },
+     {
+      "name": "霞",
+      "changesHtml": "<li>造成伤害：105% → 100%</li><li>攻速增长：+3% → 0%</li>"
+     },
+     {
+      "name": "卡莉丝塔",
+      "changesHtml": "<li>造成伤害：110% → 105%</li><li>承受伤害：90% → 95%</li>"
+     },
+     {
+      "name": "菲兹",
+      "changesHtml": "<li>造成伤害：105% → 100%</li><li>承受伤害：95% → 100%</li><li>韧性：10% → 0%</li>"
+     },
+     {
+      "name": "崔丝塔娜",
+      "changesHtml": "<li>造成伤害：105% → 100%</li><li>承受伤害：95% → 100%</li>"
+     },
+     {
+      "name": "图奇",
+      "changesHtml": "<li>承受伤害：95% → 100%</li>"
+     },
+     {
+      "name": "斯莫德",
+      "changesHtml": "<li>承受伤害：102% → 100%</li>"
+     },
+     {
+      "name": "韦鲁斯",
+      "changesHtml": "<li>承受伤害：105% → 100%</li>"
+     },
+     {
+      "name": "莎弥拉",
+      "changesHtml": "<li>承受伤害：105% → 100%</li>"
+     },
+     {
+      "name": "费德提克",
+      "changesHtml": "<li>造成伤害：95% → 100%</li><li>承受伤害：105% → 100%</li>"
+     }
+    ]
+   },
+   {
+    "category": "装备",
+    "list": [
+     {
+      "name": "海克斯注力刚壁",
+      "changesHtml": "<li>过载运转：施放终极技能时，获得50%额外攻速和20%额外移速，持续8秒 → 远程：获得35%额外攻击速度和14%额外移动速度，持续8秒（近战英雄效果不变）</li>"
+     },
+     {
+      "name": "心之钢",
+      "changesHtml": "<li>伤害转化为永久生命值的比例：8% → 10%</li>"
+     },
+     {
+      "name": "斯塔缇克电刃",
+      "changesHtml": "<li>攻击力：40 → 45</li>"
+     },
+     {
+      "name": "月石再生器",
+      "changesHtml": "<li>修复了多个BUG，包括不再同时叠加治疗/护盾强度和重伤/掠盾者的效果</li><li>弹跳现在会优先选择生命值较低的友军</li>"
+     },
+     {
+      "name": "帝国指令",
+      "changesHtml": "<li>合成路线：恶魔法典（850金币）+班德尔玻璃镜（900金币）+500金币=2200金币 → 爆裂魔杖（850金币）+ 班德尔玻璃镜（900金币）+ 650金币=2400金币</li><li>法术强度：60 → 65</li><li>技能急速：20 → 15</li><li>法力回复：125% → 150%</li><li>[已移除]唯一 - 协同开火</li><li>[新增]唯一 - 控制：你的带有【定身】效果的技能获得15技能急速</li><li>[新增]唯一 - 指令：在定身一名敌方英雄时，将其标记为6%【易损】，持续4秒（【易损】敌人会受到百分比额外伤害）</li>"
+     },
+     {
+      "name": "海力亚的回响",
+      "changesHtml": "<li>伤害储量：35% → 30%</li>"
+     },
+     {
+      "name": "钢铁烈阳之匣",
+      "changesHtml": "<li>护甲和魔抗：25 → 30</li>"
+     },
+     {
+      "name": "骑士之誓",
+      "changesHtml": "<li>伤害转移：12% → 14%</li><li>治疗效果：10% → 12%</li>"
+     },
+     {
+      "name": "基克的聚合",
+      "changesHtml": "<li>霜火风暴：在施放大招时触发 → 在施放大招后进入就绪状态，持续5秒，期间一旦有敌方英雄进入范围即刻触发</li>"
+     }
+    ]
+   },
+   {
+    "category": "海克斯大乱斗BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：格雷福斯搭配【神射法师】时会造成异常伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【防护面纱】在复活时进入冷却。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果佛耶戈占据了同样拥有【艾卡西亚的陷落】任务的敌人，自己可能无法完成这个任务。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【超凡邪恶】未提供没有被选作第一个强化符文时的40法术强度。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：艾希的Q技能未能施加【神射法师】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：斯莫德在携带特定强化符文时，E技能期间无法释放Q技能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：奥瑞利安·索尔在【溢流】状态下，Q技能未正确消耗双倍法力值。"
+     },
+     {
+      "name": null,
+      "changesHtml": "【魔鬼之舞】现在不再根据属性锻造器而是仅根据强化符文来提供生命值。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【魄罗爆破手】生成的魄罗可以看到草丛内。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果你的雪球强化符文被【潘朵拉的盒子】移除，雪球冷却时间会异常延长。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果你在选择【小丑学院】时使用了雪球，会导致【小丑学院】的召唤师技能被覆盖。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果妮蔻在假扮成非英雄时施放终极技能，将无法激活【终极唤醒】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【升级：荆棘之甲】让你可以无限制地购买荆棘之甲。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【贾克斯】W无法触发【神射法师】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：亚托克斯在使用R技能时阵亡会触发【和我一起困在这里】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：伊泽瑞尔Q技能无法触发【台风】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：俄洛伊的E技能会受益于【仆从大师】。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-05-28 01:57:41",
+  "last_update": "2026-5-28"
+ },
+ "6月11日凌晨1点停机版本更新公告": {
+  "section": "版本更新提取",
+  "title": "6月11日凌晨1点停机版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37088140.html#n3",
+  "data": [
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "利刃华尔兹",
+      "changesHtml": "现在会在最终攻击时重新瞄准初始目标，以便玩家能够落在初始目标附近"
+     },
+     {
+      "name": "转得我眩晕了",
+      "changesHtml": "为攻击距离低于400的英雄提升至400攻击距离"
+     },
+     {
+      "name": "亮出你的剑",
+      "changesHtml": "攻击力：30%加成，根据攻击距离（500-650）提升至多30% ⇒ 24%加成，根据攻击距离（500-650）提升至多100%\n攻击速度：25%加成，根据攻击距离（500-650）提升至多30% ⇒ 20%加成，根据攻击距离（500-650）提升至多100%\n生命值：30%加成，根据攻击距离（500-650）提升至多30% ⇒ 24%加成，根据攻击距离（500-650）提升至多100%\n移动速度：25%加成，根据攻击距离（500-650）提升至多30% ⇒ 20%加成，根据攻击距离（500-650）提升至多100%"
+     }
+    ]
+   },
+   {
+    "category": "已移除的强化符文",
+    "list": [
+     {
+      "name": "",
+      "changesHtml": "？？？\n霸符兄弟\n地狱三头犬\n作弊：我能回城！\n砸开那颗蛋\n魔鬼之舞\n裁决使\n感受燃烧\n冰霜 幽灵\n砍伤\n祖母的辣椒油\n帽上加帽\n圣火\n小猫咪找妈妈\n基石法师\n激光治疗\n闪电打击\n魄罗爆破手\n魄罗之王的弹跳\n古式佳酿\n红包\n退敌力场\n无休回复\n自我毁灭\n一板一眼\n雪球扭蛋机\n速度恶魔\n残暴之力\n折磨者\n精准奇才\n接二连三\n升级：弯刀\n升级：狂妄\n升级：米凯尔\n升级：荆棘之甲\n虚空裂隙\n当心小蛋糕！\n负重爆气\n刃下生风"
+     }
+    ]
+   },
+   {
+    "category": "新增的强化符文",
+    "list": [
+     {
+      "name": "白银阶强化符文",
+      "changesHtml": "自适应防护\n别停止引导\n加固护盾\n大师铸就\n前进时间到\n主玩辅助\n虹吸\n下雪天\n叠角龙\n保持坚定\n可靠武器"
+     },
+     {
+      "name": "黄金阶强化符文",
+      "changesHtml": "大法师\n邦！\n炽燃利息\n无尽大杀四方\n狙神飞星\n藏身草丛\n小小的额外帮助\n仁慈打击\n自然即是治愈\n我们的治疗\n过量延伸者\n轻拍背部\n豪猪\n高压锅\n急速之追求\n威能之追求\n贪欲束缚\n活力焕发\n鲨鱼诱饵\n鲨鱼暴风\n冰雪爆裂\n地形专家\n牙仙子\n虚空冲刺\n术士果汁盒\n喂呜喂呜\n哎哟，我的硬币！"
+     },
+     {
+      "name": "棱彩阶强化符文",
+      "changesHtml": "连锁反应\n位面转移\n空投熊\n回响施放\n吃过路兵\n濒死悟道\n掷骰狂人\n多重射击\n大招工具人\n超负荷\n针插垫\n魄罗蛮冲\n快步\n飞升仪式\n咒语裂变\n灵魄炸弹\n软弹啪叽抓\n电涌力场\n惊惧\n泰坦的坚决\n三重射击"
+     }
+    ]
+   },
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "暗裔剑魔 亚托克斯",
+      "changesHtml": "Q - 暗裔之刃<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;增效区额外伤害：70&nbsp;→&nbsp; 75"
+     },
+     {
+      "name": "灵罗娃娃 格温",
+      "changesHtml": "Q - 快刀剪乱<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;每次剪击的基础伤害：10/13.5/17/20.5/24&nbsp;→&nbsp;10/14/18/22/26<br>E - 断续疾走<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;额外攻击速度：20/35/50/65/80%&nbsp;&nbsp;→&nbsp; 30/42.5/55/67.5/80%"
+     },
+     {
+      "name": "异画师 彗",
+      "changesHtml": "Q - 主题：灾<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;QQ伤害：50 / 80 / 110 / 140 / 170 (+70%法术强度) (+3 / 4 / 5 / 6 / 7%目标最大生命值)&nbsp;&nbsp;→&nbsp; 50 / 80 / 110 / 140 / 170 (+80%法术强度) (+3 / 4 / 5 / 6 / 7%目标最大生命值)<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;QW伤害：60 / 85 / 110 / 135 / 160（+25%法术强度），提升至最高120 / 201.875 / 302.5 / 421.875 / 560（+50 / 59.375 / 68.75 / 78.125 / 87.5%法术强度）&nbsp;→&nbsp; 60 / 85 / 110 / 135 / 160（+30%法术强度），提升至最高120 / 201.875 / 302.5 / 421.875 / 560（+60 / 71.25 / 82.5 / 93.75 / 105%法术强度）<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;QE减速：30%&nbsp;→&nbsp; 35%<br>E - 主题：悚<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;冷却时间：13 / 12.5 / 12 / 11.5 / 11秒&nbsp;&nbsp;→&nbsp; 12 / 11.5 / 11 / 10.5 / 10秒"
+     },
+     {
+      "name": "武器大师 贾克斯",
+      "changesHtml": "Q - 跳斩<br>E - 反击风暴<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;目标最大生命值伤害：3.5%最低伤害 / 7%最高伤害 &nbsp;→&nbsp;4%最低伤害 / 8%最高伤害"
+     },
+     {
+      "name": "盲僧 李青",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;成长攻击力：3.7 &nbsp;→&nbsp;3.4<br>Q1 - 天音波<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong>伤害：65 / 95 / 125 / 155 / 185 (+95%额外攻击力）&nbsp;→&nbsp;60 / 90 / 120 / 150 / 180 (+90%额外攻击力)<br>Q2 - 回音击<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;伤害：65 / 95 / 125 / 155 / 185 (+95%额外攻击力）&nbsp;→&nbsp;60 / 90 / 120 / 150 / 180 (+90%额外攻击力)"
+     },
+     {
+      "name": "永恒梦魇 魔腾",
+      "changesHtml": "Q - 梦魇之径<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;伤害：65 / 110 / 155 / 200 / 245 &nbsp;→&nbsp;65 / 105 / 145 / 185 / 225"
+     },
+     {
+      "name": "发条魔灵 奥莉安娜",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础生命值：585 &nbsp;→&nbsp;565<br>被动 - 发条协奏<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;每层伤害提升：20% &nbsp;→&nbsp;15%<br>R - 指令：冲击波<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;伤害：250/400/550 (+95%法术强度) &nbsp;→&nbsp;225/350/475 (+110%法术强度)"
+     },
+     {
+      "name": "符文法师 瑞兹",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础生命值：645 &nbsp;→&nbsp;620<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础攻击力：58 &nbsp;→&nbsp;55"
+     },
+     {
+      "name": "解脱者 塞拉斯",
+      "changesHtml": "Q - 锁链鞭击<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;第一段伤害：40 / 60 / 80 / 100 / 120 (+40%法术强度) &nbsp;→&nbsp;40 / 65 / 90 / 115 / 140 (+45%法术强度)<br>W - 弑君突刺<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;治疗量：20 / 40 / 60 / 80 / 100（+20%法术强度）（+5%塞拉斯额外生命值），根据塞拉斯已损失生命值最多提升100% &nbsp;→&nbsp;20 / 40 / 60 / 80 / 100（+30%法术强度）（+5%塞拉斯额外生命值），根据塞拉斯已损失生命值最多提升100%"
+     },
+     {
+      "name": "暗黑元首 辛德拉",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础生命值：563 &nbsp;→&nbsp;583<br>Q - 暗黑法球&nbsp; &nbsp; &nbsp; &nbsp;<br>&nbsp; &nbsp; &nbsp; <strong>&nbsp;</strong>&nbsp;伤害：80-220 (+65%法术强度) &nbsp;→&nbsp;90-230 (+70%法术强度)"
+     },
+     {
+      "name": "麦林炮手 崔丝塔娜",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;成长攻击力：2.9 &nbsp;→&nbsp;3.4<br>Q - 急速射击<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;法力值：30 / 35 / 40 / 45 / 50 &nbsp;→&nbsp;15 / 20 / 25 / 30 / 35"
+     },
+     {
+      "name": "惩戒之箭 韦鲁斯",
+      "changesHtml": "被动 - 复仇之欲<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;击杀非英雄单位时获得攻击力和法术强度：他的10%总攻速 ⇒ 他的11%总攻速<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;击杀英雄时获得攻击力和法术强度：他的25%总攻速 ⇒ 他的33%总攻速<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;击杀非英雄单位时获得攻速：+50%攻速 &nbsp;→&nbsp;+30%攻速<br>Q - 穿刺之箭<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;伤害：53.33 / 100 / 146.67 / 193.33 / 240（+100%额外攻击力）至80 / 150 / 220 / 290 / 360（+150%额外攻击力）&nbsp;→&nbsp;53.33 / 100 / 146.67 / 193.33 / 240（+80%额外攻击力）至80 / 150 / 220 / 290 / 360（+120%额外攻击力）<br>W - 枯萎箭袋<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;附带伤害：8 / 17 / 26 / 35 / 44 (+15%额外攻击力) (+25%法术强度) &nbsp;→&nbsp;4 / 13 / 22 / 31 / 40 (+15%额外攻击力) (+25%法术强度)"
+     },
+     {
+      "name": "德邦总管 赵信",
+      "changesHtml": "被动技能 - 果决<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;治疗效果：3 / 4 / 5%最大生命值 (+45 / 55 / 80%法术强度) &nbsp;→&nbsp;2 / 3.5 / 5%最大生命值 (+40 / 50 / 70%法术强度)<br>W - 风斩电刺<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;法力消耗：60 / 55 / 50 / 45 / 40 &nbsp;→&nbsp;60<br>E - 无畏冲锋<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;法力消耗：50 &nbsp;→&nbsp;60"
+     },
+     {
+      "name": "魔法猫咪 悠米",
+      "changesHtml": "被动 - 猫的博爱<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;治疗量：20 - 110（+25%法术强度）（1-18级）&nbsp;→&nbsp;20 - 110（+30%法术强度）（1-18级）<br>E - 旺盛精力<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;护盾值：65 / 90 / 115 / 140 / 165 (+30%法术强度) &nbsp;→&nbsp;65 / 90 / 115 / 140 / 165 (+40%法术强度)"
+     }
+    ]
+   },
+   {
+    "category": "羁绊系统发生了什么变化？",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "大法师 - 黄金"
+     },
+     {
+      "name": null,
+      "changesHtml": "掷骰狂人 - 棱彩"
+     },
+     {
+      "name": null,
+      "changesHtml": "下雪天 - 白银"
+     },
+     {
+      "name": null,
+      "changesHtml": "下场金币雨！ >>> 哎哟，我的硬币！- 黄金"
+     },
+     {
+      "name": null,
+      "changesHtml": "喂呜喂呜 - 黄金"
+     },
+     {
+      "name": null,
+      "changesHtml": "叠角龙 - 白银"
+     }
+    ]
+   }
+  ],
+  "time": "2026-06-10 18:02:50",
+  "last_update": "2026-6-11"
+ },
+ "6月25日凌晨1点停机版本更新公告": {
+  "section": "版本更新提取",
+  "title": "6月25日凌晨1点停机版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37089201.html#n5",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "残月之肃 厄斐琉斯",
+      "changesHtml": "通碧<br>&nbsp; &nbsp; &nbsp; &nbsp;被动标记伤害：15 (+10%额外攻击力) → 15 (+15%额外攻击力)<br>断魄<br>&nbsp; &nbsp; &nbsp; &nbsp;Q - 对影 伤害：每次攻击造成19 / 24.25 / 29.5 / 34.75 / 40%总攻击力的伤害 → 每次攻击造成20 / 25.25 / 30.5 / 35.75 / 41%总攻击力的伤害<br>荧焰<br>&nbsp; &nbsp; &nbsp; &nbsp;Q - 暝涌 伤害：20 - 110 (1 - 18级) (+ 10-16%额外攻击力) → 20 - 110 (1 - 18级) (+ 15-21%额外攻击力)<br>折镜<br>&nbsp; &nbsp; &nbsp; &nbsp;Q - 驻灵 伤害：35 - 125 (1 - 18级) (+ 30-48%额外攻击力) → 35 - 125 (1 - 18级) (+ 34-52%额外攻击力)"
+     },
+     {
+      "name": "星界游神 巴德",
+      "changesHtml": "被动 - 旅者的召唤<br>&nbsp; &nbsp; &nbsp; &nbsp;每木灵伤害：35 (+10每5个木灵) (+40%法术强度) → 30 (+6每5个木灵) (+40%法术强度)"
+     },
+     {
+      "name": "复仇焰魂 布兰德",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;基础法力回复：9 → 11<br>被动 - 炽热之焰<br><strong>&nbsp; &nbsp; &nbsp; </strong>&nbsp;引爆伤害：8 - 12% (1-17级) (+2%每100法术强度) → 6 - 12%(1-18级，18级后继续提升) (+2%每100法术强度)<br>E - 烈火燃烧<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>法力消耗：70 / 75 / 80 / 85 / 90 → 90"
+     },
+     {
+      "name": "魔蛇之拥 卡西奥佩娅",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>成长生命值：104 → 98"
+     },
+     {
+      "name": "荣耀行刑官 德莱文",
+      "changesHtml": "E - 开道利斧<br><strong>&nbsp; &nbsp; &nbsp; </strong>&nbsp;冷却时间：18 / 17 / 16 / 15 / 14秒 → 16 / 15 / 14 / 13 / 12秒<br>R - 冷血追命<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>命中敌方时伤害削减：每次-8%(乘算)，最低至40%(第11次命中) → 每次-5%，最低至50%(第14次命中)"
+     },
+     {
+      "name": "虚空之女 卡莎",
+      "changesHtml": "W - 虚空索敌<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>冷却时间：22 / 20 / 18 / 16 / 14 → 20 / 18.5 / 17 / 15.5 / 14<br>R - 猎手本能<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>护盾值：70 / 90 / 110 (+90 / 135 / 180%攻击力) (+120%法术强度) → 100 / 150 / 200 (+90 / 135 / 180%攻击力) (+120%法术强度)"
+     },
+     {
+      "name": "纳祖芒荣耀 奎桑提",
+      "changesHtml": "E - 大步驰援<br><strong>&nbsp; &nbsp;</strong> &nbsp; &nbsp;护盾值：80 / 120 / 160 / 200 / 240 (+15%额外生命值) → 70 / 112.5 / 155 / 197.5 / 240 (+13.5%额外生命值)"
+     },
+     {
+      "name": "诡术妖姬 乐芙兰",
+      "changesHtml": "R - 故技重施<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>RQ1 / RE1 伤害：70 / 140 / 210 → 70 / 150 / 230<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>标记/禁锢伤害：140 / 280 / 420 → 140 / 300 / 460<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>RW伤害：150 / 300 / 450 → 150 / 315 / 480"
+     },
+     {
+      "name": "狂战士 奥拉夫",
+      "changesHtml": "Q - 逆流投掷<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>野怪额外物理伤害：20 / 35 / 50 / 65 / 80 → 20 / 45 / 70 / 95 / 120"
+     },
+     {
+      "name": "圣锤之毅 波比",
+      "changesHtml": "Q - 圣锤猛击<br><strong>&nbsp; &nbsp; </strong>&nbsp; &nbsp;野怪伤害上限：50 / 80 / 110 / 140 / 170 → 75 / 105 / 135 / 165 / 195"
+     },
+     {
+      "name": "元素女皇 奇亚娜",
+      "changesHtml": "Q - 以绪塔尔之锋<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>野怪伤害：155% → 175%"
+     },
+     {
+      "name": "虚空遁地兽 雷克塞",
+      "changesHtml": "E - 狂野之噬 / 挖掘隧道<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>物理伤害：80 / 108 / 136 / 164 / 192 (+64%额外攻击力) → 70 / 95 / 120 / 145 / 170 (+60%额外攻击力)<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>额外真实伤害：125% → 120%"
+     },
+     {
+      "name": "机械公敌 兰博",
+      "changesHtml": "Q - 纵火盛宴<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>伤害：60 / 85 / 110 / 135 / 160 (+100%法术强度) → 50 / 75 / 100 / 125 / 150 (+105%法术强度)"
+     },
+     {
+      "name": "涤魂圣枪 赛娜",
+      "changesHtml": "被动 - 赦除<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>灵魂掉落几率（赛娜击杀）:10% → 5%<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>灵魂掉落几率（友军击杀）：28% → 32%<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>暴击伤害：-10%(180% / 27%搭配【无尽之刃】) → -15% (170% / 25.5%搭配【无尽之刃】)<br>Q - 黑暗洞灭<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>冷却返还：命中时 → 攻击时"
+     },
+     {
+      "name": "亡灵战神 赛恩",
+      "changesHtml": "Q - 残虐猛击<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>最小伤害：40 / 60 / 80 / 100 / 120 → 30 / 45 / 60 / 75 / 90<br>W - 灵魂熔炉<br><strong>&nbsp; &nbsp; &nbsp;</strong> &nbsp;法力值：65 / 70 / 75 / 80 / 85 → 75 / 80 / 85 / 90 / 95"
+     },
+     {
+      "name": "愁云使者 薇古丝",
+      "changesHtml": "E - 溟濛渐染<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>冷却时间：13秒 → 12秒<br>R - 愁煞<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>重置时间窗口：6秒 → 8秒"
+     },
+     {
+      "name": "不落魔锋 亚恒",
+      "changesHtml": "W - 厄影回锋<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>冷却时间：16 / 15 / 14 / 13 / 12 → 14 / 13.5 / 13 / 12.5 / 12"
+     }
+    ]
+   },
+   {
+    "category": "装备",
+    "list": [
+     {
+      "name": "多兰之盔",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>护甲和魔法抗性：10 → 8<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>生命值：140 → 150"
+     },
+     {
+      "name": "帝国指令",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>合成路线：爆裂魔杖 (850金币) + 班德尔玻璃镜(900金币) +650金币 → 增幅典籍(400金币) + 班德尔玻璃镜(900金币) + 增幅典籍(400金币) + 700金币<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>法术强度：65 → 60<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>唯一 - 控制：定身技能提供15技能急速 → 定身技能提供20技能急速<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>唯一 - 指令：6%易损 → 7%易损"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "大法师",
+      "changesHtml": "位阶：黄金 → 棱彩"
+     },
+     {
+      "name": "炽燃利息",
+      "changesHtml": "来自伤害的百分比金币：1% → 0.75%"
+     },
+     {
+      "name": "狙神飞星",
+      "changesHtml": "对最大范围效果的尺寸增加了限制。"
+     },
+     {
+      "name": "玻璃大炮",
+      "changesHtml": "真实伤害百分比：15% → 25%(近战) / 15%(远程)"
+     },
+     {
+      "name": "针插垫",
+      "changesHtml": "每一根针的伤害：20 - 30 → 20 - 60"
+     },
+     {
+      "name": "高压锅",
+      "changesHtml": "总燃烧伤害：2%最大生命值 → 1.5%最大生命值（注：游戏内数值和实际伤害异常，将于后续版本修复）"
+     },
+     {
+      "name": "快步",
+      "changesHtml": "位阶：棱彩 → 黄金"
+     },
+     {
+      "name": "灵魄炸弹",
+      "changesHtml": "护盾时长：4秒 → 2秒"
+     },
+     {
+      "name": "牙仙子",
+      "changesHtml": "爆发阈值20% → 25%<br>穿甲与法术穿透：5 → 4"
+     },
+     {
+      "name": "双生火焰",
+      "changesHtml": "暴击几率：15% → 25%"
+     },
+     {
+      "name": "虚空献祭",
+      "changesHtml": "新增被动【荒芜】：击杀一个敌人时，会在其周围造成魔法伤害。"
+     },
+     {
+      "name": "哎哟，我的硬币！",
+      "changesHtml": "掉落硬币：16 → 9"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【史上最大雪球！】对目标造成双倍伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：已损失生命值伤害被错误地计算。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：两个玩家同时拥有【轻拍背部】时能够导致无限护盾。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-06-24 19:40:21",
+  "last_update": "2026-6-29"
+ },
+ "7月16日凌晨1点停机版本更新公告": {
+  "section": "版本更新提取",
+  "title": "7月16日凌晨1点停机版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37091415.html#n5",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "沙漠皇帝 阿兹尔",
+      "changesHtml": "W - 沙兵现身<br>&nbsp; &nbsp; &nbsp; &nbsp;攻击特效？更像是摧毁特效：【焦灼】、【兰德里的折磨】、【黯炎火炬】和【海克斯科技发电机】现在的伤害会在命中时造成100%，而非50%。<br>&nbsp; &nbsp; &nbsp; &nbsp;双击：【征服者】现在会在每次命中时叠加2层，而不是1层<br>&nbsp; &nbsp; &nbsp; &nbsp;激光专注：【强攻】现在会作用于命中的主要目标<br>R - 禁军之墙<br>&nbsp; &nbsp; &nbsp; &nbsp;退下，凡人！：现在会击退野怪"
+     },
+     {
+      "name": "英勇投弹手 库奇",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;成长攻击力：2 → 2.5<br>R - 火箭轰击<br>&nbsp; &nbsp; &nbsp; &nbsp;来自普攻的剩余充能时间缩减：2-4秒（基于暴击几率）→ 2-6秒"
+     },
+     {
+      "name": "德玛西亚之力 盖伦",
+      "changesHtml": "R - 德玛西亚正义<br>&nbsp; &nbsp; &nbsp; &nbsp;真实伤害：150 / 250 / 350（+25/30/35%目标已损失生命值）→ 125 / 200 / 275（+25/30/35%目标已损失生命值）"
+     },
+     {
+      "name": "未来守护者 杰斯",
+      "changesHtml": "被动 - 海克斯科技电容<br>&nbsp; &nbsp; &nbsp; &nbsp;额外移动速度：40 → 30<br>R - 墨丘利之锤<br>&nbsp; &nbsp; &nbsp; &nbsp;额外护甲和魔法抗性：5 / 15 / 25 / 35（+7.5%额外攻击力）→ 5 / 12 / 19 / 26（+7.5%额外攻击力）"
+     },
+     {
+      "name": "灰烬驱魔人 洛克",
+      "changesHtml": "Q - 伏魔三钉<br>&nbsp; &nbsp; &nbsp; &nbsp;大钉 再次施放 维持时间：5秒 → 4秒<br>&nbsp; &nbsp; &nbsp; &nbsp;大钉伤害：50 / 60 / 70 / 80 / 90 → 50 / 58 / 66 / 74 / 82<br>&nbsp; &nbsp; &nbsp; &nbsp;标记基础额外伤害：20 / 30 / 40 / 50 / 60 → 18 / 26 / 34 / 42 / 50<br>W - 灵焰仪式<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>所受伤害灰色生命值上限40 / 80 / 120 / 160 / 200 → 40 / 70 / 100 / 130 / 160"
+     },
+     {
+      "name": "铁铠冥魂 莫德凯撒",
+      "changesHtml": "E - 断魂一扼<br>&nbsp; &nbsp; &nbsp; &nbsp;伤害：60 / 75 / 90 / 105 / 120 (+40%法术强度) → 60 / 80 / 100 / 120 / 140 (+45%法术强度)<br>R - 轮回绝境<br>&nbsp; &nbsp; &nbsp; &nbsp;属性偷取：10% → 13%"
+     },
+     {
+      "name": "唤潮鲛姬 娜美",
+      "changesHtml": "E - 唤潮之佑<br>&nbsp; &nbsp; &nbsp; &nbsp;每次命中的伤害：20 / 30 / 40 / 50 / 60 → 20 / 35 / 50 / 65 / 80"
+     },
+     {
+      "name": "涤魂圣枪 赛娜",
+      "changesHtml": "被动 - 赦除<br>&nbsp; &nbsp; &nbsp; &nbsp;暴击伤害修正：85% → 80%<br>Q - 黑暗洞灭<br>&nbsp; &nbsp; &nbsp; &nbsp;减速 法术强度收益率：10%每100法术强度 → 7%每100法术强度<br>&nbsp; &nbsp; &nbsp; &nbsp;治疗 法术强度收益率：50%法术强度 → 35%法术强度"
+     },
+     {
+      "name": "星籁歌姬 萨勒芬妮",
+      "changesHtml": "Q - 清籁穿云<br>&nbsp; &nbsp; &nbsp; &nbsp;法术强度收益率：50%法术强度 → 40%法术强度"
+     },
+     {
+      "name": "不破之誓 芸阿娜",
+      "changesHtml": "<strong>&nbsp; &nbsp; </strong>&nbsp; &nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;成长攻击力：2.5 → 3"
+     }
+    ]
+   },
+   {
+    "category": "装备",
+    "list": [
+     {
+      "name": "原生质护带",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;</strong> &nbsp;费用：2500 → 2600<br>&nbsp; &nbsp; &nbsp; &nbsp;额外生命值：200 - 300 → 100 - 300<br>&nbsp; &nbsp; &nbsp; &nbsp;治疗效果：200 - 400 → 100 - 400"
+     },
+     {
+      "name": "海克斯科技火箭腰带",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>合成路线：海克斯科技发电机 + 恶魔法典 + 增幅典籍 + 300 → 海克斯科技发电机 + 燃烧宝石 + 红水晶 + 350<br>&nbsp; &nbsp; &nbsp; &nbsp;主动效果冷却时间：40秒 → 50秒<br>&nbsp; &nbsp; &nbsp; &nbsp;法术强度：70 → 60<br>&nbsp; &nbsp; &nbsp; &nbsp;生命值：300 → 350"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "位面转移",
+      "changesHtml": "冷却时间：108秒 → 75秒<br>攻击力：25~100 → 35~150<br>法术强度：25~100 → 35~150<br>生命值：200~1000 → 300~1500<br>[新增]建筑伤害：现在对建筑物造成1伤害。"
+     },
+     {
+      "name": "魄罗蛮冲",
+      "changesHtml": "魄罗佳肴 生成间隔：35~20 → 25~15<br>基础伤害：50~100 → 100~200"
+     },
+     {
+      "name": "软弹啪叽抓",
+      "changesHtml": "每抓到一个敌人时的护盾值：25~75 → 35~150"
+     },
+     {
+      "name": "针插垫",
+      "changesHtml": "[新增]处决：现在会在积累的伤害足以击杀时进行处决。"
+     },
+     {
+      "name": "飞身踢",
+      "changesHtml": "基础值：5% → 4%<br>基础攻击力收益：0.035% → 0.055%<br>额外生命值收益：0.002% → 0.0001%"
+     },
+     {
+      "name": "牙仙子",
+      "changesHtml": "每颗牙齿的双穿：4 → 3"
+     },
+     {
+      "name": "炼狱导管",
+      "changesHtml": "对非英雄单位的冷却缩减：启用 → 不再在影响非英雄单位时缩减冷却时间"
+     },
+     {
+      "name": "叠角龙",
+      "changesHtml": "效果：将不再影响强化符文或装备效果"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【飞升仪式】能够提供无限攻击距离。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【炽燃利息】不会将金币提供给英雄（诸如德莱厄斯、提莫、图奇）的持续伤害效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：斯莫德能够被供应【炽燃利息】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【前进时间到】没有正确提供移动速度至易的E，艾希的Q和图奇的Q。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【掷骰狂人】有时未能成功地在一个单位阵亡时掉落一个锻造器。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【空投熊】有时会在生成后立刻阵亡。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在你选择【鲨鱼暴风】和【冰雪爆裂】之后，依然能够获得又一个主动施放的召唤师技能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【急速之追求】会被供应给亚索的E。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-07-15 18:36:57",
+  "last_update": "2026-7-16"
+ },
+ "7月30日零点停机版本更新公告": {
+  "section": "版本更新提取",
+  "title": "7月30日零点停机版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37092739.html#n7",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "牛头酋长 阿利斯塔",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;移动速度：330 ⇒ 335"
+     },
+     {
+      "name": "虚空女皇 卑尔维斯",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;攻击速度：0.85 ⇒ 0.67<br>&nbsp; &nbsp; &nbsp; &nbsp;攻击速度收益率：0.85 ⇒ 0.67<br>&nbsp; &nbsp; &nbsp; &nbsp;攻击力：60 ⇒ 55<br>&nbsp; &nbsp; &nbsp; &nbsp;基础攻击力修正：75% ⇒ 100%<br>&nbsp; &nbsp; &nbsp; &nbsp;攻击施放时间：0.25 ⇒ 0.22<br>&nbsp; &nbsp; &nbsp; &nbsp;总体攻击动画：调整至在较低攻速下手感更佳<br>&nbsp; &nbsp; &nbsp; &nbsp;护甲：32 ⇒ 28<br>&nbsp; &nbsp; &nbsp; &nbsp;成长护甲：4.7 ⇒ 5<br>&nbsp; &nbsp; &nbsp; &nbsp;生命值：610 ⇒ 580<br>&nbsp; &nbsp; &nbsp; &nbsp;成长生命值：105 ⇒ 110<br>&nbsp; &nbsp; &nbsp; &nbsp;模型大小：100% ⇒ 95%<br>被动 - 溶烛化紫<br>&nbsp; &nbsp; &nbsp; &nbsp;在施放技能后的攻击速度：持续2次攻击，最小20%/最大40% ⇒ 持续3秒的20%<br>&nbsp; &nbsp; &nbsp; &nbsp;每层攻击速度：最小0.28%/最大1.1% ⇒ 最小0.1%/最大2%<br>Q - 虚空激流<br>&nbsp; &nbsp; &nbsp; &nbsp;速度：800 / 850 / 900 / 950 / 1000 ⇒ 850<br>&nbsp; &nbsp; &nbsp; &nbsp;施法间隔：1 ⇒ 4 / 3.25 / 2.5 / 1.75 / 1<br>&nbsp; &nbsp; &nbsp; &nbsp;野怪伤害修正率：55 / 65 / 75 / 85 / 95 ⇒ 70<br>&nbsp; &nbsp; &nbsp; &nbsp;小兵伤害修正率：60 / 70 / 80 / 90 / 100% ⇒ 已移除<br>&nbsp; &nbsp; &nbsp; &nbsp;伤害：0 / 5 / 10 / 15 / 20 (+100%攻击力) ⇒ 12 / 14 / 16 / 18 / 20 (+105%攻击力)<br>&nbsp; &nbsp; &nbsp; &nbsp;攻击速度至技能急速的转化率：0.25 ⇒ 0.2<br>W技能：上觐沉渊<br>伤害：70 / 110 / 150 / 190 / 230 (+100%额外攻击力) (+125%法术强度) ⇒ 80 / 140 / 200 / 260 / 320 (+150%法术强度)<br>减速时长：持续1.25/1.5/1.75/2/2.25秒的50%减速 ⇒ 持续2秒的30%减速<br>击飞时长：0.75秒 ⇒ 0.6 / 0.7 / 0.8 / 0.9 / 1秒<br>E - 搠面皇锋<br>每次打击的伤害：6 / 7 / 8 / 9 / 10 (+8%攻击力) (+8%攻击特效)，根据已损失生命值最多提升至300% ⇒ 10 / 12 / 14 / 16 / 18 (+12%攻击力) (+12%攻击特效)，根据已损失生命值最多提升至100%<br>打击次数：6 + 每33%额外攻击速度提升1 ⇒ 6 + 每40%额外攻击速度提升1<br>伤害减免：35 / 40 / 45 / 50 / 55% ⇒ 20 / 30 / 40 / 50 / 60%<br>生命偷取：20% ⇒ 20 / 25 / 30 / 35 / 40%<br>生命偷取收益率：100% ⇒ 已移除<br>冷却时间：20 / 19 / 18 / 17 / 16 ⇒ 24 / 21 / 18 / 15 / 12<br>野怪伤害修正率：150% ⇒ 200%<br>R - 万载豪筵<br>被动攻击特效施加：每隔一次攻击 ⇒ 每次攻击<br>被动真实伤害：6 / 10 / 14（+12%额外攻击力）⇒ 2 / 4 / 6（+3%额外攻击力）<br>切换目标：切换目标时被动效果会移除 ⇒ 切换目标时被动效果不再移除<br>史诗级野怪层数上限：10 ⇒ 8<br>被动触发条件：E和Q曾要求卑尔维斯先对目标进行攻击 ⇒ E和Q现在不再要求卑尔维斯先对目标进行攻击<br>爆炸伤害：150 / 200 / 250 (+100%法术强度) (+25%已损失生命值) ⇒ 150 / 200 / 250 (+150%法术强度) (+20%已损失生命值)<br>每块【虚空珊瑚】的治疗：100 / 250 / 400 (+150%额外攻击力) (+90%法术强度) ⇒ 100 / 250 / 400 (+150%额外攻击力) (+150%法术强度)<br>基础攻击距离加成：75 ⇒ 25 / 75 / 125<br>总攻击速度：10 / 15 / 20% ⇒ 5 / 15 / 25%<br>体型：10% ⇒ 10 / 15 / 20%<br>未强化增益持续时间：60 ⇒ 45 / 90 / 无限，分别对应0 / 40 / 80层<br>强化版增益时长：180 ⇒ 45 / 90 / 无限，分别对应0 / 40 / 80层<br>施法后锁定：0.5秒 ⇒ 0.25秒<br>非战斗移动速度：已移除"
+     },
+     {
+      "name": "虚空之女 卡莎",
+      "changesHtml": "被动 - 体表活肤<br>&nbsp; &nbsp; &nbsp; &nbsp;苛性伤口：4&nbsp;-&nbsp;24&nbsp;(英雄等级)&nbsp;(+12%法术强度),&nbsp;每层已有层数+1&nbsp;-&nbsp;6&nbsp;(英雄等级)&nbsp;(+3%法术强度)&nbsp;⇒&nbsp;4&nbsp;-&nbsp;30&nbsp;(英雄等级)&nbsp;(+12%法术强度),&nbsp;每层已有层数+1&nbsp;-&nbsp;8&nbsp;(英雄等级)&nbsp;(+3%法术强度)"
+     },
+     {
+      "name": "灰烬驱魔人 洛克",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;生命值：655 ⇒ 620<br>Q - 伏魔三钉<br>&nbsp; &nbsp; &nbsp; &nbsp;基础伤害 - 大钉：50 / 58 / 66 / 74 / 82 (+20%法术强度) ⇒ 40 / 48 / 56 / 64 / 72 (+20%法术强度)<br>&nbsp; &nbsp; &nbsp; &nbsp;三枚大钉伤害：150 / 174 / 198 / 222 / 246 (+60%法术强度) ⇒ 120 / 144 / 168 / 192 / 216 (+60%法术强度)<br>W - 灵焰仪式<br>&nbsp; &nbsp; &nbsp; &nbsp;移动速度：40 / 45 / 50 / 55 / 60% (每100法术强度+2%) ⇒ 40% (每100法术强度+2%)<br>&nbsp; &nbsp; &nbsp; &nbsp;灰色生命值基础数值：40 / 70 / 100 / 130 / 160 (+120%法术强度) ⇒ 40 / 60 / 80 / 100 / 120 (+100%法术强度)"
+     },
+     {
+      "name": "扭曲树精 茂凯",
+      "changesHtml": "Q - 荆棘重击<br>&nbsp; &nbsp; &nbsp; &nbsp;野怪伤害修正率：140 / 150 / 160 / 170 / 180 ⇒ 150 / 160 / 170 / 180 / 190<br>&nbsp; &nbsp; &nbsp; &nbsp;法术强度收益率：40% ⇒ 50%"
+     },
+     {
+      "name": "铁铠冥魂 莫德凯撒",
+      "changesHtml": "E - 断魂一扼<br>&nbsp; &nbsp; &nbsp; &nbsp;冷却时间：18 / 16 / 14 / 12 / 10 ⇒ 16 / 14 / 12 / 10 / 8<br>R - 轮回绝境<br>&nbsp; &nbsp; &nbsp; &nbsp;窃取属性：13% ⇒ 10%<br>&nbsp; &nbsp; &nbsp; &nbsp;BUG修复：当对生命值高于其减伤后最大生命值的目标施放终极技能时，不再会导致伤害提升（最高曾可达两倍）。"
+     },
+     {
+      "name": "百裂冥犬 纳亚菲利",
+      "changesHtml": "终极技能 - 暴吼<br>&nbsp; &nbsp; &nbsp; &nbsp;伤害：150 / 225 / 300 (+120%攻击力) ⇒ 125 / 200 / 275 (+100%额外攻击力)<br>&nbsp; &nbsp; &nbsp; &nbsp;每个狗群伙伴的伤害：15 / 22.5 / 30 (+12%攻击力) ⇒ 12.5 / 20 / 27.5 (+10%额外攻击力)"
+     },
+     {
+      "name": "放逐之刃 锐雯",
+      "changesHtml": "R - 放逐之锋<br>&nbsp; &nbsp; &nbsp; &nbsp;额外攻击力收益：25% ⇒ 20%<br>R - 疾风斩<br>&nbsp; &nbsp; &nbsp; &nbsp;额外攻击力收益：最小60%/最大180% ⇒ 最小55%/最大165%"
+     },
+     {
+      "name": "解脱者 塞拉斯",
+      "changesHtml": "Q - 锁链鞭击<br>&nbsp; &nbsp; &nbsp; &nbsp;第一段抽击伤害：40 / 65 / 90 / 115 / 140 (+45%法术强度) ⇒ 40 / 60 / 80 / 100 / 120 (+40%法术强度)"
+     },
+     {
+      "name": "不灭狂雷 沃利贝尔",
+      "changesHtml": "Q - 擂首一击<br>&nbsp; &nbsp; &nbsp; &nbsp;冷却时间：14 / 13 / 12 / 11 / 10 ⇒ 12 / 11.5 / 11 / 10.5 / 10"
+     },
+     {
+      "name": "生化魔人 扎克",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;成长护甲：4.7 ⇒ 5.2<br>E - 橡筋弹弓<br>&nbsp; &nbsp; &nbsp; &nbsp;冷却时间：22 / 19 / 16 / 13 / 10 ⇒ 21 / 18 / 15 / 12 / 9"
+     },
+     {
+      "name": "阿狸",
+      "changesHtml": "治疗效果：90% ⇒ 100%"
+     },
+     {
+      "name": "阿克尚",
+      "changesHtml": "造成伤害：105% ⇒ 100%<br>承受伤害：5% ⇒ 0%"
+     },
+     {
+      "name": "阿利斯塔",
+      "changesHtml": "治疗效果：80% ⇒ 100%<br>伤害修正：95% ⇒ 100%"
+     },
+     {
+      "name": "安蓓萨",
+      "changesHtml": "承受伤害：-5% ⇒ 0%"
+     },
+     {
+      "name": "安妮",
+      "changesHtml": "护盾效果：90% ⇒ 100%<br>承受伤害：-5% ⇒ 0%"
+     },
+     {
+      "name": "艾希",
+      "changesHtml": "造成伤害：105% ⇒ 100%"
+     },
+     {
+      "name": "库奇",
+      "changesHtml": "承受伤害：10% ⇒ 5%"
+     },
+     {
+      "name": "艾克",
+      "changesHtml": "造成伤害：110% ⇒ 105%"
+     },
+     {
+      "name": "彗",
+      "changesHtml": "造成伤害：110% ⇒ 105%<br>对小兵的造成伤害：60% ⇒ 100%"
+     },
+     {
+      "name": "烬",
+      "changesHtml": "承受伤害：-5% ⇒ 0%"
+     },
+     {
+      "name": "卡莎",
+      "changesHtml": "承受伤害：10% ⇒ 0%"
+     },
+     {
+      "name": "千珏",
+      "changesHtml": "造成伤害：110% ⇒ 100%"
+     },
+     {
+      "name": "克格莫",
+      "changesHtml": "造成伤害：88% ⇒ 90%"
+     },
+     {
+      "name": "卢锡安",
+      "changesHtml": "造成伤害：105% ⇒ 100%"
+     },
+     {
+      "name": "玛尔扎哈",
+      "changesHtml": "对小兵的造成伤害：60% ⇒ 100%"
+     },
+     {
+      "name": "厄运小姐",
+      "changesHtml": "承受伤害：-5% ⇒ 0%"
+     },
+     {
+      "name": "莫德凯撒",
+      "changesHtml": "承受伤害：-2% ⇒ 0%"
+     },
+     {
+      "name": "莫甘娜",
+      "changesHtml": "承受伤害：-10% ⇒ 0%"
+     },
+     {
+      "name": "内瑟斯",
+      "changesHtml": "承受伤害：-5% ⇒ 0%"
+     },
+     {
+      "name": "奇亚娜",
+      "changesHtml": "造成伤害：115% ⇒ 110%"
+     },
+     {
+      "name": "瑞兹",
+      "changesHtml": "造成伤害：105% ⇒ 100%<br>承受伤害：5% ⇒ 0%"
+     },
+     {
+      "name": "赛娜",
+      "changesHtml": "造成伤害：97% ⇒ 100%"
+     },
+     {
+      "name": "辛吉德",
+      "changesHtml": "承受伤害：-8% ⇒ 0%"
+     },
+     {
+      "name": "斯莫德",
+      "changesHtml": "技能急速：-10 ⇒ 0"
+     },
+     {
+      "name": "索拉卡",
+      "changesHtml": "治疗效果：105% ⇒ 100%"
+     },
+     {
+      "name": "提莫",
+      "changesHtml": "技能急速：-10 ⇒ 0<br>对小兵的造成伤害：60% ⇒ 100%"
+     },
+     {
+      "name": "特朗德尔",
+      "changesHtml": "承受伤害：-5% ⇒ 0%"
+     },
+     {
+      "name": "赵信",
+      "changesHtml": "造成伤害：95% ⇒ 100%"
+     },
+     {
+      "name": "基兰",
+      "changesHtml": "造成伤害：105% ⇒ 100%<br>承受伤害：5% ⇒ 0%"
+     },
+     {
+      "name": "吉格斯",
+      "changesHtml": "造成伤害：87% ⇒ 90%<br>对小兵的造成伤害：60% ⇒ 100%"
+     }
+    ]
+   },
+   {
+    "category": "装备",
+    "list": [
+     {
+      "name": "破垒者",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;费用：3200金币 ⇒ 3000金币<br>&nbsp; &nbsp; &nbsp; &nbsp;成型炸药伤害：(30 + 150%护甲穿透)真实伤害 ⇒ (50 + 150%护甲穿透)真实伤害"
+     },
+     {
+      "name": "界弓",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;唯一 - 晦影：30魔法伤害攻击特效 ⇒ 30 (+10%额外攻击力) (+10%法术强度)"
+     },
+     {
+      "name": "育恩塔尔荒野箭",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;费用：850金币 ⇒ 750金币<br>&nbsp; &nbsp; &nbsp; &nbsp;攻击速度：40% ⇒ 45%"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "自适应防护",
+      "changesHtml": "每层的双抗：5 / 6.25 / 7.5 / 8.75 / 10 ⇒ 7 / 8.25 / 9.5 / 10.75 / 12"
+     },
+     {
+      "name": "软弹啪叽抓",
+      "changesHtml": "冷却时间：45 ⇒ 35"
+     },
+     {
+      "name": "泰坦的坚决",
+      "changesHtml": "适应之力：25 / 31.25 / 37.5 / 43.75 / 50 ⇒ 25 / 37.5 / 50 / 62.5 / 75<br>每10层提供的护甲与魔法抗性：4 / 5 / 6 / 7 / 8 ⇒ 5 / 6.25 / 7.5 / 8.75 / 10"
+     },
+     {
+      "name": "濒死悟道",
+      "changesHtml": "冷却时间：120 ⇒ 90"
+     },
+     {
+      "name": "大地苏醒",
+      "changesHtml": "基础伤害：70 / 105 / 140 / 175 / 210 ⇒ 90 / 130 / 170 / 210 / 250"
+     },
+     {
+      "name": "无尽大杀四方",
+      "changesHtml": "已损失生命值治疗：15% ⇒ 18%"
+     },
+     {
+      "name": "连锁反应",
+      "changesHtml": "[新]终极技能伤害提升：对于终极技能，伤害提升至250%"
+     },
+     {
+      "name": "暴击飞弹",
+      "changesHtml": "每颗飞弹伤害：20 / 40 / 60 / 80 / 100 ⇒ 15 / 32.5 / 50 / 67.5 / 85"
+     },
+     {
+      "name": "空投熊",
+      "changesHtml": "晕眩时长：1.5秒 ⇒ 0.5秒<br>提伯斯额外生命值：0 / 1125 / 2250 / 3375 / 4500 ⇒ 1000 / 2375 / 3750 / 5125 / 6500"
+     },
+     {
+      "name": "轻拍背部",
+      "changesHtml": "[新]叠加可用性：现在同一队的多名玩家都可获得"
+     },
+     {
+      "name": "仁慈打击",
+      "changesHtml": "[新]防御塔交互：【仁慈打击】的增益在攻击防御塔时会被消耗。<br>[新]防御塔伤害：防御塔会受到相当于最大生命值2.5%的伤害。"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：维克兹的（Q）第一段命中未能触发【老练狙神】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：艾尼维亚的（Q）在穿过单位时未能触发【老练狙神】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：洛克的（Q）的多次施放会获得【老练狙神】的充能返还。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【飞升仪式】占据期间无法进行攻击。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：莫甘娜的（R）回响施放时，分身总是朝屏幕底部移动。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【尖端发明家】未能减少【沃格勒特的巫师帽】冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在图奇的（R）火力全开技能结束前再次施放时，它的子弹会消失。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：拥有【咒语裂变】的艾克的（Q）在飞弹结束时未能正常分裂。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果你拥有灼烧装备或符文，【炽燃利息】无法生成金币。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【歌之权冠】不在商店和可合成路径中显示。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：米利欧的（W）在【海克斯大乱斗】中为自己或队友治疗时未能为【主玩辅助】提供任务进度。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：洛克的（E）的第二段冲刺在【海克斯大乱斗】中未能为【威能之追求】或【急速之追求】提供任务进度。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中选取【潘朵拉的盒子】后，易的（Q）和佛耶戈的（R）仍然保留【全凭身法】的技能急速。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【超负荷】能被供应给卡特琳娜的（E）和萨科的（E）。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【小小的额外帮助】在效果结束后会移除【万用瞄准镜】、【更万用的瞄准镜】和【最万用的瞄准镜】的视觉特效。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果奈德丽在【海克斯大乱斗】中选择【咒语裂变】时处于美洲狮形态，那么她的人类形态（Q）标枪投掷不会触发飞弹分裂"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【威能之追求】或【急速之追求】能被供应给阿克尚的（E）。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，【仁慈打击】能被供应给非辅助型英雄，如弗拉基米尔。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，【防护武器】能被供应给阿克尚的（E）。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【威能之追求】能被供应给阿克尚（E）、德莱文的（Q）、俄洛伊的（E）和墨菲特的（W）。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，【可靠武器】依然能被供应给阿克尚的（E）。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-07-29 20:34:46",
+  "last_update": "2026-7-30"
+ },
+ "8月13日1点停机版本更新公告": {
+  "section": "版本更新提取",
+  "title": "8月13日1点停机版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37093830.html#n6",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "沙漠皇帝 阿兹尔",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;Q - 狂沙猛攻<br>&nbsp; &nbsp; &nbsp; &nbsp;伤害：60 / 80 / 100 / 120 / 140 (+35 / 40 / 45 / 50 / 55%法术强度) ⇒ 75 / 95 / 115 / 135 / 155 (+35 / 40 / 45 / 50 / 55%法术强度)"
+     },
+     {
+      "name": "虚空女皇 卑尔维斯",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;</strong> &nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;成长生命值：110 ⇒ 105<br>R - 万载豪筵<br>&nbsp; &nbsp; &nbsp; &nbsp;真实形态 总攻击速度：5 / 15 / 20% ⇒ 6 / 13 / 20%<br>&nbsp; &nbsp; &nbsp; &nbsp;[新]真实形态 珊瑚指示器：在真实形态可以生成珊瑚时，资源条现在会变紫（注：暂未生效，将于后续版本修复）"
+     },
+     {
+      "name": "青钢影 卡蜜尔",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;法力值：339 ⇒ 375<br>被动 - 适应性防御<br>&nbsp; &nbsp; &nbsp; &nbsp;护盾值：20%最大生命值 ⇒ 10 / 15 / 20 / 25%最大生命值 (1 / 7 / 13 / 19级)<br>&nbsp; &nbsp; &nbsp; &nbsp;冷却时间：18 / 14 / 10 / 6秒 (1 / 7 / 13 / 19级) ⇒ 14 / 11 / 8秒 (1 / 7 / 13级)<br>W - 战术横扫<br>&nbsp; &nbsp; &nbsp; &nbsp;冷却时间：15 / 14 / 13 / 12 / 11秒 ⇒ 12 / 11.5 / 11 / 10.5 / 10秒<br>&nbsp; &nbsp; &nbsp; &nbsp;外侧锥形 额外伤害：6 / 6.5 / 7 / 7.5 / 8% (+2.5%每100额外攻击力) 目标最大生命值 ⇒ 7 / 7.5 / 8 / 8.5 / 9% (+2.5%每100额外攻击力) 目标最大生命值"
+     },
+     {
+      "name": "灵罗娃娃 格温",
+      "changesHtml": "被动 - 千穿百孔<br>&nbsp; &nbsp; &nbsp; &nbsp;对抗英雄时的治疗效果：50%折后，封顶值为10-25 (基于等级) (+6.5%法术强度) ⇒ 67%折后，封顶值为12-40 (基于等级) (+7%法术强度)"
+     },
+     {
+      "name": "狂暴之心 凯南",
+      "changesHtml": "R - 秘奥义！万雷天牢引<br>&nbsp; &nbsp; &nbsp; <strong>&nbsp;</strong>额外双抗：20 / 40 / 60 ⇒ 25 / 50 / 75<br>&nbsp; &nbsp; &nbsp; &nbsp;伤害：40 / 75 / 110 (+22.5%法术强度) ⇒ 40 / 80 / 120 (+25%法术强度)<br>&nbsp; &nbsp; &nbsp; &nbsp;最大伤害：300 / 562.5 / 825 (+168.75%法术强度) ⇒ 300 / 600 / 900 (+187.5%法术强度)"
+     },
+     {
+      "name": "沙漠死神 内瑟斯",
+      "changesHtml": "Q - 汲魂痛击<br>&nbsp; &nbsp; &nbsp; &nbsp;层数：3，对英雄/大型小兵/野怪提升至12 ⇒ 4，对英雄/大型小兵/野怪提升至10"
+     },
+     {
+      "name": "圣锤之毅 波比",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;攻击力：60 ⇒ 56<br>&nbsp; &nbsp; &nbsp; &nbsp;生命回复：8 ⇒ 9<br>&nbsp; &nbsp; &nbsp; &nbsp;法力值：280 + 40/级 ⇒ 300 + 45/级<br>Q - 圣锤猛击<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>伤害：30 / 55 / 80 / 105 / 130 (+100%额外攻击力) (+9%目标最大生命值)，两次 ⇒ 30 / 55 / 80 / 105 / 130 (+75%额外攻击力) (+7 / 7.5 / 8 / 8.5 / 9%目标最大生命值)，两次<br>&nbsp; &nbsp; &nbsp; &nbsp;目标最大生命值 野怪上限：75 / 105 / 135 / 165 / 195 ⇒ 85 / 120 / 155 / 190 / 225 减速幅度：20 / 25 / 30 / 35 / 40% ⇒ 20 / 23 / 26 / 29 / 32% (+8%每1000额外生命值)<br>W - 坚定风采<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>护甲和魔法抗性：12%，在低于40%最大生命值时翻倍 ⇒ 16%，在低于40%最大生命值时翻倍"
+     },
+     {
+      "name": "洛克",
+      "changesHtml": "造成伤害：100% ⇒ 105%<br>承受伤害：100% ⇒ 95%<br>韧性：0 ⇒ 20"
+     }
+    ]
+   },
+   {
+    "category": "装备",
+    "list": [
+     {
+      "name": "狂战士胫甲",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>攻击速度：25% ⇒ 30%<br>&nbsp; &nbsp; &nbsp; &nbsp;3级鞋 攻击速度：40% ⇒ 45%"
+     },
+     {
+      "name": "黑色切割者",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>攻击力：40 ⇒ 45<br>&nbsp; &nbsp; &nbsp; &nbsp;移动速度：20，持续2秒 ⇒ [20近战 || 10远程]，持续2秒"
+     },
+     {
+      "name": "星蚀",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>伤害：[6%近战 || 4%远程]目标最大生命值 ⇒ [8%近战 || 5%远程]目标最大生命值<br>&nbsp; &nbsp; &nbsp; &nbsp;护盾值：[160 + 40%额外攻击力 近战 || 80 + 20%额外攻击力 远程] ⇒ [150 + 40%额外攻击力 近战 || 75 + 20%额外攻击力 远程]"
+     },
+     {
+      "name": "卢安娜的飓风",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>移动速度：4% ⇒ 5%<br>&nbsp; &nbsp; &nbsp; &nbsp;风怒 弩箭伤害：55%攻击力 ⇒ 65%攻击力"
+     },
+     {
+      "name": "斯特拉克的挑战护手",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;</strong> &nbsp;额外攻击力：45%基础攻击力 ⇒ 50%基础攻击力"
+     },
+     {
+      "name": "焚天",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>配方：掘道钻头(1150金币) + 考尔菲德的战锤(1050金币) + 红水晶(400金币) + 500金币 ⇒ 掘道钻头(1150金币) + 考尔菲德的战锤(1050金币) + 900金币<br>&nbsp; &nbsp; &nbsp; &nbsp;治疗效果：[100% 近战 || 50% 远程]基础攻击力 + 6%已损失生命值 ⇒ [90% 近战 || 45% 远程]基础攻击力+4%已损失生命值<br>&nbsp; &nbsp; &nbsp; &nbsp;生命值：400 ⇒ 450"
+     },
+     {
+      "name": "日炎圣盾",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>伤害：20 (+1%额外生命值) ⇒ 20 (+1.5%额外生命值)<br>&nbsp; &nbsp; &nbsp;&nbsp;小兵/野怪伤害修正率：160%小兵，200%野怪 ⇒ 150%小兵， 180%野怪，合成配方：600金币 ⇒ 700金币"
+     },
+     {
+      "name": "提亚马特",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>攻击力：20 ⇒ 25"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "老练狙神",
+      "changesHtml": "狙击距离700 ⇒ 600"
+     },
+     {
+      "name": "吞噬灵魂",
+      "changesHtml": "[新增]第二个强化符文的额外生命值：300"
+     },
+     {
+      "name": "夜狩",
+      "changesHtml": "[新增]增益期间的移动速度：40%"
+     },
+     {
+      "name": "冰雪爆裂",
+      "changesHtml": "[新增]半径：提升30%<br>[新增]击飞时长：得到提升"
+     },
+     {
+      "name": "鲨鱼诱饵",
+      "changesHtml": "基础伤害：80-300 ⇒ 120-350<br>已损失生命值伤害：20% ⇒ 30%"
+     },
+     {
+      "name": "暴击飞弹",
+      "changesHtml": "每飞弹伤害：15-85 ⇒ 15-65"
+     },
+     {
+      "name": "连锁反应",
+      "changesHtml": "位阶：棱彩 ⇒ 黄金"
+     },
+     {
+      "name": "自然即是治愈",
+      "changesHtml": "每个草丛有一个独立的冷却时间并且仅在进入时治疗。<br>[新]治疗：40-300 +15%已损失生命值<br>[新]冷却时间：20秒"
+     },
+     {
+      "name": "升级：焚天",
+      "changesHtml": "[新]每个目标的装备冷却时间：5秒<br>[新]已损失生命值治疗：9%"
+     },
+     {
+      "name": "升级：贪欲九头蛇",
+      "changesHtml": "[新]顺劈施加：你的技能施加无冷却的顺劈效果<br>[新]生命偷取：18%"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：召唤师技能【净化】和召唤师技能【清晰术】在大乱斗模式中不可被选用。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【威能之追求】在任务完成后，会影响洛克的被动伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，维迦的W不会触发【大法师】的冷却返还效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【大法师】不会正确返还阿兹尔的W。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，【神射法师】不会将它的伤害施加至某些强化普攻技能，包括布里茨的E，内瑟斯的Q，以及特朗德尔的Q。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果安妮拥有【终极刷新】，那么她的R会在第一个提伯斯阵亡时进入冷却阶段。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果英雄拥有复活型被动，则会损失【濒死悟道】的冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：强化符文伤害可以叠加莎弥拉的被动。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：丽桑卓的被动会消耗来自【哎哟，我的硬币！】的金币。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【全凭身法】不会施加至李青的Q、克烈的Q和雷克塞的E。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：维克兹的分裂Q不会触发【老练狙神】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：切换形态型英雄的【玻璃大炮】拥有不正确的伤害比率。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【万用瞄准镜】系列不会在切换形态型英雄切换形态时提供相应的攻击距离提升。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【台风】在距离内没有敌方英雄时无法发射弹体。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【炼狱导管】的基础伤害和收益率高于说明文本。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：沃利贝尔的R的防御塔失能减益在通过【回响施放】版本施加时，在视觉上刷新了但持续时长并没有刷新。（注：仅图标视觉上刷新持续时长，实际未刷新持续时长，将于后续版本修复）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在拥有【纯粹主义者 - 术师】时，妮蔻在离开假扮状态后会重新获得额外攻击速度。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：卑尔维斯的E无法触发【飞身踢】的处决效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【狙神飞星】的敌方视觉警告特效大于预期。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-08-12 18:36:20",
+  "last_update": "2026-8-13"
+ },
+ "26.17版本更新公告": {
+  "section": "版本更新提取",
+  "title": "26.17版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37094929.html#n4",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "铸星龙王 奥瑞利安·索尔",
+      "changesHtml": "Q - 星河冲荡<br>&nbsp; &nbsp; &nbsp; &nbsp;每秒法力消耗：35 / 40 / 45 / 50 / 55 ⇒ 30 / 35 / 40 / 45 / 50<br>W - 星穹流丽<br>&nbsp; &nbsp; &nbsp; &nbsp;冷却时间：22 / 20.5 / 19 / 17.5 / 16秒 ⇒ 22 / 20 / 18 / 16 / 14秒"
+     },
+     {
+      "name": "虚空恐惧 科加斯",
+      "changesHtml": "E -恐惧之刺<br>&nbsp; &nbsp; &nbsp; &nbsp;基础伤害（3次攻击）：20 / 40 / 60 / 80 / 100（+30%法术强度）（+2.5% - 3.9%（每层盛宴+0.5%）目标最大生命值）⇒30 / 50 / 70 / 90 / 110（+30%法术强度）（+2.5% - 3.9%（每层盛宴+0.5%）目标最大生命值）"
+     },
+     {
+      "name": "法外狂徒 格雷福斯",
+      "changesHtml": "Q - 穷途末路<br>&nbsp; &nbsp; &nbsp; &nbsp;第一段伤害：50 / 75 / 100 / 125 / 150 (+65% 额外攻击力）⇒ 50 / 75 / 100 / 125 / 150 (+55%额外攻击力)<br>&nbsp; &nbsp; &nbsp; &nbsp;返程伤害：80 / 125 / 170 / 215 / 260 (+55 / 70 / 85 / 100 / 115%额外攻击力) ⇒ 80 / 125 / 170 / 215 / 260 (+45 / 60 / 75 / 90 / 105%额外攻击力)"
+     },
+     {
+      "name": "刀锋舞者 艾瑞莉娅",
+      "changesHtml": "Q - 利刃冲击<br>&nbsp; &nbsp; &nbsp; &nbsp;伤害：5 / 25 / 45 / 65 / 85 (+70%攻击力) ⇒ 5 / 25 / 45 / 65 / 85 (+80%攻击力)<br>&nbsp; &nbsp; &nbsp; &nbsp;此外团队还提升了她的法术强度收益率，鼓励玩家在大乱斗和竞技场中尝试有趣的出装。但这应该不会让法强艾瑞莉娅在召唤师峡谷突然变强。<br>W - 距破之舞<br>&nbsp; &nbsp; &nbsp; &nbsp;伤害减免 法术强度收益率：每100法术强度提升7%（对魔法伤害减半）（在竞技场中对魔法伤害降至75%效能） ⇒ 每100法术强度提升8%（对魔法伤害减半）（在竞技场中对魔法伤害降至75%效能）<br>R - 先锋之刃<br>&nbsp; &nbsp; &nbsp; &nbsp;法术强度收益率：70% ⇒ 100%（在斗魂竞技场中已经是100%，这次是统一数值）"
+     },
+     {
+      "name": "诡术妖姬 乐芙兰",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;攻击速度收益率：0.4 ⇒ 0.625<br>&nbsp; &nbsp; &nbsp; &nbsp;成长攻击速度：2.35% ⇒ 1.5%<br>W - 魔影迷踪<br>&nbsp; &nbsp; &nbsp; &nbsp;伤害：75 / 115 / 155 / 195 / 235 (+80%法术强度) ⇒ 75 / 115 / 155 / 195 / 235 (+90%法术强度)<br>&nbsp; &nbsp; &nbsp; &nbsp;RW - 故技重施：魔影迷踪<br>&nbsp; &nbsp; &nbsp; &nbsp;伤害：150 / 315 / 480 (+80%法术强度) ⇒ 150 / 315 / 480 (+90%法术强度)"
+     },
+     {
+      "name": "沙漠死神 内瑟斯",
+      "changesHtml": "被动 - 吞噬灵魂<br>&nbsp; &nbsp; &nbsp; &nbsp;生命偷取：12 / 18 / 24% ⇒ 10 / 15 / 20%"
+     },
+     {
+      "name": "永恒梦魇 魔腾",
+      "changesHtml": "&nbsp; &nbsp; &nbsp; &nbsp;基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;护甲：38 ⇒ 36<br>&nbsp; &nbsp; &nbsp; &nbsp;生命值：655 ⇒ 640"
+     },
+     {
+      "name": "元素女皇 奇亚娜",
+      "changesHtml": "Q - 元素之怒<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>伤害：70 / 100 / 130 / 160 / 190 (+85%额外攻击力）⇒ 80 / 110 / 140 / 170 / 200 (+90%额外攻击力)<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>野怪伤害修正率：对野怪造成175%伤害 ⇒ 对野怪造成160%伤害"
+     },
+     {
+      "name": "魂锁典狱长 锤石",
+      "changesHtml": "E - 厄运钟摆<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>主动伤害：75 / 120 / 165 / 210 / 255 (+70%法术强度) ⇒ 65 / 110 / 155 / 200 / 245 (+60%法术强度)"
+     },
+     {
+      "name": "巨魔之王 特朗德尔",
+      "changesHtml": "W - 冰封领域<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>攻击速度：30 / 45 / 60 / 75 / 90% ⇒ 30 / 50 / 70 / 90 / 110%"
+     },
+     {
+      "name": "暗夜猎手 薇恩",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>生命值：550 + 103/等级 ⇒ 580 + 98/等级<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>生命回复：3.5 + 0.55/等级 ⇒ 4 + 0.5/等级<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>攻击速度收益率：0.658 + 3.3%/等级 ⇒ 0.67 + 2.8%/等级<br>Q - 闪避突袭<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>法力消耗：30 ⇒ 46 / 42 / 38 / 34 / 30<br>W - 圣银弩箭<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>真实伤害：6 / 7 / 8 / 9 / 10%目标最大生命值 ⇒ 4 / 5.5 / 7 / 8.5 / 10%目标最大生命值<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>最小伤害：50 / 65 / 80 / 95 / 110 ⇒ 40 / 55 / 70 / 85 / 100"
+     },
+     {
+      "name": "远古巫灵 泽拉斯",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>生命值：596 ⇒ 575<br>Q - 奥能脉冲<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>伤害：75 / 115 / 155 / 195 / 235 (+90%法术强度) ⇒ 70 / 110 / 150 / 190 / 230 (+90%法术强度)"
+     },
+     {
+      "name": "疾风剑豪 亚索",
+      "changesHtml": "被动 - 浪客之道<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>暴击伤害减免：-10% ⇒ -5%"
+     },
+     {
+      "name": "封魔剑魂 永恩",
+      "changesHtml": "被动 - 狩人之道<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>暴击伤害减免：-10% ⇒ -5%（相当于基础暴击伤害从180%提升至190%）"
+     }
+    ]
+   },
+   {
+    "category": "装备",
+    "list": [
+     {
+      "name": "岚切",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>攻击速度：20% ⇒ 25%"
+     },
+     {
+      "name": "焚天",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>生命值：450 ⇒ 400<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>攻击力：45 ⇒ 40"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "暴击飞弹",
+      "changesHtml": "飞弹数量：1 / 2 / 3 / 4取决于暴击几率 ⇒ 1 / 2 / 3取决于暴击几率"
+     },
+     {
+      "name": "双发快射",
+      "changesHtml": "位阶：黄金 ⇒ 棱彩"
+     },
+     {
+      "name": "三重射击",
+      "changesHtml": "目标选取：现在会优先攻击主目标附近的敌人"
+     },
+     {
+      "name": "终极九头蛇",
+      "changesHtml": "[新]效果:在完成一个【九头蛇】装备时，获得一个【提亚马特】<br>[新]任务:获得【巨型九头蛇】、【贪欲九头蛇】和【亵渎九头蛇】<br>[新]奖励：获得【终极九头蛇】"
+     },
+     {
+      "name": "升级：死亡之舞",
+      "changesHtml": "[新]效果:获得250金币。所受伤害的40%/15%将在3秒内持续结算。在完成击杀时，立即治疗等同于125%额外攻击力的生命值。"
+     },
+     {
+      "name": "升级：无尽之刃",
+      "changesHtml": "[已移除]暴击几率：已移除"
+     },
+     {
+      "name": "升级：贪欲九头蛇",
+      "changesHtml": "效果：顺劈效果同样会对小兵触发<br>【贪欲九头蛇】的生命偷取：18% ⇒ 20%"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【软弹啪叽抓】在赛恩死亡后会立即触发，而不是在35秒后刷新。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【和我一起困在这里】在莫德凯撒（R）结束后依然触发。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在重新连接后，【回响施放】的复制体会朝错误方向施放技能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【大法师】在施放其它技能时，会让充能类技能进入冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【炽燃利息】灼烧触发后，队友的灼烧和持续伤害也会提供金币。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【掷骰狂人】在某些英雄身上未能触发。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-08-26 20:36:55",
+  "last_update": "2026-8-27"
+ },
+ "26.18版本更新公告": {
+  "section": "版本更新提取",
+  "title": "26.18版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37096116.html#n5",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "星界游神 巴德",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;护甲：34 + 5/等级 ⇒ 32 + 4.7/等级"
+     },
+     {
+      "name": "魔蛇之拥 卡西奥佩娅",
+      "changesHtml": "被动 - 优雅蛇行<br>&nbsp; &nbsp; &nbsp; <strong>&nbsp;移动速度加成：6 - 40% (基于等级) ⇒ 5 - 36% (基于等级)</strong><br>Q - 瘟毒爆炸<br>&nbsp; &nbsp; &nbsp; &nbsp;伤害：75 / 110 / 145 / 180 / 215 ⇒ 65 / 100 / 135 / 170 / 205<br>&nbsp; &nbsp; &nbsp; &nbsp;法术强度收益率：65% ⇒ 75%<br>E - 双生毒牙<br>&nbsp; &nbsp; &nbsp; &nbsp;法力消耗：40 ⇒ 45<br>&nbsp; &nbsp; &nbsp; &nbsp;基础法术强度收益率：10% ⇒ 20%<br>&nbsp; &nbsp; &nbsp; &nbsp;强化法术强度收益率：55% ⇒ 45%<br>&nbsp; &nbsp; &nbsp; &nbsp;总法术强度收益率：65% ⇒ 65%<br>&nbsp; &nbsp; &nbsp; &nbsp;伤害：52 - 120 ⇒ 50 - 120<br>R - 石化凝视<br>&nbsp; &nbsp; &nbsp; &nbsp;伤害：150 / 250 / 350 ⇒ 125 / 225 / 325<br>&nbsp; &nbsp; &nbsp; &nbsp;法术强度收益率：50% ⇒ 75%"
+     },
+     {
+      "name": "时间刺客 艾克",
+      "changesHtml": "Q - 时间卷曲器<br>&nbsp; &nbsp; &nbsp; &nbsp;法力消耗：50 / 60 / 70 / 80 / 90 ⇒ 40 / 50 / 60 / 70 / 80<br>&nbsp; &nbsp; &nbsp; &nbsp;返程伤害 法术强度收益率：60% ⇒ 70%"
+     },
+     {
+      "name": "虚空行者 卡萨丁",
+      "changesHtml": "Q - 虚无法球<br>&nbsp; &nbsp; &nbsp; &nbsp;法术强度收益率：70%法术强度 ⇒ 80%法术强度<br>R - 虚空行走<br>&nbsp; &nbsp; &nbsp; <strong>&nbsp;</strong>基础伤害：70 / 90 / 110 ⇒ 80 / 95 / 110"
+     },
+     {
+      "name": "无极剑圣 易",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;成长护甲：33 + 4.5/等级 ⇒ 33 + 5/等级<br>R - 高原血统<br>&nbsp; &nbsp; &nbsp; &nbsp;移动速度：35 / 45 / 55% ⇒ 40 / 50 / 60%"
+     },
+     {
+      "name": "深海泰坦 诺提勒斯",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;攻击力：61 + 3.3/等级 ⇒ 58 + 3.3/等级<br>Q - 疏通航道<br>&nbsp; &nbsp; &nbsp; &nbsp;<strong>伤害</strong>：85 / 130 / 175 / 220 / 265 (+90%法术强度) ⇒ <strong>85 / 125 / 165 / 205 / 245 (+90%法术强度)</strong>"
+     },
+     {
+      "name": "星籁歌姬 萨勒芬妮",
+      "changesHtml": "E - 增幅节拍<br>&nbsp; &nbsp; &nbsp; &nbsp;冷却时间：11 / 10.5 / 10 / 9.5 / 9秒 ⇒ 11秒"
+     },
+     {
+      "name": "暗黑元首 辛德拉",
+      "changesHtml": "被动 - 卓尔不凡<br>&nbsp; &nbsp; &nbsp; &nbsp;碎晶法力值：20 - 255 ⇒ 20 - 199<br>W - 驱使念力<br><strong>&nbsp; &nbsp; &nbsp;</strong> &nbsp;冷却时间：12 / 11 / 10 / 9 / 8秒 ⇒ 13 / 12 / 11 / 10 / 9秒"
+     },
+     {
+      "name": "破败之王 佛耶戈",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp; &nbsp;成长攻击力：3.5 ⇒ 4<br>被动 - 君命已决<br>&nbsp; &nbsp; &nbsp; &nbsp;治疗效果：2% (+2.5%每100额外攻击力) (+2%每100法术强度) (+5%每100%额外攻击速度) 目标最大生命值 ⇒ 2% (+2.5%每100额外攻击力) (+2%每100法术强度) (+5%每100%额外攻击速度) (+2%每500额外生命值) 目标最大生命值"
+     },
+     {
+      "name": "不落魔锋 亚恒",
+      "changesHtml": "Q -&nbsp;暗裔长刀<br>&nbsp; &nbsp; &nbsp; &nbsp;[新]冷却时间机制：如果Q技能处于激活状态，现在在复活时会立即冷却完毕。（注：暂未生效，将于后续版本修复）<br>&nbsp; &nbsp; &nbsp; &nbsp;Q技能第二段伤害：25 / 50 / 75 / 100 / 125 (+20 / 25 / 30 / 35 / 40%额外攻击力) ⇒ 30 / 60 / 90 / 120 / 150 (+20 / 25 / 30 / 35 / 40%额外攻击力)"
+     },
+     {
+      "name": "祖安花火 泽丽",
+      "changesHtml": "W - 强穿激光<br>&nbsp; &nbsp; &nbsp; &nbsp;伤害：30 / 70 / 110 / 150 / 190 (+120%总攻击力) ⇒ 30 / 70 / 110 / 150 / 190 (+100%总攻击力)<br>&nbsp; &nbsp; &nbsp; &nbsp;墙体伤害：45 / 105 / 165 / 225 / 285 (+180%总攻击力) ⇒ 45 / 105 / 165 / 225 / 285 (+150%总攻击力)<br>&nbsp; &nbsp; &nbsp; &nbsp;暴击伤害：150% (+15%如有【无尽之刃】)"
+     }
+    ]
+   },
+   {
+    "category": "装备",
+    "list": [
+     {
+      "name": "",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; </strong>&nbsp;沸腾打击 层数持续时间：3秒 ⇒ 4秒"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "小丑学院",
+      "changesHtml": "<strong> [新]状态：</strong>重新启用"
+     },
+     {
+      "name": "旋转至胜",
+      "changesHtml": "<strong>R技能伤害提升：</strong>30% ⇒ 50%"
+     },
+     {
+      "name": "终极九头蛇",
+      "changesHtml": "<strong> [新]限售：</strong>拥有该强化符文时无法出售九头蛇装备"
+     },
+     {
+      "name": "强化符文池调整",
+      "changesHtml": "<strong> [新]强化符文 排除池：</strong>新增一个强化符文池，来排除那些不应被随机提供到的强化符文。<br><strong>当前影响：</strong>质变类强化符文、潘朵拉的盒子、尊我为王。<br><strong>进入排除池的强化符文：</strong>物理转魔法、回归基本功、你肩上的恶魔（当前已禁用）、亮出你的剑、大力、溢流、纯粹主义者 - 术师、大招工具人、吸血习性（当前已禁用）<br><strong> [新]强力后期成长池：</strong>移除了超凡邪恶、坦克引擎、牙仙子<br><strong>剩余强化符文：</strong>仍然包含有始有终、掷骰狂人、无限循环往复、多重射击、任务 -海牛阿福的勇士，叠角龙<br><strong> [新]排除筛选器：</strong>添加了新的“无法强收益率”排除筛选器，可排除没有法强收益率的英雄<br><strong>适用于：</strong>物理转魔法、魔法转物理和超凡邪力<br><strong>包含的英雄：</strong>亚托克斯、安蓓萨、卡蜜尔、德莱厄斯、蒙多医生、德莱文、盖伦、奎桑提、凯隐、克烈、纳亚菲利、尼菈、奥拉夫、派克、锐雯、莎弥拉、瑟提、泰隆、厄加特、霞、永恩、亚恒、劫<br><strong>控制池：</strong>移除了软弹啪叽抓<br><strong>生命值池：</strong>已从艾尼维亚、奥瑞利安·索尔、卡西奥佩娅、莉莉娅、奈德丽身上移除<br><strong>生命值池：</strong>低 ⇒ <strong>极低</strong>：巴德<br><strong>生命值池：</strong>中 ⇒ <strong>低</strong>：莫甘娜、瑞兹<br><strong>珠光护手：</strong>被移出以下符文池：远程普攻 攻击、远程普攻 爆发、近战普攻 攻击、近战普攻 爆发<br><strong>坦克引擎 与 飞身踢：</strong>排除了瑞兹、莫甘娜、奥莉安娜、卡尔萨斯、兰博<br><strong>狂徒豪气</strong> + <strong>大地苏醒</strong>：排除了低频率大招专属突进英雄：薇古丝、费德提克、伊芙琳、赫卡里姆、墨菲特、奥恩、沃里克<br><strong>扳机炼狱：</strong>排除了基兰<br><strong>风语者的祝福：</strong>排除了卑尔维斯<br><strong>叠角龙：</strong>排除了普朗克"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在你拥有【升级：贪欲九头蛇】时，装备伤害会触发顺劈效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：当同一队有两名或以上玩家拥有【吃过路兵】时，该效果无法正常触发。（注：暂未生效，将于后续版本修复）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在拥有【终极九头蛇】的状态下，佛耶戈在占据他人时可以获得多个【提亚马特】。（注：暂未生效，将于后续版本修复）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在装备了【终极九头蛇】的状态下，能够通过反复出售和重新购买一件九头蛇装备来获得额外金币。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：玩家可以购买多件【贪欲九头蛇】并在搭配【终极九头蛇】时，可让所有3种九头蛇都获得【升级：贪欲九头蛇】的生命偷取。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【小丑学院】的【欺诈魔术】造成了拥有错误暴击比率的伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【飞升仪式】可能封印强化版技能。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-09-09 19:26:11",
+  "last_update": "2026-9-10"
+ },
+ "26.19版本更新公告": {
+  "section": "版本更新提取",
+  "title": "26.19版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37097271.html#n5",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "暗裔剑魔 亚托克斯",
+      "changesHtml": "W - 恶火束链<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>冷却时间：20 / 18 / 16 / 14 / 12秒 ⇒ 18 / 16.5 / 15 / 13.5 / 12秒<br>E - 暗影冲决<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>治疗的生命值收益率：1.1%每100额外生命值 ⇒ 1.3%每100额外生命值"
+     },
+     {
+      "name": "残月之肃 厄斐琉斯",
+      "changesHtml": "<strong></strong>通碧<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>月闪伤害：70 - 160 (+42 - 60%额外攻击力) (+100%法术强度) ⇒ 80 - 170 (+42 - 60%额外攻击力) (+100%法术强度)<br>断魄<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>治疗效果：2 - 7.1%，提升至5 - 17.75% ⇒ 2 - 8%，提升至5 - 20%<br>坠明<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>减速：持续2.5秒的30%，在0.7秒后衰减至10% ⇒ 持续2.5秒的30%，在0.7秒后衰减至15%<br>荧焰<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>暝涌冷却时间：9 / 8.25 / 7.5 / 6.75 / 6秒 ⇒ 8 / 7.25 / 6.5 / 5.75 / 5秒<br>折镜<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>迷你折镜伤害：15%攻击力，衰减值为1.5%，最小值为5%，在第8个飞轮刃时达成 ⇒ 16%攻击力，衰减值为1.5%，最小值为5%，在第9个飞轮刃时达成"
+     },
+     {
+      "name": "双界灵兔 阿萝拉",
+      "changesHtml": "E - 怪奇喷涌<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础伤害：70 / 110 / 150 / 190 / 230 ⇒ 80 / 120 / 160 / 200 / 240<br>R - 双界合一<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>裂隙时长：1.75 / 2.5 / 3.25秒 ⇒ 2.25 / 2.75 / 3.25秒"
+     },
+     {
+      "name": "荣耀行刑官 德莱文",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>攻击力：62 ⇒ 64"
+     },
+     {
+      "name": "蜘蛛女皇 伊莉丝",
+      "changesHtml": "被动 - 蜘蛛女皇<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>被动 附带的额外魔法伤害：12 / 22 / 32 / 42 ⇒ 14 / 24 / 34 / 44<br>W - 掠行狂暴<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>额外攻击速度：60 / 75 / 90 / 105 / 120% ⇒ 70 / 85 / 100 / 115 / 130%"
+     },
+     {
+      "name": "无双剑姬 菲奥娜",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>成长生命值：99 ⇒ 105<br>R -无双挑战<br>治疗距离：550 ⇒ 600<br>每段治疗：18.75 / 25 / 31.25 (+15%额外攻击力) ⇒ 20 / 26.25 / 32.5 (+17.5%额外攻击力)<br>最大治疗：375 / 500 / 625 (+300%额外攻击力) ⇒ 400 / 525 / 650 (+350%额外攻击力)"
+     },
+     {
+      "name": "虚空掠夺者 卡兹克",
+      "changesHtml": "被动 - 无形威胁<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>伤害：17 - 136 (+50%额外攻击力) ⇒ 22 - 141 (+50%额外攻击力)<br>W - 虚空突刺<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>进化版 减速时长：2秒 ⇒ 2.25秒<br>E - 跃击<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>进化版 距离加成：+200 ⇒ +300"
+     },
+     {
+      "name": "含羞蓓蕾 莉莉娅",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>护甲：22 ⇒ 24<br>R - 夜阑谣<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>昏睡时长：2秒 ⇒ 2.5秒"
+     },
+     {
+      "name": "圣枪游侠 卢锡安",
+      "changesHtml": "被动 - 警惕<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>强化附带伤害：15 (+20%攻击力) ⇒ 5 (+15%攻击力)<br>Q - 透体圣光<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础伤害：80 / 115 / 150 / 185 / 220 (+100%额外攻击力) ⇒ 90 / 130 / 170 / 210 / 250 (+100%额外攻击力)"
+     },
+     {
+      "name": "无极剑圣 易",
+      "changesHtml": "Q - 阿尔法突袭<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>命中时的冷却返还：1秒，随技能急速的提升而降低 ⇒ 1秒"
+     },
+     {
+      "name": "沙漠死神 内瑟斯",
+      "changesHtml": "Q - 汲魂痛击<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>额外伤害 基础值：40 / 60 / 80 / 100 / 120 ⇒ 30 / 50 / 70 / 90 / 110"
+     },
+     {
+      "name": "永恒梦魇 魔腾",
+      "changesHtml": "R - 鬼影重重<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>冷却时间：140 / 115 / 90秒 ⇒ 160 / 130 / 100秒"
+     },
+     {
+      "name": "圣锤之毅 波比",
+      "changesHtml": "Q - 圣锤猛击<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>小兵/野怪 最大生命值伤害上限：85 / 120 / 155 / 190 / 225 ⇒ 70 / 105 / 140 / 175 / 210"
+     },
+     {
+      "name": "机械公敌 兰博",
+      "changesHtml": "被动 - 机械重组<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>过热 攻击速度：50 - 130% ⇒ 30 - 100%<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>对野怪的伤害上限：65 - 150 ⇒ 90 - 175"
+     },
+     {
+      "name": "符文法师 瑞兹",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>成长护甲：4.2 ⇒ 4.7<br>Q - 超负荷<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>涌动 额外伤害：25 / 50 / 75 / 100%提升伤害 ⇒ 15 / 40 / 65 / 90%提升伤害<br>E - 法术涌动<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>法力消耗：35 / 45 / 55 / 65 / 75 ⇒ 40 / 50 / 60 / 70 / 80"
+     },
+     {
+      "name": "皮城执法官 蔚",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>基础属性<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>攻击力：63 + 3.5/等级 ⇒ 61 + 3.9/等级<br>被动 - 爆裂护盾<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>护盾值：12%最大生命值 ⇒ 10%最大生命值"
+     },
+     {
+      "name": "不灭狂雷 沃利贝尔",
+      "changesHtml": "被动 - 狂雷渐起<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>每层攻击速度：5% (+3%每100法术强度) ⇒ 5% (+4%每100法术强度)<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;</strong>闪电附带伤害：11 - 60 (1-18级) (+45%法术强度) ⇒ 11 - 60 (1-18级) (+45%法术强度) (+20%额外攻击力)"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "掷骰狂人",
+      "changesHtml": "掉率：进一步降低。"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【小丑学院】误用了给真实伤害的文本颜色。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【尊我为王】拥有调试强化符文名称调用，包含【濒死悟道】、【超负荷】、【电涌力场】、【灵魄炸弹】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【科学狂人】会提供+30%攻击力和法术强度，而非+30%适应之力。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【多重射击】对娜美和伊泽瑞尔的终极技能来说，有额外的任务步骤需求。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：悠米在附身至一个单位时，可以猛刷比尔吉沃特加农炮的着陆效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：由于各单位的独立冷却，【牙仙子】不会触发。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：拥有【终极唤醒】时，卑尔维斯的Q不会在她使用终极技能之后。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在重新添加任务类强化符文供应时，装备任务进度会失效。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：维克兹的W未能通过【老练狙神】获得正确返还。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：移除【升级：贪欲九头蛇】会导致你的所有装备都有负数的生命偷取。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-09-22 19:28:53",
+  "last_update": "2026-9-23"
+ },
+ "26.2版本公告-无限乱斗回归，全新圣堂级皮肤【王 佛耶戈】破界而至": {
+  "section": "海克斯大乱斗",
+  "title": "26.2版本公告-无限乱斗回归，全新圣堂级皮肤【王 佛耶戈】破界而至",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37075848.html#n5",
+  "data": [
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【玻璃大炮】会阻止【饮血剑】触发效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【斯莫德】的Q无法与【活力再生】配合生效。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【闪现向前】与【闪闪现现】会取消费德提克的R技能引导。（注：【闪现向前】仍处于临时禁用状态）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【至高天诺言】的效果距离小于预期值。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【花晓之剑】的被动可能会选错友军。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：来自【升级：雪球】和【史上最大雪球】的雪球伤害会错误触发阿萝拉和亚恒的被动。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【先攻】无法正确追踪【有始有终】中的金币。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-02-03 18:59:17",
+  "last_update": "2026-3-8"
+ },
+ "26.20版本更新公告": {
+  "section": "版本更新提取",
+  "title": "26.20版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37098539.html#n4",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "铁血狼母 安蓓萨",
+      "changesHtml": "被动 - 龙犬诡步<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>伤害：5 - 30 (+25%额外攻击力) ⇒ 5 - 25 (+20%额外攻击力)"
+     },
+     {
+      "name": "寒冰射手 艾希",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>基础属性<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>每级攻击力：3.5 ⇒ 3"
+     },
+     {
+      "name": "魔蛇之拥 卡西奥佩娅",
+      "changesHtml": "<strong>&nbsp;</strong> &nbsp; &nbsp;&nbsp;基础属性<br>&nbsp; &nbsp; &nbsp;&nbsp;基础生命值：630 ⇒ 610<br>&nbsp; &nbsp; &nbsp;&nbsp;基础法力值：480 ⇒ 450"
+     },
+     {
+      "name": "皎月女神 黛安娜",
+      "changesHtml": "W - 苍白之瀑<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>护盾 额外生命值收益率：11% ⇒ 14%"
+     },
+     {
+      "name": "狂暴之心 凯南",
+      "changesHtml": "E - 奥义！雷铠<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>额外攻击速度：40 / 50 / 60 / 70 / 80% ⇒ 50 / 60 / 70 / 80 / 90%"
+     },
+     {
+      "name": "永猎双子 千珏",
+      "changesHtml": "W - 狼灵狂热<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>对野怪伤害修正：150% ⇒ 165%<br>E - 横生惧意<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>减速时长：1秒 ⇒ 1.5秒<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>小型野怪目标选取：已启用 ⇒ 已移除"
+     },
+     {
+      "name": "纳祖芒荣耀 奎桑提",
+      "changesHtml": "W - 辟路先锋<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>法力消耗：40 / 45 / 50 / 55 / 60 ⇒ 45 / 50 / 55 / 60 / 65<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>W技能 基础/最高伤害减免：30 / 75% ⇒ 25 / 70%"
+     },
+     {
+      "name": "含羞蓓蕾 莉莉娅",
+      "changesHtml": "R - 夜阑谣<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>持续时长：2.5秒 ⇒ 2.5 / 2.75 / 3秒"
+     },
+     {
+      "name": "圣枪游侠 卢锡安",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>基础属性<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>攻击力：60 + 2.5/级 ⇒ 60 + 2.9/级"
+     },
+     {
+      "name": "铁铠冥魂 莫德凯撒",
+      "changesHtml": "Q - 破灭之锤<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>10-20级每级成长：(+5/级) ⇒ (+7/级)<br>R - 轮回绝境<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>冷却时间：140 / 120 / 100秒 ⇒ 120 / 110 / 100秒"
+     },
+     {
+      "name": "万花通灵 妮蔻",
+      "changesHtml": "E - 缠结倒刺<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>基础伤害：70 / 105 / 140 / 175 / 210 (+65%法术强度) ⇒ 80 / 115 / 150 / 185 / 220 (+65%法术强度)<br>&nbsp; &nbsp; &nbsp;&nbsp;强化禁锢时长：1.8 / 2.1 / 2.4 / 2.7 / 3秒 ⇒ 2 / 2.25 / 2.5 / 2.75 / 3秒"
+     },
+     {
+      "name": "炽炎雏龙 斯莫德",
+      "changesHtml": "被动 - 龙之研习<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>【</strong>Q超级灼热龙息】额外魔法伤害：25-55%【龙之研习】层数 (如有【无尽之刃】+0-9%)，随暴击几率提升 ⇒ 25-60%【龙之研习】层数 (如有【无尽之刃】+0-10.5%)，随暴击几率提升<br>&nbsp; &nbsp; &nbsp;&nbsp;【E扑棱，扑棱，扑棱！】额外魔法伤害：8 - 12.8%【龙之研习】层数 (如有【无尽之刃】+0-1.44%)，随暴击几率提升 ⇒ 8 - 14% 【龙之研习】层数 (如有【无尽之刃】+0-1.8%)，随暴击几率提升<br>R - 妈----！<br><strong>&nbsp; &nbsp; </strong>&nbsp;&nbsp;自我治疗：100 / 135 / 170 (+50%额外攻击力) (+75%法术强度) ⇒ 100 / 175 / 250 (+75%额外攻击力) (+75%法术强度)"
+     },
+     {
+      "name": "诺克萨斯统领 斯维因",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp;&nbsp;基础魔抗：31 ⇒ 34<br>&nbsp; &nbsp; &nbsp;&nbsp;基础护甲：25 ⇒ 23<br>W - 帝国视界<br>&nbsp; &nbsp; &nbsp;&nbsp;伤害：70 / 105 / 140 / 175 / 210 (+60%法术强度) ⇒ 70 / 115 / 160 / 205 / 250 (+60%法术强度)<br>&nbsp; &nbsp; &nbsp;&nbsp;冷却时间：22 / 21 / 20 / 19 / 18秒 ⇒ 20 / 19 / 18 / 17 / 16秒"
+     },
+     {
+      "name": "河流之王 塔姆",
+      "changesHtml": "Q - 巨舌鞭笞<br><strong>&nbsp; &nbsp;</strong> &nbsp;&nbsp;基础治疗效果：10 / 13.75 / 17.5 / 21.25 / 25 ⇒ 10 / 20 / 30 / 40 / 50"
+     },
+     {
+      "name": "暗夜猎手 薇恩",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp;&nbsp;生命回复/5秒：4 + 0.5/级 ⇒ 5.5 + 0.4/级<br>Q - 闪避突袭<br><strong>&nbsp;</strong> &nbsp; &nbsp;&nbsp;法力消耗：46 / 42 / 38 / 34 / 30 ⇒ 30"
+     },
+     {
+      "name": "不破之誓 芸阿娜",
+      "changesHtml": "Q - 灵蕴拳<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>被动附带伤害：5 / 10 / 15 / 20 / 25 (+20%法术强度) ⇒ 3 / 8 / 13 / 18 / 23 (+20%法术强度)<br>&nbsp; &nbsp; &nbsp;&nbsp;主动附带伤害：5 / 10 / 15 / 20 / 25 (+20%法术强度) ⇒ 3 / 8 / 13 / 18 / 23 (+20%法术强度)<br>W - 善恶轮<br><strong>&nbsp;</strong> &nbsp; &nbsp;&nbsp;减速效果叠加：可与其他减速效果叠加 ⇒ 不再与其他减速效果叠加"
+     },
+     {
+      "name": "巴德",
+      "changesHtml": "木灵 法术强度收益率：50% ⇒ 67%<br>木灵 充能时间：8秒 ⇒ 5秒<br>每3层调和之音对木灵的普攻伤害提升：6 / 3层调和之音 ⇒ 10 / 3层调和之音"
+     },
+     {
+      "name": "盖伦",
+      "changesHtml": "被动回复：1.5%~1.01% ⇒ 2%~12%<br>W冷却时间：22~12 ⇒ 18~12<br>W护盾值：18%额外生命值 ⇒ 20%额外生命值<br>W被动 双抗：每击杀一个小兵获得0.4双抗 ⇒ 每击杀一个小兵获得0.75双抗"
+     },
+     {
+      "name": "奎桑提",
+      "changesHtml": "W冷却时间：14~10 ⇒ 10<br>W伤害减免：30% ⇒ 45%<br>E护盾值：13.5%额外生命值 ⇒ 15%额外生命值"
+     },
+     {
+      "name": "李青",
+      "changesHtml": "被动 攻击速度：40%额外攻击速度 ⇒ 50%额外攻击速度<br>被动 能量回复：20 / 30 / 40 ⇒ 30 / 40 / 50<br>W护盾值：60~240 ⇒ 80~320<br>Q技能第二段伤害：60~180 ⇒ 80~240<br>斯维因<br>承受伤害：105% ⇒ 100%<br>治疗效果：95% ⇒ 100%<br>魂屑回复：固定6% ⇒ 3%~6%，随等级提升"
+     },
+     {
+      "name": "锤石",
+      "changesHtml": "被动 每个灵魂提供的层数：2 ⇒ 3<br>W冷却时间：21 / 20 / 19 / 18 / 17秒 ⇒ 19 / 18 / 17 / 16 / 15秒"
+     }
+    ]
+   },
+   {
+    "category": "装备",
+    "list": [
+     {
+      "name": "海克斯注力刚壁",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>由远程英雄持有时的效能：70%数值(35%攻击速度、14%移动速度) ⇒ 50%数值(25%攻击速度、10%移动速度)"
+     },
+     {
+      "name": "海克斯科技火箭腰带",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;</strong>&nbsp;技能急速：20 ⇒ 10<br>&nbsp; &nbsp; &nbsp;&nbsp;主动伤害：100 (+10%法术强度) ⇒ 135 (+15%法术强度)"
+     },
+     {
+      "name": "卢安娜的飓风",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>每支弩箭攻击力：65% ⇒ 60%"
+     },
+     {
+      "name": "记分板显示优化",
+      "changesHtml": "以下装备的图标计数现在不再显示在记分板上：<br>死亡之舞<br>幽魂面具<br>兰德里的折磨<br>裂隙制造者<br>海妖杀手<br>界弓<br>鬼索的狂暴之刃<br>猎魔人弩箭<br>海力亚的回响<br>亡者的板甲<br>朔极之矛<br>霸王血铠<br>破舰者<br>千变者贾修<br>自然之力"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "注魔",
+      "changesHtml": "[已移除]普攻法力消耗：已移除<br>额外伤害 法力值收益率：4.5% ⇒ 7%<br>&nbsp;[新]由远程英雄持有时的效果：5.6%（80%x7%）"
+     },
+     {
+      "name": "练腿日",
+      "changesHtml": "减速抗性：40% ⇒ 50%"
+     },
+     {
+      "name": "咒语裂变",
+      "changesHtml": "分裂 触发条件：首次命中单位 ⇒ 到达终点或再次施放时"
+     },
+     {
+      "name": "鲨鱼暴风",
+      "changesHtml": "减速：30% 持续3秒 ⇒ 40% 持续3秒<br>基础范围伤害：50~100 ⇒ 100~200<br>附着伤害 持续3秒：75~225 + 0.6额外攻击力 + 0.36法术强度 ⇒ 90~270 + 0.75额外攻击力 + 0.45法术强度"
+     },
+     {
+      "name": "软弹啪叽抓",
+      "changesHtml": "冷却时间：35秒 ⇒ 30秒<br>伤害：30~100 + 10%额外生命值 ⇒ 50~150 + 15%额外生命值<br>每拉拽一个目标的护盾：35~150 + 50%额外护甲 + 50%额外魔法抗性 ⇒ 50~200 + 50%额外护甲 + 50%额外魔法抗性"
+     },
+     {
+      "name": "牙仙子",
+      "changesHtml": "[新]伤害判定：折前而非折后"
+     },
+     {
+      "name": "扳机炼狱",
+      "changesHtml": "冷却时间：15秒 ⇒ 5秒"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【炼狱龙魂】和【珠光护手】会将对小兵造成的伤害计入统计。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【尊我为王】在任务完成后仍占据栏位。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【尊我为王】质变为【超负荷】后，后者无法生效。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【鲨鱼诱饵】显示空白增益栏。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：阿萝拉的(Q)技能无法获得来自【老练狙神】的冷却缩减效果。（注：暂未生效，将于后续版本修复）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：慎在使用【闪现】或排序施放其他技能时，【回响施放】复制的【奥义！影缚】(E)无法进行冲刺。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：移动指令可能会改变【回响施放】的复制体朝向。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：拥有【咒语裂变】的卢锡安在(W)技能施放期间使用(E)技能时，(W)技能的飞弹无法正常分裂。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在技能施放期间施放召唤师技能，会导致【咒语裂变】的飞弹无法正常分裂。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：当施放被【咒语裂变】强化的技能时，英雄无法排序施放其他技能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【舞会女王】的冷却图标在死亡后消失。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：厄加特(W)技能的飞弹会摧毁【飞升仪式】的精华。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【仆从大师】的伤害增幅对萨科(R)技能的爆炸伤害和艾翁(R)技能的击飞伤害不生效。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【终极九头蛇】的任务图标与卡牌图标不一致。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-10-08 19:28:39",
+  "last_update": "2026-10-9"
+ },
+ "26.21版本更新公告": {
+  "section": "版本更新提取",
+  "title": "26.21版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37099805.html#n4",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "沙漠皇帝 阿兹尔",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp;&nbsp;成长法力值：40/等级 ⇒ 50/等级"
+     },
+     {
+      "name": "皮城女警 凯特琳",
+      "changesHtml": "被动 - 爆头<br><strong>&nbsp; &nbsp; &nbsp;</strong>&nbsp;伤害：60 - 100%攻击力(每1%暴击几率+1%攻击力) (每1%额外暴击伤害+1%攻击力) ⇒ 60 - 80%攻击力(每1%暴击几率+1%攻击力) (每1%额外暴击伤害+1%攻击力)<br>Q - 和平使者<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>基础伤害：50 / 90 / 130 / 170 / 210 ⇒ 50 / 95 / 140 / 185 / 230"
+     },
+     {
+      "name": "诺克萨斯之手 德莱厄斯",
+      "changesHtml": "Q - 大杀四方<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>冷却时间：9 / 8 / 7 / 6 / 5秒 ⇒ 9 / 8 / 7 / 6 / 4秒"
+     },
+     {
+      "name": "暴走萝莉 金克丝",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp;&nbsp;攻击力：59 + 3.25/等级 ⇒ 59 + 3/等级<br>&nbsp; &nbsp; &nbsp;&nbsp;生命值：630 + 105/等级 ⇒ 610 + 105/等级"
+     },
+     {
+      "name": "盲僧 李青",
+      "changesHtml": "W - 金钟罩<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>冷却时间：7秒 ⇒ 8秒<br><strong></strong>E - 天雷破<br>&nbsp; &nbsp; &nbsp;&nbsp;BUG修复：如果敌人在被【天雷破】命中后进入隐身，将不再被显形。<br>R - 猛龙摆尾<br>&nbsp; &nbsp; &nbsp;&nbsp;踢击伤害：175 / 400 / 625 (+200%额外攻击力) ⇒ 150 / 350 / 550 (+200%额外攻击力)<br>&nbsp; &nbsp; &nbsp;&nbsp;碰撞伤害：175 / 400 / 625 (+200%额外攻击力) (+12 / 15 / 18%被踢英雄的生命值) ⇒ 150 / 350 / 550 (+200%额外攻击力) (+12 / 15 / 18%被踢英雄的生命值)"
+     },
+     {
+      "name": "灰烬驱魔人 洛克",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp;&nbsp;成长法力值：70 ⇒ 60<br>Q - 伏魔三钉<br>&nbsp; &nbsp; &nbsp;&nbsp;未使用充能返还：20 - 35%法力值和冷却时间返还 ⇒ 10 - 40%法力值和冷却时间返还<br>W - 灵焰仪式<br>&nbsp; &nbsp; &nbsp;&nbsp;法力消耗：50 / 55 / 60 / 65 / 70 ⇒ 60 / 65 / 70 / 75 / 80<br>&nbsp; &nbsp; &nbsp;&nbsp;根据当前生命值的灰色生命值储存：40-200 (基于等级的部分) ⇒ 20-200 (基于等级的部分)<br>&nbsp; &nbsp; &nbsp;&nbsp;当前生命值储存：150 - 450 (基于等级的部分) ⇒ 100 - 500 (基于等级的部分)<br>E - 灰猎无影<br><strong>&nbsp; &nbsp; </strong>&nbsp;&nbsp;闪烁伤害：40 / 50 / 60 / 70 / 80 (+40%法术强度) ⇒ 40 / 55 / 70 / 85 / 100 (+50%法术强度)"
+     },
+     {
+      "name": "赏金猎人 厄运小姐",
+      "changesHtml": "E -枪林弹雨<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>伤害：70 / 100 / 130 / 160 / 190 (+120%法术强度) ⇒ 90 / 120 / 150 / 180 / 210 (+120%法术强度)<br>R - 弹幕时间<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>暴击伤害：130% (每1%额外暴击伤害+0.3%) ⇒ 145% (每1%额外暴击伤害+0.45%)"
+     },
+     {
+      "name": "狂野女猎手 奈德丽",
+      "changesHtml": "W - 猛扑<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>伤害：&nbsp;&nbsp;伤害：55&nbsp;/&nbsp;100&nbsp;/&nbsp;145&nbsp;/&nbsp;190&nbsp;(+50%额外攻击力)&nbsp;(+30%法术强度)&nbsp;⇒&nbsp;50&nbsp;/&nbsp;90&nbsp;/&nbsp;130&nbsp;/&nbsp;170&nbsp;(+50%额外攻击力)&nbsp;(+30%法术强度)<br>E - 野性奔腾<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>攻击速度：30 / 40 / 50 / 60 / 70% ⇒ 20 / 30 / 40 / 50 / 60%"
+     },
+     {
+      "name": "雪原双子 努努和威朗普",
+      "changesHtml": "R - 绝对零度<br><strong>&nbsp; &nbsp; &nbsp;</strong>&nbsp;最大伤害：625 / 925 / 1275 (+300%法术强度) ⇒ 750 / 1100 / 1450 (+300%法术强度)"
+     },
+     {
+      "name": "发条魔灵 奥莉安娜",
+      "changesHtml": "Q - 指令：攻击<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>伤害：60 / 90 / 120 / 150 / 180 (+55%法术强度) ⇒ 60 / 90 / 120 / 150 / 180 (+60%法术强度)<br>W - 指令：杂音<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>伤害：70 / 110 / 150 / 190 / 230 (+80%法术强度) ⇒ 70 / 110 / 150 / 190 / 230 (+85%法术强度)"
+     },
+     {
+      "name": "元素女皇 奇亚娜",
+      "changesHtml": "Q - 元素之怒 / 以绪塔尔之锋<br><strong>&nbsp; &nbsp;</strong> &nbsp;&nbsp;伤害：80 / 110 / 140 / 170 / 200 (+90%额外攻击力) ⇒ 70 / 100 / 130 / 160 / 190 (+90%额外攻击力)"
+     },
+     {
+      "name": "披甲龙龟 拉莫斯",
+      "changesHtml": "W - 尖刺防御<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>额外护甲：27 / 32 / 37 / 42 / 47 (+30 - 60%护甲) ⇒ 25 / 30 / 35 / 40 / 45 (+30 - 50%护甲)<br>&nbsp; &nbsp; &nbsp;&nbsp;额外魔法抗性：20 / 25 / 30 / 35 / 40 (+30 - 60%魔法抗性) ⇒ 20 / 25 / 30 / 35 / 40 (+30 - 50%魔法抗性)"
+     },
+     {
+      "name": "符文法师 瑞兹",
+      "changesHtml": "Q - 超负荷<br><strong>&nbsp; &nbsp; </strong>&nbsp;&nbsp;涌动 额外伤害：15% / 40% / 65% / 90%额外伤害 ⇒ 10% / 40% / 70% / 100%额外伤害<br>&nbsp; &nbsp; &nbsp;&nbsp;额外移动速度：28% / 32% / 36% / 40% / 44% ⇒ 30% / 35% / 40% / 45% / 50%<br>W - 符文禁锢<br><strong>&nbsp; &nbsp;</strong> &nbsp; 伤害：60 / 90 / 120 / 150 / 180 (+60%法术强度) (+3%额外法力值) ⇒ 60 / 90 / 120 / 150 / 180 (+70%法术强度) (+3%额外法力值)"
+     },
+     {
+      "name": "亡灵战神 赛恩",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp;&nbsp;生命值：655 + 87/等级 ⇒ 655 + 95/等级<br>R - 蛮横冲撞<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>引导最初3秒内的伤害提升：+0 - 166.67%基础伤害，0 - 100%收益伤害 ⇒ +0 - 200%<br>&nbsp; &nbsp; &nbsp;&nbsp;BUG修复：现在的说明文本会正确显示最小和最大额外攻击力收益率(40-120%)。之前显示了错误的额外攻击力收益率(60%-120%)。实际上在25.16版本并没有改动它。"
+     },
+     {
+      "name": "岩雀 塔莉垭",
+      "changesHtml": "E - 撒石阵<br>&nbsp; &nbsp; &nbsp;&nbsp;伤害：60 / 105 / 150 / 195 / 240 (+60%法术强度) ⇒ 70 / 115 / 160 / 205 / 250 (+70%法术强度)<br>&nbsp; &nbsp; &nbsp;&nbsp;引爆伤害：25 / 40 / 55 / 70 / 85 (+30%法术强度) ⇒ 30 / 45 / 60 / 75 / 90 (+30%法术强度)<br>&nbsp; &nbsp; &nbsp;&nbsp;野怪伤害：对野怪造成225%伤害。"
+     },
+     {
+      "name": "瓦洛兰之盾 塔里克",
+      "changesHtml": "Q - 星光之触<br><strong>&nbsp; &nbsp; </strong>&nbsp;&nbsp;施放判定：现在，即使友军处于不可被选取状态时，Q技能也能成功施放。<br>E - 炫光<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>施放判定：在友军处于不可被选取状态时施放E技能，现在可以成功发射炫光。<br>&nbsp; &nbsp; &nbsp;&nbsp;说明文本：已更新以包含“消失的友军无法发射炫光”。<br>R - 宇宙之辉<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>施放判定：现在，当友军处于不可被选取时，R技能施放将能成功施放。"
+     },
+     {
+      "name": "麦林炮手 崔丝塔娜",
+      "changesHtml": "Q - 急速射击<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>攻击速度：60 / 75 / 90 / 105 / 120% ⇒ 40 / 60 / 80 / 100 / 120%"
+     },
+     {
+      "name": "卡牌大师 崔斯特",
+      "changesHtml": "R - 命运<br><strong>&nbsp; &nbsp; &nbsp;</strong>&nbsp;显形：现在可以显形不可被选取的单位。"
+     },
+     {
+      "name": "惩戒之箭 韦鲁斯",
+      "changesHtml": "Q - 穿刺之箭<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>伤害计算：最大伤害增长，53.33 - 240(+80%额外攻击力)至80 - 360(+120%额外攻击力) ⇒ 最小伤害增长，50 - 230(+80%额外攻击力)至85 - 391(+136%额外攻击力)<br>&nbsp; &nbsp; &nbsp;&nbsp;随引导时间提升伤害：提升幅度上限为50% ⇒ 提升幅度上限为70%<br>W - 枯萎箭袋<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>附带伤害：4 / 13 / 22 / 31 / 40 (+15%额外攻击力) (+25%法术强度) ⇒ 4 / 10 / 16 / 22 / 28 (+20%额外攻击力) (+30%法术强度)<br>&nbsp; &nbsp; &nbsp;&nbsp;每层伤害：3 - 5% (每100法术强度提升1.3%)目标最大生命值 ⇒ 2.5 - 4.5% (每100法术强度提升1.4%)目标最大生命值<br>&nbsp; &nbsp; &nbsp;&nbsp;主动 已损失生命值伤害：6-14%，可通过Q引导来提升，提升幅度上限为50% (9-21%) ⇒ 6-10%，可通过Q引导来提升，提升幅度上限为70% (10.2-17%)<br>&nbsp; &nbsp; &nbsp;&nbsp;基础技能 冷却时间返还：每层13%，可通过Q引导来提升，提升幅度上限为50% (每层19.5%) ⇒ 11%，可通过Q引导来提升，提升幅度上限为70% (每层18.7%)"
+     },
+     {
+      "name": "虚空之眼 维克兹",
+      "changesHtml": "被动 - 有机体解构<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>伤害：35 - 180 (+60%法术强度) ⇒ 35 - 205 (+65%法术强度)<br>Q - 等离子裂变<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>冷却时间：7秒 ⇒ 6秒"
+     },
+     {
+      "name": "机械先驱 维克托",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>基础属性<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>移动速度：335 ⇒ 330<br>Q - 虹吸能量<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>护盾值：40 - 140 (基于等级) (+25%法术强度) ⇒ 30 - 130 (+20%法术强度)<br>&nbsp; &nbsp; &nbsp;&nbsp;护盾持续时间：2.5秒 ⇒ 2秒"
+     },
+     {
+      "name": "齐天大圣 孙悟空",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>基础属性<br>&nbsp; &nbsp; &nbsp;&nbsp;生命回复：3.5 + 0.65/等级 ⇒ 5.5 + 0.65/等级<br>被动 - 金刚不坏<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>每层护甲：6 - 10 (基于英雄等级) ⇒ 4.5 - 10 (基于英雄等级)"
+     },
+     {
+      "name": "德邦总管 赵信",
+      "changesHtml": "Q - 三重爪击<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>每一击伤害：15 / 30 / 45 / 60 / 75 (+40%额外攻击力) ⇒ 15 / 30 / 45 / 60 / 75 (+45%额外攻击力)<br>E - 无畏冲锋<br>&nbsp; &nbsp; &nbsp;&nbsp;攻击速度收益：1%每5%额外攻击速度(来自永久来源) ⇒ 1%每4%额外攻击速度(来自永久来源)"
+     },
+     {
+      "name": "封魔剑魂 永恩",
+      "changesHtml": "Q - 错玉切<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>伤害：25 / 50 / 75 / 100 / 125 (+110%攻击力) ⇒ 25 / 50 / 75 / 100 / 125 (+105%攻击力)"
+     },
+     {
+      "name": "荆棘之兴 婕拉",
+      "changesHtml": "W - 狂野生长<br><strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>种子充能：18 / 16 / 14 / 12 / 10秒 ⇒ 16 / 14.5 / 13 / 11.5 / 10秒"
+     }
+    ]
+   },
+   {
+    "category": "装备",
+    "list": [
+     {
+      "name": "破垒者",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>穿甲：22 ⇒ 18<br>&nbsp; &nbsp; &nbsp;&nbsp;成型炸药 伤害：近战: 50+1.5x穿甲；远程:25+0.75x穿甲 ⇒ 近战: 40+1.5x穿甲；远程:20+0.75x穿甲<br>&nbsp; &nbsp; &nbsp;&nbsp;蓄意破坏 持续时间：90秒 ⇒ 无限<br>&nbsp; &nbsp; &nbsp;&nbsp;蓄意破坏 持续时间说明：这是你可对战略点造成额外伤害的时间。"
+     },
+     {
+      "name": "黎明核心",
+      "changesHtml": "<strong>&nbsp; &nbsp; </strong>&nbsp;&nbsp;每100%基础法力回复提供的法术强度：10 ⇒ 15"
+     },
+     {
+      "name": "暴食胫甲",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;</strong>&nbsp;总费用：1000金 ⇒ 1100金"
+     },
+     {
+      "name": "狂妄",
+      "changesHtml": "<strong>&nbsp; &nbsp; &nbsp;&nbsp;</strong>基础额外攻击力：12 ⇒ 15(近战) / 10(远程)<br>&nbsp; &nbsp; &nbsp;&nbsp;每层额外攻击力：3 ⇒ 3(近战) / 2(远程)"
+     }
+    ]
+   },
+   {
+    "category": "赛季之星",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "K/DA：收集4张K/DA明星卡即可赚取一个额外的强化符文！"
+     },
+     {
+      "name": null,
+      "changesHtml": "心之钢：强化符文可以附带独特的贴纸来变得更加强力。"
+     },
+     {
+      "name": null,
+      "changesHtml": "真实伤害：参与击杀和摧毁防御塔可以掉落锻造器供你的队伍使用。"
+     },
+     {
+      "name": null,
+      "changesHtml": "五杀乐队：在游戏开始时和18级时，强化你的一个技能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "迪斯科：在迪斯科灯球下跳舞，即可为每个人赚取金币。"
+     },
+     {
+      "name": null,
+      "changesHtml": "咖啡甜心：治疗圣物（加血包）会特别强力。"
+     },
+     {
+      "name": null,
+      "changesHtml": "小蜜蜂：收集蜂蜜并躲开那些飞越地图的小蜜蜂。"
+     },
+     {
+      "name": null,
+      "changesHtml": "命令行：在每次强化符文选择中，可将你的一个强化符文刷新成一个更高位阶的强化符文。"
+     },
+     {
+      "name": null,
+      "changesHtml": "还有更多？？？？"
+     }
+    ]
+   },
+   {
+    "category": "新增的强化符文",
+    "list": [
+     {
+      "name": "蓝色屏障",
+      "changesHtml": "每当你施放一个技能时，获得基于该法力消耗的护盾值。"
+     },
+     {
+      "name": "灵魂乐流",
+      "changesHtml": "使用一个特定技能时，会为你提供可叠加的攻击速度。"
+     },
+     {
+      "name": "水果化",
+      "changesHtml": "参与击杀会在受害者的位置生成水果，可供你和你的友军拾取以回复生命值和法力值。"
+     },
+     {
+      "name": "溺水之赠礼",
+      "changesHtml": "从你的装备获得的所有额外生命值转化为穿甲。"
+     },
+     {
+      "name": "远射天资",
+      "changesHtml": "你在接近最大攻击距离处打出的攻击造成额外伤害。"
+     },
+     {
+      "name": "巫妖大脑",
+      "changesHtml": "获得基于你的额外生命值的法术强度。"
+     },
+     {
+      "name": "孤勇者",
+      "changesHtml": "你周围每有一个敌方英雄，你就会获得护甲、魔法抗性和攻击速度。"
+     },
+     {
+      "name": "没法力，没问题",
+      "changesHtml": "从你的装备获得的所有法力回复转化为法术强度。"
+     },
+     {
+      "name": "音之屏障",
+      "changesHtml": "你的护盾会提升移动速度。"
+     },
+     {
+      "name": "终极循环往复",
+      "changesHtml": "获得50终极技能急速。"
+     },
+     {
+      "name": "奥术公理",
+      "changesHtml": "参与击杀后，会返还你的一部分终极技能冷却时间。"
+     },
+     {
+      "name": "装甲冲击",
+      "changesHtml": "使用一个技能时，会使你的下一次普攻造成基于你护甲的额外伤害。"
+     },
+     {
+      "name": "小蜜蜂！！！",
+      "changesHtml": "你的技能会周期性地对敌人们掷出一个爆炸蜂巢，来造成伤害、减速并附带攻击特效。"
+     },
+     {
+      "name": "黄铜爆音",
+      "changesHtml": "获得一个召唤师技能，它可使你蓄力一次号角爆音来击退并伤害你的敌人们。"
+     },
+     {
+      "name": "深红钴蓝闪光",
+      "changesHtml": "你的一个技能会标记敌方英雄，在消耗该标记时会造成额外伤害并降低你该技能的冷却时间。"
+     },
+     {
+      "name": "翻倍时间",
+      "changesHtml": "快速且连续地用两个不同的技能对敌方英雄造成伤害时，会提供永久法力值并造成额外伤害。"
+     },
+     {
+      "name": "迷人蝴蝶",
+      "changesHtml": "为友军提供治疗和护盾时会积攒蝴蝶。一旦你拥有了足够数量的蝴蝶，它们就会飞向你伤害的敌人从而造成额外伤害。"
+     },
+     {
+      "name": "罪恶快感",
+      "changesHtml": "获得一个召唤师技能，它可使你跳到一个毁灭性的飞弹上并驾驭它冲向你的敌人们。"
+     },
+     {
+      "name": "王冠之重",
+      "changesHtml": "获得攻击力、法术强度和攻击速度，但降低你自己的移动速度。每次参与击杀后都会提升这个效果，并且阵亡时降低这个效果。"
+     },
+     {
+      "name": "珠光手镯",
+      "changesHtml": "你的终极技能可以暴击。"
+     },
+     {
+      "name": "反冲",
+      "changesHtml": "你的一个技能将在你发射它时将你向后反冲。"
+     },
+     {
+      "name": "拯救",
+      "changesHtml": "跌下低生命值时，会将敌人们推后并治疗友军们。"
+     },
+     {
+      "name": "吸元秘术",
+      "changesHtml": "每10秒，你的下一次普通攻击造成额外伤害并治疗你。"
+     },
+     {
+      "name": "屹立不倒",
+      "changesHtml": "基于你的已损失生命值，获得攻击力、法术强度和生命偷取。"
+     },
+     {
+      "name": "将他们放倒倒倒",
+      "changesHtml": "用攻击和技能对一个敌方英雄造成5次伤害，即可获得一次爆发性的治疗并对该英雄造成额外伤害。"
+     },
+     {
+      "name": "鼓声暴起 低音轰鸣",
+      "changesHtml": "施放技能后，你的下一次攻击造成额外伤害并为你提供爆发性的移动速度。"
+     },
+     {
+      "name": "嗡嗡怪兽",
+      "changesHtml": "你从装备获得的所有额外攻击力转化为攻击速度。"
+     },
+     {
+      "name": "升级：风暴狂涌",
+      "changesHtml": "当【风暴狂涌】施加【风啸】时，它会引爆一个区域，从而造成额外伤害并用一个次级【风啸】标记敌人们。"
+     },
+     {
+      "name": "命运之武器",
+      "changesHtml": "你购买的第一件传说装备会在每次参与击杀后获得更强力的属性。"
+     },
+     {
+      "name": "重炮手",
+      "changesHtml": "你的很大一部分攻击速度转化为暴击伤害。"
+     },
+     {
+      "name": "弹跳蜜蜂",
+      "changesHtml": "使用技能后，你的下一次普攻会弹跳至附近敌人，优先选择英雄。让你的攻击弹跳到敌方英雄身上来完成任务，可获得额外的弹跳次数和攻击力。"
+     },
+     {
+      "name": "一起抱抱",
+      "changesHtml": "你的一个技能在提供治疗或护盾时还会为附近的友军提供治疗或护盾。"
+     },
+     {
+      "name": "热舞怪兽",
+      "changesHtml": "使用你的终极技能时，会为你提供额外生命值并在你周围生成一个地带来减速敌方英雄们。击杀和参与击杀会提升你获得的额外生命值数额以及减速地带的的范围。"
+     },
+     {
+      "name": "伤不过三",
+      "changesHtml": "攻击一个敌方英雄3次，即可造成爆发性的伤害并为你提供爆发性的攻击速度"
+     },
+     {
+      "name": "死之舞",
+      "changesHtml": "获得一个召唤师技能，它可让你“与死亡共舞”，从而为你提供持续5秒的“不可被击杀”状态，但如果你在此期间未能获得一次参与击杀，那么你就会被拖入冥界（也就是阵亡）。"
+     }
+    ]
+   },
+   {
+    "category": "已移除的强化符文",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "炽燃利息"
+     },
+     {
+      "name": null,
+      "changesHtml": "由暴生急"
+     },
+     {
+      "name": null,
+      "changesHtml": "暴击飞弹"
+     },
+     {
+      "name": null,
+      "changesHtml": "位面转移"
+     },
+     {
+      "name": null,
+      "changesHtml": "空投熊"
+     },
+     {
+      "name": null,
+      "changesHtml": "飞身踢"
+     },
+     {
+      "name": null,
+      "changesHtml": "连拨击锤"
+     },
+     {
+      "name": null,
+      "changesHtml": "藏身草丛"
+     },
+     {
+      "name": null,
+      "changesHtml": "掷骰狂人"
+     },
+     {
+      "name": null,
+      "changesHtml": "我们的治疗"
+     },
+     {
+      "name": null,
+      "changesHtml": "魄罗蛮冲"
+     },
+     {
+      "name": null,
+      "changesHtml": "心灵净化"
+     },
+     {
+      "name": null,
+      "changesHtml": "大招工具人"
+     }
+    ]
+   }
+  ],
+  "time": "2026-10-21 20:27:31",
+  "last_update": "2026-10-22"
+ },
+ "26.3版本公告-召唤师峡谷大量英雄平衡性改动，海克斯大乱斗大型更新": {
+  "section": "海克斯大乱斗",
+  "title": "26.3版本公告-召唤师峡谷大量英雄平衡性改动，海克斯大乱斗大型更新",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37076766.html#n1",
+  "data": [
+   {
+    "category": "海克斯乱斗通行证",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "1级 - 【红包】强化符文 - 拾取地图各处的【红包】即可提升你的金币和一项随机属性。"
+     },
+     {
+      "name": null,
+      "changesHtml": "2级 - 【负重爆气】强化符文 - 击中敌人以【爆气】，从而使你的技能冷却时间转得更快。"
+     },
+     {
+      "name": null,
+      "changesHtml": "3级 - “魄罗佳肴，求求了”表情"
+     },
+     {
+      "name": null,
+      "changesHtml": "4级 - +300起始金币 - 在每局【海克斯大乱斗】开始时额外获得300金币。"
+     },
+     {
+      "name": null,
+      "changesHtml": "5级 - 【生机迸发】强化符文 - 在施放时，提升你的体型、生命值并击飞附近的敌人们。"
+     },
+     {
+      "name": null,
+      "changesHtml": "6级 - “魄罗爆裂!图标”"
+     },
+     {
+      "name": null,
+      "changesHtml": "7级 - 【捐赠】强化符文 - 获得一笔可观的金币。无需多问。"
+     },
+     {
+      "name": null,
+      "changesHtml": "8级 - 【魄罗之王的弹跳】强化符文 - 作为【魄罗之王】在敌人身上疯狂弹跳以造成击退和伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "9级 - “如此明亮!”表情"
+     },
+     {
+      "name": null,
+      "changesHtml": "10级 - 【速度恶魔】强化符文 - 对一个敌人造成伤害时，暂时获得移动速度。"
+     },
+     {
+      "name": null,
+      "changesHtml": "11级 - “绽灵蛰伏 图标”"
+     },
+     {
+      "name": null,
+      "changesHtml": "12级 - 【缩小引擎】强化符文 - 每次参与击杀后，都会获得技能急速、移动速度并且缩小。"
+     },
+     {
+      "name": null,
+      "changesHtml": "13级 - 【金色刷新】强化符文 - 有几率将符文刷新为更高等级。"
+     },
+     {
+      "name": null,
+      "changesHtml": "14级 - 【砸开那颗蛋】强化符文 - 你的护盾现在可以引爆，对附近的敌人们造成伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "15级 - “大雪崩!”表情"
+     },
+     {
+      "name": null,
+      "changesHtml": "16级 - 【虚空献祭】强化符文 - 将【日炎圣盾】和【璀璨回响】转换成【虚空献祭】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "17级 - “发红包魄罗 图标”"
+     },
+     {
+      "name": null,
+      "changesHtml": "18级 - 【锻造器兑换券】 - 你将在每局游戏开始获得一个【锻造器兑换券】，可兑换获得额外属性。"
+     },
+     {
+      "name": null,
+      "changesHtml": "19级 - 【扳机炼狱】强化符文 - 在你达到“S”评价等级时，自动施放莎弥拉的R。"
+     },
+     {
+      "name": null,
+      "changesHtml": "20级 - “庆典自拍 图标”"
+     },
+     {
+      "name": null,
+      "changesHtml": "21级 - 【升级：荆棘之甲】 - 【荆棘之甲】和【棘刺背心】会回敬更多伤害给攻击者。"
+     },
+     {
+      "name": null,
+      "changesHtml": "22级 - “帮帮忙嘛”表情"
+     },
+     {
+      "name": null,
+      "changesHtml": "23级 - 【合剂】 - 在9/12/16级时获得一个免费合剂。"
+     },
+     {
+      "name": null,
+      "changesHtml": "24级 - 【飞身踢】 - 你的攻击会处决敌方英雄，回复生命值，并将敌人们击退。"
+     },
+     {
+      "name": null,
+      "changesHtml": "25级 - 【咏叹奏鸣】 - 自动交替施放娑娜的E和W。"
+     },
+     {
+      "name": null,
+      "changesHtml": "26级 - “魄罗之王的旗帜”"
+     },
+     {
+      "name": null,
+      "changesHtml": "27级 - 【和我一起困在这里】强化符文 - 在施放你的终极技能之后，获得伤害减免并嘲讽敌人们。"
+     },
+     {
+      "name": null,
+      "changesHtml": "28级 - “有爱之家”表情"
+     },
+     {
+      "name": null,
+      "changesHtml": "29级 - 【信念者的强化】强化符文 - 为友军提供治疗或护盾会积攒【虔诚】从而能够处决低生命值的敌人们。"
+     },
+     {
+      "name": null,
+      "changesHtml": "30级 - “升空啦!图标”"
+     },
+     {
+      "name": null,
+      "changesHtml": "31级 - 【金色刷新+】 - 有更大几率将符文刷新为更高等级。"
+     },
+     {
+      "name": null,
+      "changesHtml": "32级 - ??? - 你的“敌人消失信号”现在可以搞点事情……虽然不知道是什么。"
+     }
+    ]
+   },
+   {
+    "category": "强化符文套装",
+    "list": [
+     {
+      "name": "俯冲炸弹",
+      "changesHtml": "进行决死冲锋并使用强化符文造成真实伤害<br>●(2) 使复活倒计时缩短40%<br>强化符文：小丑学院、最终都市列车、自我毁灭、俯冲轰炸"
+     },
+     {
+      "name": "神龙烈焰",
+      "changesHtml": "飞弹很酷，越多飞弹就越酷。【爆竹】飞弹弹跳额外的次数至相距最近的敌人并造成其一部分原伤害。<br>●(2) 2次弹跳，造成40%原伤害。<br>●(4) 3次弹跳，造成80%原伤害。<br>强化符文：连拨击锤、魔法飞弹、暴击飞弹、点亮他们、台风、双生火焰"
+     },
+     {
+      "name": "掷骰狂人",
+      "changesHtml": "不出手就错失100%的机会 - 萨科 - 崔斯特(也许吧)<br>●(2) 小兵在阵亡时有几率掉落一个【属性锻造器】。<br>●(3) +50%几率获得黄金阶或棱彩阶锻造器。<br>●(4) +100%几率获得黄金阶或棱彩阶锻造器。<br>强化符文：质变：混沌、潘朵拉的盒子、属性叠属性叠属性、质变：棱彩阶、属性叠属性、属性、质变：黄金阶"
+     },
+     {
+      "name": "叠角龙",
+      "changesHtml": "叠啊叠啊叠啊叠啊叠<br>●(2) 获得50%额外层数。<br>●(3) 获得100%额外层数。<br>●(4) 获得200%额外层数。<br>强化符文：无限循环往复、物法皆修、踢踏舞、吞噬灵魂、钢化你心、超凡邪恶、缩小引擎、升级：狂妄、扇巴掌"
+     },
+     {
+      "name": "喂呜喂呜",
+      "changesHtml": "●(2) 朝着低生命值友军时获得40%移动速度，25%治疗和护盾强度。<br>●(3) 朝着低生命值友军时获得50%移动速度，35%治疗和护盾强度。<br>●(4) 朝着低生命值友军时获得60%移动速度，45%治疗和护盾强度。<br>强化符文：风语者的祝福、小猫咪找妈妈、升级：米凯尔的祝福、全心为你、会心治疗、咏叹奏鸣、 急救用具"
+     },
+     {
+      "name": "完全自动化",
+      "changesHtml": "让乱斗变得更乱的第一步。<br>●(2) 将自动施放的冷却时间缩短30%<br>●(3) 自动施放冷却时间受益于技能急速<br>强化符文：舞会女王、量子计算、回力OK镖、迅捷奏鸣、神圣干预、自我毁灭、冰霜 幽灵、火狐"
+     },
+     {
+      "name": "大法师",
+      "changesHtml": "任何对局的承重支柱。<br>●(2) 在你施放一个技能时，返还一个随机技能的40%冷却时间<br>强化符文：溢流、由心及物、霸符兄弟、注魔、海洋龙魂"
+     },
+     {
+      "name": "金币雨",
+      "changesHtml": "金币统治着你周围的一切。<br>●(2) 使来自强化符文和击杀的金币提升30%<br>●(3) 使来自强化符文和击杀的金币提升50%<br>●(4) 使来自强化符文和击杀的金币提升100%<br>强化符文：夺金、当心小蛋糕!、捐赠、红包、有始有终、升级：献祭、升级：收集者"
+     },
+     {
+      "name": "下雪天",
+      "changesHtml": "雪球咻咻咻<br>●(2) 雪球和雪球类技能获得50技能急速并造成30%额外伤害。<br>●(3) 雪球和雪球类技能获得100技能急速并造成50%额外伤害。<br>●(4) 雪球和雪球类技能获得150技能急速并造成100%额外伤害。<br>强化符文：史上最大雪球、神圣雪球、升级：雪球、弹球、雪球扭蛋机"
+     }
+    ]
+   },
+   {
+    "category": "强化符文平衡性改动",
+    "list": [
+     {
+      "name": "至高天诺言",
+      "changesHtml": "●延迟移动时间：0.5秒 → 0.25秒<br>●移动速度：3500 → 4000<br>●冷却时间：30 → 20<br>●强化符文使用者在行进时即刻获得护盾值，而非在着陆时获得护盾值。"
+     },
+     {
+      "name": "激光治疗",
+      "changesHtml": "●冷却时间：45 → 35<br>●基础治疗：150-430 (基于等级) → 200-550 (基于等级)"
+     },
+     {
+      "name": "地狱三头犬",
+      "changesHtml": "●攻击速度增幅：140% / 80% → 200% / 115%<br>●额外伤害：120 - 360 → 120 - 360 ( 40%攻击力) (+30%法术强度)"
+     },
+     {
+      "name": "夺金",
+      "changesHtml": "●每次触发的金币：15金币 → 30金币"
+     },
+     {
+      "name": "有始有终",
+      "changesHtml": "●【先攻】触发金币基础值：10 → 20<br>●额外真实伤害：7% → 10%<br>●金币转化率：50% / 35% → 60% / 42%"
+     },
+     {
+      "name": "闪电打击",
+      "changesHtml": "●攻击速度需求：3.5 → 1.75"
+     },
+     {
+      "name": "秘术冲拳",
+      "changesHtml": "●附带技能冷却缩减：20% → 1.25秒"
+     }
+    ]
+   },
+   {
+    "category": "品质级改动",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "你现在可以带任何你想带的召唤师技能。诸如【利刃华尔兹】或【史上最大雪球】等主动型召唤师技能强化符文，你能够选择一个栏位来进行替换。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-02-03 18:59:17",
+  "last_update": "2026-3-8"
+ },
+ "26.4+26.5版本公告-海量英雄平衡性改动，海克斯大乱斗大型更新": {
+  "section": "海克斯大乱斗",
+  "title": "26.4+26.5版本公告-海量英雄平衡性改动，海克斯大乱斗大型更新",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37078696.html#n7",
+  "data": [
+   {
+    "category": "通行证",
+    "list": [
+     {
+      "name": "4级奖励",
+      "changesHtml": "●300金币 → 金色刷新"
+     }
+    ]
+   },
+   {
+    "category": "强化符文和套装改动",
+    "list": [
+     {
+      "name": "魄罗爆破手",
+      "changesHtml": "●现在每个队伍仅可被一个玩家选取。<br>●提升了叠加魄罗们所需的时间"
+     },
+     {
+      "name": "当心小蛋糕！",
+      "changesHtml": "●拾取减速：50% → 25%<br>●每1000治疗的金币：200 → 150<br>●已损失生命值治疗：20 - 50% → 5 - 15%"
+     },
+     {
+      "name": "你肩上的恶魔",
+      "changesHtml": "●附近有敌人时的生命值汲取：7.5% → 5%<br>●额外真实伤害：20% → 15%"
+     },
+     {
+      "name": "速度恶魔",
+      "changesHtml": "●速度提升：300，在2秒里持续衰减 → 200，在1秒里持续衰减"
+     },
+     {
+      "name": "杀意翻涌",
+      "changesHtml": "●朝着低生命值英雄的额外移动速度：100% → 60%"
+     },
+     {
+      "name": "【金币雨】套装",
+      "changesHtml": "●金币奖励：30 / 50 / 100% → 15 / 30 / 50%"
+     },
+     {
+      "name": "【大法师】套装",
+      "changesHtml": "●冷却返还：40% → 30%"
+     },
+     {
+      "name": "【俯冲炸弹】套装",
+      "changesHtml": "●复活时间缩减：40% → 25%"
+     },
+     {
+      "name": "红包",
+      "changesHtml": "●每个红包的金币：(10 - 18)到(25 - 58) → (8-15)到(22 - 46)"
+     },
+     {
+      "name": "捐赠",
+      "changesHtml": "●金币：2500 → 1750"
+     },
+     {
+      "name": "属性！",
+      "changesHtml": "●给予的属性锻造器数量：3 → 2"
+     },
+     {
+      "name": "属性叠属性！",
+      "changesHtml": "●给予的属性锻造器数量：4 → 3"
+     },
+     {
+      "name": "属性叠属性叠属性！",
+      "changesHtml": "●给予的属性锻造器数量：5 → 4"
+     },
+     {
+      "name": "缩小引擎",
+      "changesHtml": "●每层急速：10 → 8<br>●每层额外移动速度：2% → 1%"
+     },
+     {
+      "name": "吸血习性",
+      "changesHtml": "●全能吸血：30% → 25%"
+     },
+     {
+      "name": "棱彩阶属性锻造器",
+      "changesHtml": "●近战全能吸血：25% → 20%<br>●远程全能吸血：12.5% → 10%"
+     },
+     {
+      "name": "男爵之手",
+      "changesHtml": "●适应之力：33% → 25%（注：实测值依然是33%，将于后续版本修复）"
+     },
+     {
+      "name": "【神龙烈焰】套装",
+      "changesHtml": "●(2)层级 爆竹弹跳伤害：40% → 25%<br>●(4)层级 爆竹弹跳伤害：80% → 50%"
+     },
+     {
+      "name": "【掷骰狂人】套装",
+      "changesHtml": "●(3)层级 套装加成 获得黄金阶或棱彩阶锻造器的几率：50% → 20%<br>●(5)层级 套装加成 获得黄金阶或棱彩阶锻造器的几率：100% → 50%"
+     },
+     {
+      "name": "升级：献祭",
+      "changesHtml": "●每段的金币：10 → 12"
+     },
+     {
+      "name": "慢炖",
+      "changesHtml": "●伤害收益 最大生命值：1.5% → 2%"
+     },
+     {
+      "name": "星界躯体",
+      "changesHtml": "●最大生命值获取：1250 → 1500"
+     },
+     {
+      "name": "恶趣味",
+      "changesHtml": "●来自定身/缚地敌人的治疗效果：10-150 (+ 1.5%最大生命值) → 30-250 (+ 1.5%最大生命值)"
+     },
+     {
+      "name": "坚韧",
+      "changesHtml": "●基础回复：800%基础生命回复 →&nbsp;1000%基础生命回复<br>●低血量生命回复：1600%基础生命回复 →&nbsp;2000%基础生命回复"
+     },
+     {
+      "name": "巨像的勇气",
+      "changesHtml": "●护盾值：100-300 + 4%生命值 → 150-450 + 4%生命值"
+     },
+     {
+      "name": "坚若磐石",
+      "changesHtml": "●来自每个定身/缚地敌人的护甲/魔抗：8 → 10"
+     },
+     {
+      "name": "不动如山",
+      "changesHtml": "●【余震】和【冰川增幅】冷却时间：15秒 → 20秒（注：暂未生效，将于后续版本修复）"
+     },
+     {
+      "name": "和我一起困在这里",
+      "changesHtml": "●嘲讽后的伤害缓和：40% → 50%"
+     },
+     {
+      "name": "飞身踢",
+      "changesHtml": "●处决阈值 攻击力收益率：0.03% → 0.035%"
+     },
+     {
+      "name": "卡皮巴拉空投",
+      "changesHtml": "●冷却时间：75秒 → 45秒"
+     },
+     {
+      "name": "神圣雪球",
+      "changesHtml": "●免疫伤害时长：1秒 → 1.5秒"
+     },
+     {
+      "name": "魄罗之王的弹跳",
+      "changesHtml": "●移动速度提升：25% → 40%<br>●伤害减免：85% → 70%<br>●伤害：100-300 + 5%额外生命值 + 100%额外攻击力 + 50%额外法术强度 → 100-700"
+     },
+     {
+      "name": "虚空裂隙",
+      "changesHtml": "●伤害：75-350 + 450%穿甲 + 450%法术穿透 → 100-450 + 550%穿甲 + 550%法术穿透<br>●宽度：210 → 250"
+     },
+     {
+      "name": "逃跑计划",
+      "changesHtml": "●移除了阵亡时的冷却重置"
+     },
+     {
+      "name": "暴击飞弹",
+      "changesHtml": "●每颗飞弹伤害：11-40 + 7%额外攻击力 + 10%法术强度 → 20-100"
+     },
+     {
+      "name": "升级：花晓之剑",
+      "changesHtml": "●新增"
+     },
+     {
+      "name": "[新增]【喂呜喂呜】套装加成",
+      "changesHtml": "●套装加成：朝着低于50%生命值友军时获得额外效果<br>●(2) 获得50%移动速度<br>●(3) 你的下一个治疗或护盾回复目标的12%已损失生命值。(每个目标有10秒冷却时间)"
+     }
+    ]
+   },
+   {
+    "category": "系统",
+    "list": [
+     {
+      "name": "强化符文套装面板悬停延迟",
+      "changesHtml": "●悬停延迟降低：0.75秒 → 0.1秒"
+     },
+     {
+      "name": "玩家屏幕界面(HUD)",
+      "changesHtml": "●移除：将强化符文套装图标从玩家屏幕界面中移除"
+     },
+     {
+      "name": "建筑物",
+      "changesHtml": "●水晶枢纽 基础生命值：5500 → 3000<br>●水晶枢纽塔 基础生命值：1800 → 3250"
+     }
+    ]
+   },
+   {
+    "category": "装备",
+    "list": [
+     {
+      "name": "月石再生器",
+      "changesHtml": "●大蒜：【月石再生器】的连锁治疗将不会选择那些拥有【吸血习性】的目标。"
+     },
+     {
+      "name": "耳语头环",
+      "changesHtml": "●白银：【歌之权冠】的治疗飞弹将不会选择那些拥有【吸血习性】的目标。"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【舞会女王】在你阵亡后无法触发。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【会心治疗】和【暴击飞弹】能够无限触发。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【暴击飞弹】过于频繁地通过【会心防御】触发。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【神龙烈焰】套装加成会导致普攻计时器重置。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【神龙烈焰】套装加成会在普攻效果上触发。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：玩家们可以多次选到相同的强化符文。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【转得我眩晕了】能导致英雄们失去其原有技能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在拥有【珠光护手】时，【灵魂虹吸】会有一个不正确的治疗值。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：英雄们无法选择来自【掷骰狂人】套装的锻造器，例如克格莫、赛恩、和卡尔萨斯。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：当你在基地升级时，你的强化符文可能会被覆写。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在选择属性锻造器之后，你就不能选择你的最后一个强化符文了。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：你可以在商店中购买锻造器并覆写你当前的强化符文选择。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：魄罗之王给予了错误的伤害减免。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：魄罗之王在不可阻挡状态期间未获得控制免疫。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在拥有【升级：荆棘之甲】时，你可以通过在商店中反复售出【荆棘之甲】来获得无限护甲。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在被供应主动型召唤师技能、雪球和闪现时，你可以将两个召唤师技能栏位都进行置换。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：反复点击召唤师技能置换按钮可以为你的雪球类强化符文提供可叠加的急速。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在选择普朗克的银蛇币购买项目时，将会在你的召唤师技能栏位中置换另一个主动型召唤师技能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【???】可以处决千珏R范围内的英雄或者处于激活R状态下的泰达米尔。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在你拥有【黄昏与黎明】时，【升级：耀光】可以触发双倍治疗。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【升级：耀光】会追踪对小兵造成的伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：派克的终极技能不能从【全凭身法】中获益。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：潜行状态的英雄的【魄罗爆破手】处于敌方可见状态。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【耳语头环】和【歌之权冠】不会被【帽上加帽】视为帽子。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【祖母的辣椒油】的灼烧每秒造成了不正确的伤害值。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【潘朵拉的盒子】不会为【掷骰狂人】套装提供计数。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【物法皆修】通过【叠角龙】套装加成获得的额外层数不会提供额外法术强度。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果你哟偶【闪现向前】和【闪闪现现】，那么【闪现】会显示不正确的充能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【虚空献祭】没有触发【升级：献祭】的效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【金币雨】套装加成的层级提升时，【升级：献祭】的金币生成不会提升。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【完全自动化】的(3)层级加成会与(2)层级加成一起生效。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【神圣干预】没有冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【祖母的辣椒油】的增益和减益缺失了图标和说明文本。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：当多个玩家站在【祖母的辣椒油】的池子之中时，该池子会停止施加效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【炼狱导管】的伤害不会触发【祖母的辣椒油】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【虚空献祭】会被【祖母的辣椒油】视作2个灼烧来源。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：基兰可以无限触发【终极刷新】，方法是在复活之后对自己施放【R时光倒流】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【信念者的强化】在友军身上有debug增益。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【信念者的强化】的冲击波会导致英雄们变成隐形。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在组合了【扳机炼狱】和【魄罗爆破手】时，英雄们被击退的距离会比预期更远。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【咏叹奏鸣】会从技能急速中获得冷却缩减，即使是享有【(2) 完全自动化】的加成。（注：暂未修复，将于后续版本修复）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【屠夫之桥】的加农炮无法在小地图上显示它的距离指示器。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果你在选择【海牛阿福的勇士】并使用魄罗佳肴之后，装备栏是满的并且完成了任务，那么【金铲铲】会丢失。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【魄罗之王】会移除科加斯的R层数或赛恩的W层数。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【升级：献祭】不会通过【虚空献祭】生效。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【红包】不会提供攻击力。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【卡皮巴拉空投】和【魄罗之王】会在阿萝拉的被动和亚恒的被动上生效。阿萝拉的被动和亚恒的被动将不再能通过强化符文伤害来触发。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【升级：耀光】在触发时不会治疗。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在第一次强化符文供应之前使用【属性锻造器兑换券】，会导致该次强化符文供应被打破。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【升级：荆棘之甲】的效果会在你没有这些装备时存在。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【升级：荆棘之甲】的护盾可被小兵触发。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【弹球】雪球会打破海克斯飞门的重新定位功能。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-03-04 20:16:30",
+  "last_update": "2026-3-8"
+ },
+ "3月19日凌晨1点停机版本更新公告": {
+  "section": "海克斯大乱斗",
+  "title": "3月19日凌晨1点停机版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37079862.html#n7",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "俄洛伊",
+      "changesHtml": "• 承受伤害：105% → 100%<br>•&nbsp;治疗效果：80% → 90%"
+     },
+     {
+      "name": "瑟提",
+      "changesHtml": "• 承受伤害：110% → 100%"
+     },
+     {
+      "name": "希瓦娜",
+      "changesHtml": "• 承受伤害：105% → 100%"
+     },
+     {
+      "name": "赛恩",
+      "changesHtml": "• 承受伤害：110% → 100%"
+     },
+     {
+      "name": "斯维因",
+      "changesHtml": "• 承受伤害：115% → 105%<br>•&nbsp;治疗效果：80% → 90%<br>•&nbsp;造成伤害：95% → 100%"
+     },
+     {
+      "name": "厄加特",
+      "changesHtml": "• 承受伤害：105% → 100%"
+     },
+     {
+      "name": "弗拉基米尔",
+      "changesHtml": "• 承受伤害：105% → 100%<br>•&nbsp;治疗效果：90% → 100%<br>•&nbsp;造成伤害：95% → 100%"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "卡皮巴拉空投",
+      "changesHtml": "• 范围规模：550 → 650<br>•&nbsp;最大生命值真实伤害：25% → 30%"
+     },
+     {
+      "name": "双刀流",
+      "changesHtml": "• 攻击速度加成：20% → 10%"
+     },
+     {
+      "name": "火狐",
+      "changesHtml": "• 额外移动速度：40% → 25%"
+     },
+     {
+      "name": "冰寒",
+      "changesHtml": "• 固定移动速度降低：100 → 75"
+     },
+     {
+      "name": "注魔",
+      "changesHtml": "• 附带最大法力值百分比伤害：3.5% → 4.5%<br>•&nbsp;现在仅影响英雄"
+     },
+     {
+      "name": "舞会女王",
+      "changesHtml": "• 魅惑时长：2秒 → 1.5秒"
+     },
+     {
+      "name": "咏叹奏鸣",
+      "changesHtml": "• 自我移速增益：50% → 30%<br>•&nbsp;友军移速增益：30% → 20%"
+     },
+     {
+      "name": "速度恶魔",
+      "changesHtml": "• 衰减时间：1秒 → 0.75秒"
+     },
+     {
+      "name": "和我一起困在这里",
+      "changesHtml": "• 现在，对于卡特琳娜来说，会在她引导她的终极技能时即刻施放"
+     },
+     {
+      "name": "扳机炼狱",
+      "changesHtml": "• 每层移动速度：(2.75 - 3.5) → (4.25 - 5)<br>•&nbsp;每一击伤害：10 - 40 (+ 0.35攻击力) (+ 0.2法术强度) → 20-40 (+ 0.4攻击力) (+ 0.25法术强度)"
+     },
+     {
+      "name": "当心小蛋糕！",
+      "changesHtml": "• 非持有者的金币：15 → 50"
+     }
+    ]
+   },
+   {
+    "category": "强化符文套装",
+    "list": [
+     {
+      "name": "金币雨",
+      "changesHtml": "• 参与击杀敌人后，该敌人将掉落一些钱币。<br>•&nbsp;2级：掉落6枚钱币。<br>•&nbsp;3级：掉落12枚钱币。<br>•&nbsp;每枚钱币价值5金并且仅能被强化符文的持有者及其友方英雄拾取。"
+     }
+    ]
+   },
+   {
+    "category": "品质级改动",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "【红包】不再出现在双方的小地图上"
+     },
+     {
+      "name": null,
+      "changesHtml": "现在，【最终都市列车】在每次命中英雄时，仅为该强化符文的持有者显示一条聊天信息。"
+     },
+     {
+      "name": null,
+      "changesHtml": "【吸血习性】和【坚韧】现在会彼此互斥，并且在你已有其中一个时将不再被供应另一个。"
+     },
+     {
+      "name": null,
+      "changesHtml": "【 扇巴掌】现在有一个图标用于它的相关减益了。"
+     },
+     {
+      "name": null,
+      "changesHtml": "诸如纳亚菲利的狗群等英雄召唤物在其拥有大量帽子时不再显示一条聊天信息了。"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】购买一个属性锻造器会阻止强化符文被供应。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在购买一个属性锻造器之后，奥恩的被动能够触发一次预期之外的强化符文选择。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：黄金阶强化符文【作弊：我能回城】会允许在强化符文选择期间进入商店。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在购买属性锻造器时，强化符文选择会被属性锻造器选择给替代。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果在多个供应处于排队状态时未作出选择，会导致最后一次刷新到的强化符文能够在阵亡时刷新。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果玩家在多个供应处于排队状态时阵亡，11级和15级的强化符文供应会无法被给到玩家。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【掷骰狂人】已排队的锻造器在通过【作弊：我能回城】强化符文进行回城之后就无法供应了。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：赛恩在【海克斯大乱斗】的第一次阵亡后，会损失他的一部分魔法抗性。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：奥恩可以在他的被动商店窗口中看到【虚空献祭】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：基兰的R会在复活近战友军后移除其魔法抗性。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：泽拉斯和吉格斯能够用单次技能施放来双重触发【古式佳酿】和【不祥契约】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：佛耶戈可以在离开占据敌人的状态后使用商店。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果敌人在你的基地中，那么强化符文卡片会在战斗期间打开。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果佛耶戈在占据一名敌人的状态下完成了【尊我为王】的任务，那么他会失去来自这个强化符文的升级。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：佛耶戈的【尊我为王】升级会在离开占据敌人状态后进行回退。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：提供【沃格勒特的巫师帽】会导致玩家失去一个额外的【无用大棒】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果玩家在一次属性锻造器选择还在进程中时受到了致命伤害，那么在之后就不再能购买装备了。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在用【作弊：我能回城】强化符文进行回城之后，玩家就不再能够在属性锻造器选择期间购买装备了。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在选择【升级：米凯尔的祝福】强化符文后，会无法提供该装备。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【逃跑计划】的冷却时间会在阵亡时重置。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：卡尔萨斯的【溢流】法力消耗会在复活之后返回正常，而非维持提升过的消耗。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：拥有【踢踏舞】的妮蔻在假扮成一个小兵并进行普攻的同时可以无限叠加层数。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在使用【溢流】时，一些再次施放会错误地拥有法力消耗。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：多个升级版装备的说明文本中，升级版被动描述部分有一个错误的间隔。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【魄罗之王的弹跳】的说明文本会错误地标明它会影响非英雄单位。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果赛恩有【溢流】强化符文，那么他在被动形态下无法使用技能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：如果奎因拥有【回归基本功】，那么她在重生时会处于她的终极技能形态。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：升级版【荆棘之甲】的装备名称会在聊天调出中缺失。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【飞身踢】会在参与一次击杀后提供一个被击杀英雄的持续视野。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【升级：献祭】的说明文本不会追踪来自它的效果的金币获取。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【红包】在被收集时不会提供攻击力。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【舞会女王】的冷却时间会错误地在激活时开始。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【作弊：我能回城】的回城可以被【火狐】的自动施放给打断。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：莫德凯撒的被动技能的每一段伤害都会生成【信念者的强化】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【升级：中娅】和【沃格勒特的巫师帽】之间会有一个错误的冷却时间交互。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在装备了【弹球】时，【扳机炼狱】在至少施放一次【标记】后，会替换掉【冲刺】的召唤师技能栏位。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【升级：米凯尔的祝福】的升级版纯化冷却时间显示错误。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在与【小猫咪找妈妈】组合时，【喂呜喂呜】套装加成的视觉特效很难被看到。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在受到【信念者的强化】时，索拉卡的被动和【喂呜喂呜】套装加成会剧烈地降低移动速度。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：厄斐琉斯的用户界面结合了左侧小地图设置时，会导致强化符文出现在错误的一侧并且无法被隐藏。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：厄斐琉斯在【海克斯大乱斗】中无法通过按C键来开启强化符文面板。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【海克斯大乱斗】的自定义模式在选择了【屠夫之桥】时会载入【嚎哭深渊】作为替代。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【阿塔玛的清算】不会显示它提供的技能急速。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【火狐】强化符文在施放时，会错误地触发来自【不祥契约】强化符文的5%生命值消耗。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【火狐】强化符文效果会错误地触发【大法师】套装加成。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：奥恩在12级时的免费合剂会导致他的被动技能进入冷却阶段。　(暂未生效，将于后续版本修复)"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【海牛阿福的勇士】强化符文有时不会提供【金铲铲】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在触发了【升级：耀光】之后，泰达米尔可以在他的R期间被击杀。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【炼狱导管】会导致【祖母的辣椒油】的触发比预期更频繁。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在与【质变】类强化符文组合时，【有始有终】提供的【黑暗收割】层数会比预期更多。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【神圣干预】强化符文会显示一个空白的减益图标。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【俯冲炸弹】套装加成会显示一个空白的减益图标。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【感受燃烧】会显示一个空白的减益图标。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：内瑟斯的Q不会正确显示它在【极地大乱斗】和【海克斯大乱斗】提供的层数数量。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-03-18 20:43:01",
+  "last_update": "2026-3-19"
+ },
+ "4月1日凌晨1点停机版本更新公告": {
+  "section": "海克斯大乱斗",
+  "title": "4月1日凌晨1点停机版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37081175.html#n4",
+  "data": [
+   {
+    "category": "玩法与系统更新",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "本次版本更新主要致力于减少玩家在强化符文和英雄体验方面的挫败感。"
+     },
+     {
+      "name": null,
+      "changesHtml": "针对【魄罗爆破手】，团队调整了其击退效果，使其对近战英雄的惩罚不再那么严厉。现在拥有5只魄罗时它只会击退一次，我并且团队还缩短了重生时间，让战斗更加畅快。团队还小幅调整了【虚空裂隙】，降低了其周期性伤害的压制感。"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复与优化",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "本次版本修复了多个与特定英雄相关的交互问题，尤其是商店和强化符文的异常行为。团队还持续优化了整体强化符文的易用性，包括以下修复：【舞会女王】的魅惑效果互动、希瓦娜与【最终都市列车】、妮蔻与【火狐】的问题，以及阿兹尔的【仆从大师】的行为表现。"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "魄罗爆破手",
+      "changesHtml": "•&nbsp;[新]仅会在你拥有5只魄罗时击退敌人一次。<br>•魄罗重生时间：5秒 ⇒ 3.5秒"
+     },
+     {
+      "name": "虚空裂隙",
+      "changesHtml": "•[新增] 对每个目标有0.75秒冷却时间。"
+     }
+    ]
+   },
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "希瓦娜",
+      "changesHtml": "•龙怒生成：1.25 ⇒ 2.5"
+     }
+    ]
+   },
+   {
+    "category": "愚人节",
+    "list": [
+     {
+      "name": "复仇魄罗",
+      "changesHtml": "•魄罗现在会用强壮的手臂移动，并攻击囤积魄罗佳肴的玩家，不断造成1点真实伤害，直到其中一只被投喂为止。"
+     },
+     {
+      "name": "快乐魄罗",
+      "changesHtml": "•游戏开始时一只魄罗(或码头硕鼠)将在聊天中欢迎玩家。"
+     },
+     {
+      "name": "魄罗佳肴",
+      "changesHtml": "•魄罗佳肴现在看起来像芝士汉堡。"
+     },
+     {
+      "name": "闪现",
+      "changesHtml": "•闪现后会留下一个表情残影。"
+     },
+     {
+      "name": "生命条成长",
+      "changesHtml": "•生命条会随英雄体型变化。"
+     },
+     {
+      "name": "防御塔",
+      "changesHtml": "•防御塔击杀英雄时会亮标(英雄成就)，被摧毁时会使用表情。被防御塔击杀时，有几率自动发送“消失”信号。"
+     },
+     {
+      "name": "亲爱的卡尔萨斯",
+      "changesHtml": "•当卡尔萨斯升到6级时，有小概率会受到一条专门自动发送给他的聊天消息。"
+     },
+     {
+      "name": "嚎哭深渊",
+      "changesHtml": "•在游戏结束时，丽桑卓有小概率发送一条消息。"
+     },
+     {
+      "name": "派对礼品",
+      "changesHtml": "•新道具“派对礼品”现已上架商店。使用后会开启或加入一场舞会。越多越热闹嘛!"
+     },
+     {
+      "name": "自定义生命条颜色",
+      "changesHtml": "•新道具“自定义生命条”现已上架商店。购买后，买家的生命条颜色会自动变为对应的颜色。"
+     }
+    ]
+   },
+   {
+    "category": "品质级改动",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "所有会直接与属性交互的英雄技能(如亚索Q技能冷却时间、卡莎的进化)现在在海克斯大乱斗模式中会受益于属性锻造器。"
+     },
+     {
+      "name": null,
+      "changesHtml": "如果你拥有【狂徒铠甲】，就不再会被供应【吸血习性】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "如果你拥有【卢安娜的飓风】，就不再会被供应【亮出你的剑】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "凯隐在选择形态后不再失去前往商店的能力。"
+     },
+     {
+      "name": null,
+      "changesHtml": "悠米在附身队友后不再失去前往商店的能力。"
+     },
+     {
+      "name": null,
+      "changesHtml": "【飞身踢】不再覆盖英雄的处决指示器(如果该英雄有的话)。"
+     },
+     {
+      "name": null,
+      "changesHtml": "小小英雄不再在小地图上显示一个图标。"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：希瓦娜在通过【最终都市列车】阵亡时会失去龙怒。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：阿兹尔的W沙兵伤害未被【仆从大师】提升。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：卡特琳娜的Q和W会触发【和我一起困在这里】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：梅尔可以用W反射【 当心小蛋糕!】并从生成的小蛋糕中获得金币。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：妮蔻选择【火狐】时会中断她的形态转变。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在选择特定强化后，普朗克的E技能没有冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：当萨科携带【吸血习性】强化符文时，如果在阵亡前施放R技能，分身可能会无限时间停留在0生命值。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：佛耶戈在携带【尊我为王】时，在离开占据敌人状态后会升级他的*所有*装备。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：克格莫的W技能现在能够正确作用于【双刀流】强化符文生成的弹体。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：梅尔Q在获得【作弊：我能回城!】和【潘朵拉的盒子】后持续时间过长。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【终极唤醒】未刷新雷恩加尔基础技能的冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：赛恩在拥有【终极刷新】时，处于僵尸形态再次施放R技能时可能会不正确地刷新R技能的持续时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：选择【面包与果酱】时，费德提克的W技能的冷却时间在完整施放后未正确返还。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：莎弥拉在使用EQ连招后，Q技能的冷却时间未正确返还。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【闪电打击】的攻击速度未能缩短亚索Q技能的冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：塔莉垭在携带【古式佳酿】时可以频繁施放R来获得治疗。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【小丑学院】的【欺诈魔术】技能搭配芮尔的技能时，可能导致她的模型卡在地下。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：格雷福斯在选择【全凭身法】后，R技能冷却时间未被缩减。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：带着【终极唤醒】的千珏在施放R后，其各个技能未被重置。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：黑默丁格只需开/关R技能就能触发【杀戮时间到了】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：携带【杀戮时刻到了】的塔姆玩法施放R技能但仍然触发这个强化符文。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：雷克顿在使用【小丑学院】的【欺诈魔术】后施放W技能会继续保持隐身状态。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：乌迪尔在使用【小丑学院】的【欺诈魔术】后施放R技能会继续保持隐身状态。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【老练狙神】在用多个技能同时命中敌人时，有时未能返还冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：当佛耶戈变身为拥有【心之钢】的英雄后再变回时，敌人身上仍会看到【心之钢】图标。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：施放自我控制类的技能时会触发【巨像的勇气】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在选择海克斯前购买多个锻造器可能导致海克斯消失。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在选择了【亮出你的剑】后仍可购买【卢安娜的飓风】。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：当小小英雄的拥有者阵亡时，该小小英雄仍会在敌方基地处于可见状态。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【量子计算】在阵亡时也会触发冷却时间。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【亮出你的剑】在被【潘朵拉的盒子】转化为其他强化符文后，依然会将你视为近战单位。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【不动如山】的【冰川增幅】在进入冷却前可被多次触发。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【终极唤醒】的实际冷却时间为35秒，而非描述中的20秒。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【由暴生急】被错误标记为伤害类强化符文。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【信念者的强化】在使用WASD移动时可能导致移动异常。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【阿塔玛的清算】未显示其提供的技能急速。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【无休回复】在首次选择时会回复过多生命值。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【魄罗爆破手】可以击退无法被选中的英雄。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【升级：雪球】的说明文本错误地显示命中敌人周围区域会被显形。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：装备【史上最大雪球!】时，用标记命中敌人不会施加【升级：雪球】的减速效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在拥有带有冲刺的雪球时选择一个雪球类强化符文，可能会获得两个雪球召唤师技能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：升级后的【巫妖之祸】被动技能描述文本间距异常。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【舞会女王】在死亡时会对附近的英雄和小兵施加魅惑。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：施放【闪闪现现】后部分【闪现】音效缺失。"
+     },
+     {
+      "name": null,
+      "changesHtml": "【扳机炼狱】现在能够正确检查独特的施放。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：选择【自我毁灭】时，如果角色已阵亡，会立刻触发该强化符文。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【女妖面纱】在与【当心小蛋糕！】互动时，会进入冷却但不回复生命值。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【当心小蛋糕！】会被风墙摧毁。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【踢踏舞】在聊天中显示时缺少名称。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：阵亡时获得【男爵之手】会导致视觉特效刷屏。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【男爵之手】的特效在阵亡时不会被移除。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-03-31 19:05:33",
+  "last_update": "2026-4-1"
+ },
+ "4月16日凌晨1点停机版本更新公告": {
+  "section": "海克斯大乱斗",
+  "title": "4月16日凌晨1点停机版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37082722.html#n5",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "梅尔",
+      "changesHtml": "●灵魂折镜(W)冷却时间:35 / 32 / 29 / 26 / 23 ⇒ 45 / 44 / 43 / 42 / 41"
+     }
+    ]
+   },
+   {
+    "category": "装备",
+    "list": [
+     {
+      "name": "不朽盾弓",
+      "changesHtml": "●冷却时间：75秒 ⇒ 60秒"
+     },
+     {
+      "name": "钢铁烈阳之匣",
+      "changesHtml": "●冷却时间：90秒 ⇒ 75秒"
+     },
+     {
+      "name": "玛莫提乌斯之噬",
+      "changesHtml": "●冷却时间：75秒 ⇒ 60秒"
+     },
+     {
+      "name": "原生质护带",
+      "changesHtml": "●冷却时间：90秒 ⇒ 60秒"
+     },
+     {
+      "name": "兰顿之兆",
+      "changesHtml": "●冷却时间：90秒 ⇒ 60秒"
+     },
+     {
+      "name": "舒瑞娅的战歌",
+      "changesHtml": "●冷却时间：75秒 ⇒ 60秒"
+     },
+     {
+      "name": "斯特拉克的挑战护手",
+      "changesHtml": "●冷却时间：75秒 ⇒ 60秒"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "连拨击锤",
+      "changesHtml": "●每飞弹伤害：10 - 52.5 (+ 15%额外攻击力) ⇒ 8 - 51 (+ 14%额外攻击力)"
+     },
+     {
+      "name": "巨人杀手",
+      "changesHtml": "●移动速度：30% ⇒ 20%"
+     },
+     {
+      "name": "祖母的辣椒油",
+      "changesHtml": "●将不再治疗友方小兵。"
+     },
+     {
+      "name": "移速属性锻造器",
+      "changesHtml": "●18% ⇒ 15%"
+     },
+     {
+      "name": "家园卫士",
+      "changesHtml": "●承伤后恢复额外移速的时间：3秒 ⇒ 6秒"
+     },
+     {
+      "name": "量子计算",
+      "changesHtml": "●外侧伤害：200-350 (+65%额外攻击力) (+40%法术强度) ⇒ (+75%额外攻击力) (+45%法术强度)<br>●基础伤害未改动"
+     },
+     {
+      "name": "红包",
+      "changesHtml": "●拾取后移动速度：150 ⇒ 100<br>●移动速度持续时长：4秒 ⇒ 3秒"
+     },
+     {
+      "name": "急急小子",
+      "changesHtml": "●技能急速转化的移动速度：100% ⇒ 70%"
+     },
+     {
+      "name": "???(消失信号)",
+      "changesHtml": "●对友方的治疗不会受到嚎哭深渊增益的治疗削减影响"
+     }
+    ]
+   },
+   {
+    "category": "BUG修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：拥有僵尸效果的英雄会导致【最终都市列车】改变方向。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，【砸开那颗蛋】的视觉特效在首次护盾耗尽后，在后续护盾上无法正确保持。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【火狐】强化符文会错误减少卡尔玛R技能冷却时间。（注：暂未生效，将于后续版本修复）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：厄斐琉斯无法与【神射法师】正常生效。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，厄斐琉斯购买法强装备时，【神射法师】强化符文不会触发额外伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，格雷福斯搭配【神射法师】时伤害高于预期。（注：暂未生效，将于后续版本修复）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：俄洛伊的E技能的复制体会获得【最终形态】的效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：【量子计算】在内圈造成的伤害超过双倍。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，【炼狱导管】的基础伤害和收益高于预期。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，【卡皮巴拉空投】会错误触发部分英雄的被动。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，【大法师】不会影响那些拥有延后冷却的技能。（注：暂未生效，将于后续版本修复）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，装备【雪球扭蛋机】后，被【冲刺/标记】命中时，有负面效果的召唤师技能不能释放。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，【一板一眼】存在一个句法错误。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，【你肩上的恶魔】不会施加至所有由目标来源造成的持续伤害效果。（注：暂未生效，将于后续版本修复）"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，巴德收集调和之音时无法获得【叠角龙】套装加成。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，卡莎通过【属性锻造器】获得法强后，无法进化W技能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，【连拨击锤】造成的实际伤害低于显示数值。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，【飞身踢】会对防御塔和水晶触发。（注：暂未生效，将于后续版本修复"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，先选择【史上最大雪球】再选择【弹球】后，会导致【弹球】失去真实伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，【虚空献祭】的焚烧效果在激活后不久就可能停止生效。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：部分会向物品栏中添加装备的强化符文，可能会意外吞掉该装备的各个组件且未正确补偿。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：在【海克斯大乱斗】中，属性类强化符文有时会提供2个棱彩属性选项，而非3个。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-04-15 18:44:17",
+  "last_update": "2026-4-16"
+ },
+ "4月29日凌晨1点停机版本更新公告": {
+  "section": "版本更新提取",
+  "title": "4月29日凌晨1点停机版本更新公告",
+  "sourceUrl": "https://lol.qq.com/gicp/news/410/37084056.html#n9",
+  "data": [
+   {
+    "category": "英雄",
+    "list": [
+     {
+      "name": "铁血狼母 安蓓萨",
+      "changesHtml": "<p>  安蓓萨将米达尔达的传承背负得略微过于好了。她的残暴和幻想已经引起了她的本命玩家的共鸣，但团队认为她的大招有点太快了，以至于被击中的玩家经常不清楚发生了什么。团队延长了她的施放时间以开创更清楚的反制空间，并且将密切关注是否有机会进行跟进调整。</p><br>R - 公开处刑<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;施放时间：</strong>0.55 ⇒ <strong>0.70</strong>"
+     },
+     {
+      "name": "狂厄蔷薇 贝蕾亚",
+      "changesHtml": "<p>  贝蕾亚是《英雄联盟》中熟练度曲线最陡峭的英雄之一。然而，随着时间的推移，越来越多的玩家达到了这条曲线的顶端，并取得了巨大的成功。所以团队打算削弱她的生存能力，但保留她击杀目标的能力。</p><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础属性</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>成长生命值</strong>：100 ⇒ 95"
+     },
+     {
+      "name": "探险家 伊泽瑞尔",
+      "changesHtml": "<p>  团队想要带回一些玩法，这些玩法之前已被遗失在时间的沙漠中。这张清单的第一个就是法强流伊泽瑞尔。是时候秀出你的全图流狙击了——世上有很多好法师，但没人像我这么有技术！</p><br>Q - 秘术射击<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>法强收益率</strong><strong>：</strong>15%法术强度 ⇒ <strong>40%法术强度</strong><br>W - 精华跃动<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>法强收益率</strong><strong>：</strong>70 - 90% ⇒ <strong>90%</strong><br>R - 精准弹幕<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>法强收益率</strong><strong>：</strong>90% ⇒ <strong>110%</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>对小兵/非</strong><strong>史诗级野怪</strong><strong>伤害：</strong>175 / 275 / 375 (+50%额外攻击力) (+45%法术强度) ⇒ <strong>150 / 225 / 300 (+100%额外攻击力) (+110%法术强度)</strong>"
+     },
+     {
+      "name": "酒桶 古拉加斯",
+      "changesHtml": "<p>  上路古拉加斯是受【相位猛冲】影响最大的英雄，至于最终是选择【不灭之握】还是【奥术彗星】，只有时间才能证明。在团队等待观察他的对线受影响程度的同时，这一改动应该能让古拉加斯玩家更好地为其队伍担任前排职责，并在最难熬的后期发挥更大的作用。</p><br>W - 醉酒狂暴<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>伤害减免</strong>：10 / 12 / 14 / 16 / 18% (+ 4%每100法术强度) ⇒ <strong>10 / 14 / 18 / 22 / 26 (+ 4%每100法术强度)</strong>"
+     },
+     {
+      "name": "狂暴之心 凯南",
+      "changesHtml": "<p>  “被遗失玩法”清单上的第二个就是物理流凯南。对于这个玩法，团队为凯南的W和E技能添加了暴击协同效果。虽然对于以普攻为主的凯南来说，更注重攻击速度的特效流混合型出装可能看起来更直观，但团队认为这个出装会对他的标准法强流出装产生过于严重的漫溢影响，并且想要避免为了实现这套出装而调整他的典型游戏风格。</p><br>W - 奥义！电刃<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>[新增]被动：</strong>在准备就绪时，现在会施加被动效果（作为一次攻击特效）至整次攻击，而不是仅作为第一个攻击特效触发器<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>[新增]被动伤害：</strong>现在能够暴击以造成140%(+40%额外暴击伤害)的伤害<br>E - 奥义！雷铠<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>[新增]攻击速度：</strong>暴击现在使【奥义！雷铠】的攻速增益延长一秒，至多至初始时长（4秒）。这个效果可以发生任意次数。"
+     },
+     {
+      "name": "龙血武姬 希瓦娜",
+      "changesHtml": "<p>  随着希瓦娜的更新推出了若干个版本，团队评估了她的现状，并确定了两个需要改进的地方：拓宽半肉装备可行性，以及提升物理构筑和法强构筑之间的区分度。</p><p>半肉方面，团队降低了纯输出装备（例如【海妖杀手】）的重要性。对她的基础属性、Q和W的那些调整会腾出更多空间，让【耀光】、技能急速和生命值对她的技能组提供有意义的贡献。</p><p>构筑区分度方面，物理流希瓦娜倾向于参与那些更强调续航的战斗，通过普攻接大Q来打伤害，用她的W来获得续航和粘人能力，并用E来补充追击能力。与之相比，法强流希瓦娜的伤害集中在R和E，并将W作为一种切入和切出战斗的手段。</p><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础属性</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>攻击速度：</strong>0.625 ⇒ <strong>0.638</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>攻击速度收益率：</strong>0.69 ⇒ <strong>0.638</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>成长攻击力</strong>：3 ⇒ <strong>4</strong><br>Q - 焚焰打击<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>被动：</strong>1% (+ 1.1%每100额外攻击力) (+ 1.1%每100法术强度)目标最大生命值 ⇒ <strong>1% (+ 1.1%每100额外攻击力)目标最大生命值</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>命中时的冷却缩短：</strong>1秒 ⇒<strong> 0.5秒</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>群体物理伤害：</strong>10 / 15 / 20 / 25 / 30 (+ 110%攻击力) (+ 25%法术强度) ⇒ <strong>10 / 15 / 20 / 25 / 30 (+ 110%攻击力) (+ 30%法术强度)</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;如果你未完成后续施放，冷却时间会在后台计时。冷却时间会在该后续施放中的最后一次指令输入时开始计时。<br>W - 烈火圣盾<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>冷却时间</strong>：14 / 13.5 / 13 / 12.5 / 12 ⇒ <strong>13 / 12 / 11 / 10 / 9</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>护盾值：</strong>60 / 80 / 100 / 120 / 140 (+ 5%最大生命值) ⇒ <strong>75 / 95 / 115 / 135 / 155 (+12%额外生命值)</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>伤害</strong>：80 / 100 / 120 / 140 / 160 (+ 40%额外攻击力) (+ 20%法术强度) ⇒ <strong>80 / 100 / 120 / 140 / 160 (+ 65%法术强度)</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>魔龙形态 治疗：</strong>75 – 214.71 (基于等级) (+ 10%额外攻击力) (+ 5%法术强度)，提升0% – 100% (基于她的已损失生命值)，至多为150 – 429.41 (基于等级) (+ 20%额外攻击力) (+ 10%法术强度) ⇒ <strong>60 - 100 + 4-8%&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; 已损失生命值(基于等级)</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;W的移动速度与护盾分离<br>E - 爆炎吐息<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>冷却时间</strong>：12 / 11.5 / 11 / 10.5 / 10 ⇒ <strong>12 / 11 / 10 / 9 / 8</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>魔法伤害：</strong>80 / 110 / 140 / 170 / 200 (+ 35%额外攻击力) (+ 70%法术强度) ⇒ <strong>50 / 65 / 80 / 95 / 110 (+ 60 / 65 / 70 / 75 / 80%法术强度) + 5%目标最大生命值</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>对相同目标的后续爆炸伤害：</strong>50% ⇒ <strong>40%</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>减速：</strong>20 / 25 / 30 / 35 / 40% ⇒ <strong>30%</strong>"
+     },
+     {
+      "name": "河流之王 塔姆",
+      "changesHtml": "<p>  上个版本的调整带来的结果是一次非常轻微的削弱(小于0.5%)，且上路和辅助两个位置都是如此。因此团队进行了一些专注于辅助位的改良以作为抵消。</p><br>E - 厚实表皮<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>灰色生命值至生命值的转化率：</strong>45 - 100% (1 - 18级) ⇒ <strong>60 - 100% (1 - 18级)</strong><br>R - 大快朵颐<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>吞噬友军时的移动速度：</strong>持续3秒的40% ⇒ 持续3秒的60%"
+     },
+     {
+      "name": "岩雀 塔莉垭",
+      "changesHtml": "<p>  塔莉垭和古拉加斯处在相同地位（请安息，【相位猛冲】），不同的是她还因为上个版本的削弱而在职业中单格局中略微降档。团队不希望她能够利用这次的改动获得很多竞争力，因此团队收回了对她的最后一次打击，同时还确保了她无法接近2:30清野。</p><br>Q - 石穿<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>基础伤害：</strong>50 / 67.5 / 85 / 102.5 / 120 ⇒ <strong>55 / 72.5 / 90 / 107.5 / 125</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>额外野怪伤害</strong><strong>：</strong>23 / 28 / 33 / 38 / 43 ⇒ <strong>20 / 25 / 30 / 35 / 40</strong>"
+     },
+     {
+      "name": "迅捷斥候 提莫",
+      "changesHtml": "<p>  “被遗失玩法”清单上的第三个——攻击特效流提莫构筑已缓慢淡出了时尚战术行列，因为他已被调整至以【残疫】和【兰德里的折磨】为核心。团队给提莫的E添加了额外攻击力收益，以开创一些出装选择，让普攻流构筑可以带上一些混合装备，诸如【鬼索的狂暴之刃】和更新后的【斯塔缇克电刃】。</p><br>E - 毒性射击<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>[新增]初段伤害的额外攻击力收益率：</strong>10%额外攻击力<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>[新增]持续伤害的额外攻击力收益率：</strong>4秒持续期间共30%额外攻击力"
+     },
+     {
+      "name": "兽灵行者 乌迪尔",
+      "changesHtml": "<p>  目前，团队觉得乌迪尔的物理流主Q构筑非常单一——当你看到各个技能的成长性时，这一点就说得通了。团队想要拓宽他的物理流主Q半肉构筑，方法是将他的一些攻击力收益率从他的Q技能中转出，并转入W技能和E技能，好让这个姿态切换者有一种以上的姿态能用。</p><br>Q技能：狂暴爪击<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>最先2次攻击附带的额外伤害：</strong>3 / 4 / 5 / 6 / 7 / 8% (+4%每100额外攻击力)目标最大生命值 ⇒ <strong>3 / 4 / 5 / 6 / 7 / 8% (+3.5%每100额外攻击力)目标最大生命值</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>后续4秒期间，攻击附带的额外伤害：</strong>5 / 13 / 21 / 29 / 37 / 45 (+25%额外攻击力) ⇒ <strong>6 / 12 / 18 / 24 / 30 / 36 (+20%额外攻击力) (+1 - 2%额外生命值)</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>觉醒版 最先2次攻击附带的额外伤害：</strong>额外的2 - 4% (基于等级) (+3%每100额外攻击力)目标最大生命值 ⇒ <strong>额外的2 - 4% (基于等级) (+1.5%每100额外攻击力) (+1%每1000额外生命值)目标最大生命值</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>觉醒版 连锁闪电每次弹射伤害：</strong>1.5 - 3% (基于等级) (+0.8%每100法术强度) ⇒ <strong>1.5 - 3% (基于等级) (+0.6%每100法术强度)</strong><br>W - 坚铁甲胄<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>[新增]护盾的攻击力收益率：</strong>50%额外攻击力<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>[新增]觉醒版 护盾的攻击力收益率：</strong>100%额外攻击力<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>[新增]觉醒版 治疗的攻击力收益率：</strong>50%额外攻击力<br>E - 踏火蛮冲<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>[新增]移动速度的攻击力收益率：</strong>5%移动速度每100额外攻击力<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>[新增]觉醒版 移动速度的攻击力收益率：</strong>10%移动速度每100额外攻击力"
+     },
+     {
+      "name": "祖安怒兽 沃里克",
+      "changesHtml": "<p>  人人都爱的沃里克已经难以随着游戏时间找到他的立足之地了。团队正在想办法减轻他过渡到后期所受的打击，方法是提升他的一些成长性。</p><br>被动 - 血之饥渴<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>附带伤害：</strong>6 / 16 / 26 / 36 / 46 ⇒ <strong>6 / 18.25 / 30.5 / 42.75 / 55</strong>"
+     },
+     {
+      "name": "德邦总管 赵信",
+      "changesHtml": "<p>  “被遗失玩法”清单上的第四个就是赵信——具体来说，是攻速法强流赵信。在这些年里，赵信已经彻底放弃了普攻流构筑，转而采用半肉物理技能流构筑，购买诸如【焚天】或【黑色切割者】之类的装备。他团队认为更以攻速为中心的赵信构筑提供了一种令人享受的近战战士体验，因此团队想把它带回来。围绕着吸血承伤的全法强流出装也好，偏重攻速的特效流C位出装也好，或者仅仅是混搭【挺进破坏者】、【巨型九头蛇】和【三相之力】的一些微小转型也好，团队想要看见的是更多构筑选择，哪怕只有一点点。</p><br>被动 - 果决<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>治疗效果</strong>：3 / 4 / 5%最大生命值 (+65%法术强度) (1 / 6 / 11级) ⇒ <strong>3 / 4 / 5%最大生命值 (+50 / 65 / 90%法术强度) (1 / 6 / 11级)</strong><br>W - 风斩电刺<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>戳刺时的减速：</strong>持续1.5秒的50% ⇒ <strong>持续1.5(+0.5每100法术强度)秒的50%</strong><br>E - 无畏冲锋<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>魔法伤害：</strong>50 / 75 / 100 / 125 / 150 (+60%法术强度) ⇒ <strong>50 / 75 / 100 / 125 / 150 (+120%法术强度)</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>攻击速度增益：</strong>持续5秒的 40 / 50 / 60 / 70 / 80% ⇒ <strong>持续5秒的</strong> <strong>38 / 46 / 54 / 62 / 70% (+1%每5%永久攻速) (+10%每100法术强度)</strong>"
+     },
+     {
+      "name": "祖安花火 泽丽",
+      "changesHtml": "<p>  泽丽的改动已经持续不断地推着她变得更像是一个高爆发的刺客，而非那个吸引大家使用她的最初幻想了。团队将她的强度从她的爆发力和后期输出中移出，并将这些强度移入她的机动力和前期对线。这些改动应该会允许泽丽以一个活泼高速的形象(同时依然能打出ADC的伤害)再次闪耀。</p><br>被动 - 内能迁转<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>右键点击距离：</strong>500 ⇒ <strong>550</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>处决阈值：</strong>60 / 82.5 / 105 / 127.5 / 150 (+ 18%法术强度) ⇒ <strong>70 / 92.5 / 115 / 137.5 / 160 (+ 20%法术强度)</strong><br>Q - 电火迸射<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>伤害</strong>：15 / 17 / 19 / 21 / 23 (+ 104 / 108 / 112 / 116 / 120%攻击力) ⇒ <strong>21 / 24 / 27 / 30 / 33 (+ 102 / 104 / 106 / 108 / 110%攻击力)</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>溢出攻速至攻击力的转换率：</strong>70% ⇒ <strong>50%</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;现在会强制快捷施放<br>W - 强穿激光<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>墙体暴击倍率</strong><strong>：</strong>175% ⇒ <strong>150%</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>法强收益率</strong><strong>：</strong>25% ⇒ <strong>50%</strong><br>E - 灿丽花火<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>额外魔法伤害：</strong>17 / 19 / 21 / 23 / 25 (+ 10%额外攻击力) (+ 20%法术强度) ⇒ <strong>22 / 24 / 26 / 28 / 30 (+ 20%法术强度)</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>&nbsp;</strong><strong>冷却时间</strong>：22 / 21 / 20 / 19 / 18 ⇒ <strong>24 / 22.5 / 21 / 19.5 / 18</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>冷却时间刷新：</strong>作用于对英雄的攻击和技能 ⇒ 作用于对一切的攻击<br>R - 超限爆闪<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>爆发伤害 攻击力收益率：</strong>100% ⇒ <strong>60%</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>每层移速：</strong>1% ⇒ <strong>1.5%</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>层数持续时长：</strong>1.5 ⇒ <strong>2.5</strong>"
+     },
+     {
+      "name": "暮光星灵 佐伊",
+      "changesHtml": "<p>  正在想办法将佐伊的一些强度从对线阶段的属性检测中移出，并移入更看技术的部分，也就是围绕着她的气泡的智斗。</p><br>W - 窃法巧手<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>每颗飞弹伤害：</strong>20 / 30 / 40 / 50 / 60 (+ 15%法术强度) ⇒ <strong>15 / 25 / 35 / 45 / 55 (+ 10%法术强度)</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>伤害总和： </strong>60 / 90 / 120 / 150 / 180 (+ 45%法术强度) ⇒ <strong>45 / 75 / 105 / 135 / 165 (+ 30%法术强度)</strong><br>E - 催眠气泡<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>冷却时间</strong>：16 / 15 / 14 / 13 / 12 ⇒ <strong>18 / 17 / 16 / 15 / 14</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;在命中一个敌方英雄时返还16 / 19.5 / 23 / 26.5 / 30%冷却时间"
+     },
+     {
+      "name": "巴德",
+      "changesHtml": "<strong>　　●【W游神圣坛】移动速度：</strong>20 / 22.5 / 25 / 27.5 / 30% (+ 6%每100法术强度) ⇒ <strong>25 / 27.5 / 30 / 32.5 / 35% (+ 7.5%每100法术强度)</strong><br>●<strong>【W游神圣坛】充能时间：</strong>10 ⇒ <strong>8</strong>"
+     },
+     {
+      "name": "奥恩",
+      "changesHtml": "<strong>　　●【被动-活体锻炉】冷却时间：</strong>120秒 ⇒ <strong>90-10秒（基于等级）</strong>"
+     }
+    ]
+   },
+   {
+    "category": "装备",
+    "list": [
+     {
+      "name": "公理圆弧",
+      "changesHtml": "<p>  去年，团队调整了【公理圆弧】，让它的终极技能效果有一个更高的基础返还，并且成长性更低。团队现在认为这个改动改得有点错了，因为给一件装备在前期就提供这种程度的终极技能冷却缩减，会导致那些高爆发的穿甲流英雄能让对手们趁机反打的窗口期变得非常狭窄。</p><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;涌动：</strong>参与击杀后，返还15% (+0.15%x穿甲)你的终极技能总冷却时间 ⇒ <strong>10% (+0.25%x穿甲)你的终极技能总冷却时间</strong>"
+     },
+     {
+      "name": "[新增] 多兰之弓",
+      "changesHtml": "<p>  团队在想办法提供更多出门装给那些专注于普攻的英雄。【多兰之弓】提供了一种高风险高回报的幻想，会奖励这类玩家：能够在无额外生命值的情况下，利用额外普攻次数来低调打伤害并积累出优势。</p><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;攻击力</strong>：6<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;攻击速度：</strong>12%<br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>全能吸血： </strong>1.5%"
+     },
+     {
+      "name": "[新增] 多兰之盔",
+      "changesHtml": "<p>  团队希望为那些想要堆双抗的英雄提供更多出门装选项。当谈到“不可被击杀”这一幻想时，当前道具便处于不利地位。虽然需要双抗的那些英雄往往在开局处于下风，但团队希望奖励那些抓住机会在对线阶段取得均势或优势的玩家，因此准备了这样一件装备来回报给他们在游戏剩余阶段都用得上的宝贵属性。</p><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;生命值：</strong>100<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;护甲</strong>：10<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;魔法抗性：</strong>10<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;帮助之手：</strong>对小兵附带5伤害"
+     },
+     {
+      "name": "黄昏与黎明",
+      "changesHtml": "<p>  这是本赛季目前为止最突出的装备之一，团队仍然觉得它与【巫妖之祸】的重合度有点太高了。团队想鼓励【黄昏与黎明】的使用者们在战斗中周旋以打出多次触发，并为这种打法进行了赋能。</p><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;[新增] 咒</strong><strong>刃</strong><strong>：</strong>现在还会治疗使用者(10%法术强度) (+3%额外生命值)生命值<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;生命值：</strong>350 ⇒ <strong>300</strong><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;法术强度：</strong>70 ⇒ <strong>60</strong><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;攻击速度：</strong>25% ⇒ <strong>20%</strong>"
+     },
+     {
+      "name": "无穷饥渴",
+      "changesHtml": "<p>  近战物理战士们在考虑这件装备时会面临重大取舍，那就是为什么不出其它更专注于耐久度的装备。但团队确实希望他们考虑一下【无穷饥渴】，用在那些他们已经起飞并且可以玩得更贪对局中，因此团队给了它一个用于近战英雄的微小增强。</p><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;唯一被动 - 饥馑：</strong>获得5 (+10%额外攻击力)技能急速 ⇒ 获得<strong>5 (+[13%(近战) | 10%(远程)] 额外攻击力)技能急速</strong>"
+     },
+     {
+      "name": "[新增] 暴食胫甲 & 不朽之路",
+      "changesHtml": "<p>  除了新的出门装外，团队还在游戏中添加了提供全能吸血的新鞋子。团队觉得很多战士和技能型英雄在选择鞋子时都比较受限，只有【明朗之靴】是一个真正的进攻型选项，并且当他们选择其他鞋子时，都是纯防御型的选项，而这种情况并不令人兴奋。这双鞋应该会契合这么一个处于进攻型和防御型之间的微妙中间地带——提供通过战斗获得的续航能力。</p><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;合成路线：</strong>鞋子(300金币) + 650金币<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;移动速度：</strong>45<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;全能吸血： </strong>4%<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;唯一被动 - 杀戮：</strong>参与击杀英雄后，永久获得1%全能吸血，可叠加至多6次。<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;3</strong><strong>阶鞋【不朽之路】</strong><strong> - 额外唯一被动 - 现在到永远：</strong>在一半生命值以上时，造成5%额外伤害。在一半生命值以下时，获得15%额外治疗值、护盾值和回复。"
+     },
+     {
+      "name": "狂妄",
+      "changesHtml": "<p>  【狂妄】的减价是为了让它与其它首发穿甲装备处在同一基准线，但它当前的状态感觉像是它通过提供成长性和即战力挤压了其它选项。这些改动应该会将【狂妄】与诸如【幽梦之灵】等即战力装备区分开，同时让它在你开始滚雪球时甚至变得更强。</p><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;基础攻击力</strong>：60 ⇒ <strong>55</strong><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;被动 额外攻击力 每层：</strong>+2 ⇒ <strong>+3</strong><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;被动 额外攻击力 基础值：</strong>+15 ⇒ <strong>+12</strong>"
+     },
+     {
+      "name": "[被移除] 禁忌时机",
+      "changesHtml": "<p>&nbsp; 团队感觉【禁忌时机】与【幽梦之灵】的重合度一直都略微过高，即使在一年半前团队试图将它们分开之后也是如此，而且在当前的迭代版本中，它介于【幽梦之灵】（机动力）和【电震涡流剑】（前置换血强度）之间。</p>"
+     },
+     {
+      "name": "流水法杖",
+      "changesHtml": "<p>  在过去，【流水法杖】的唯一效果提供的是技能急速，然后团队将其改为了移动速度，然后团队移除了这个移动速度。团队再次添加了这个技能急速，因为团队相信，仅提供法术强度的话，会让这件装备的适用范围过于狭窄，但若是提供移动速度，又会让这件装备的适用范围过于宽泛。</p><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;唯一被动 - 湍流：</strong>当你为一名友军提供治疗或护盾效果时，你和你的目标都会获得持续6秒的45法术强度⇒ <strong>当你为一名友军提供治疗或护</strong><strong>盾效果</strong><strong>时，你和你的目标都会获得持续6秒的45法术强度和15技能急速</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>技能急速</strong>：15 ⇒ <strong>10</strong>"
+     },
+     {
+      "name": "[已更新] 斯塔缇克电刃",
+      "changesHtml": "<p>  团队一直都不那么乐意看到【斯塔缇克电刃】成为一件纯粹用于清线的首发大件。由于在清理兵线方面非常有强度，因此它移除了很多来回线上换血的空间。因此作为替代，团队趁此机会将它变为一件用于攻击特效构筑的成长型装备，这套构筑路线一直缺少了一些配装空间，直到团队为下路打线玩家开放了第7个装备栏位。</p><br>这个新版本的电刃允许攻击特效流构筑同时对多个敌人施加其效果，从而创造了酷炫的装备组合并帮助它们在团战中发挥作用。<p></p><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;合成路线：</strong>斥候弹弓(600金币) + 十字镐(875金币) + 以太精魂(800金币) +625金币<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</strong><strong>攻击力</strong>：40<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;法术强度：</strong>45<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;攻击速度：</strong>30%<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;移动速度：</strong>4%<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;唯一被动 - 电火花：</strong>你的盈能攻击会发射连锁闪电，对最多(4-8，受益于等级)个目标造成60(对小兵和野怪提升至90)额外魔法伤害。附带攻击特效至次级弹射目标们。<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;唯一被动 - 电疗：</strong>普通攻击提供9额外盈能层数"
+     },
+     {
+      "name": "[被移除] 引路者",
+      "changesHtml": "<p>  与团队移除【禁忌时机】的原因相似，【引路者】处在两个其它坦克机动力选项之间（【班德尔音管】和【亡者的板甲】）。在这个案例中，团队不仅认为它的产出与这个空间中的类似效果重合，而且它还具有最高复杂度的唯一效果——要求盟友注意一条纤细的轨迹，且这条轨迹在视觉噪点方面看起来就跟结束了一样。</p>"
+     },
+     {
+      "name": "[已更新] 电震涡流剑",
+      "changesHtml": "<p>  【电震涡流剑】带来了一些很酷的协同选项给物理技能型英雄，但团队认为团队可以让它的适用范围更加宽泛，方法是放开之前严格的普攻门槛，因为它阻止了很多近战英雄对它的良好运用。团队也不喜爱这个减速效果，因为玩家们一旦设法进入近战距离，它就会让很多战斗变得无关紧要了。随着【禁忌时机】的移除，【电震涡流剑】也能够作为物理技能型英雄们的首选“前置爆发”装备而立足了。</p><br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;唯一被动 - 通电：</strong>用技能对一名敌人造成伤害会触发【盈能】(充能完毕时)<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;唯一被动 - 苍穹：</strong>你的【盈能】触发时会为你提供持续4秒的[15(近战)| 12(远程)]穿甲，并对目标造成相当于[9%(近战)| 7%(远程)]当前生命值的额外物理伤害。这个额外伤害对非英雄单位的上限为200。<br><strong>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;费用：</strong>3000金币 ⇒ <strong>2900金币</strong><br>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<strong>穿甲：</strong>18 ⇒ <strong>10</strong>"
+     },
+     {
+      "name": null,
+      "changesHtml": "团队为【海克斯大乱斗】进行了一些小调整，集中在巴德和奥恩基于时间的技能、治疗圣物改进、以及一些强化符文的少许平衡性调整上。"
+     }
+    ]
+   },
+   {
+    "category": "系统",
+    "list": [
+     {
+      "name": "治疗圣物：",
+      "changesHtml": "<strong>　　●[未改动]</strong> 拾取时回复8%已损失生命值/法力值<br>●<strong>范围效果 - 已损失生命值和法力值：</strong>16% ⇒ <strong>22%</strong>"
+     }
+    ]
+   },
+   {
+    "category": "强化符文",
+    "list": [
+     {
+      "name": "升级：花晓之剑",
+      "changesHtml": "<strong>　　●[已移除] </strong>对英雄的普攻造成50%伤害"
+     },
+     {
+      "name": "舞会女王",
+      "changesHtml": "<strong>　　●冷却时间</strong>：25秒 ⇒ <strong>35秒</strong>"
+     },
+     {
+      "name": "祖母的辣椒油",
+      "changesHtml": "<strong>　　●每秒基础伤害：</strong>100 ⇒ <strong>150</strong><br><strong>　　●每个灼烧来源的额外伤害：</strong>60 ⇒ <strong>50</strong><br><strong>　　●每秒基础治疗：</strong>60 - 150 (基于等级) ⇒<strong> 30 - 75 (基于等级)</strong><br>●<strong>每个灼烧来源的额外治疗：</strong>50 ⇒ <strong>25</strong>"
+     }
+    ]
+   },
+   {
+    "category": "Bug修复",
+    "list": [
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：【闪电打击】提供20%额外攻击速度而非20%总攻击速度。|"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：【败魔】和【禁忌时机】并未受益于装备急速。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：阿兹尔在拥有【溢流】时，各个法力消耗看上去翻倍了但实际上并未提升。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：艾克在使用【小丑学院】接E技能之后，会留在隐形状态。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个BUG，该BUG曾导致：拥有再次施放类技能的英雄们，在选择【溢流】强化符文后，他们会为其再次施放类技能进行充能。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：选择【霸符兄弟】之后再选择【海洋龙魂】，会导致红霸符变得没有效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：塔莉垭在死于【信念者的强化】的处决效果之后，会出现T形造型。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：一些英雄无法通过强化普攻来触发【神射法师】的效果。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：维克兹在拥有【溢流】时，Q的法力消耗未翻倍。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：在拥有很高层数的【缩小引擎】时，萨科的分身不显示生命条或模型。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：如果被基兰的R复活，那么【信念者的强化】的效果会丢失。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：【卡皮巴拉空投】的实际伤害距离会超出它的指示器距离。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：霞和厄斐琉斯可以在【活力再生】尚未冷却完毕时继续触发它。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：【史上最大雪球】强化符文搭配【弹球】强化符文时，会导致【弹球】失去其真实伤害。"
+     },
+     {
+      "name": null,
+      "changesHtml": "修复了一个【海克斯大乱斗】的BUG，该BUG曾导致：妮蔻在假扮成一个非英雄单位时会显示她的【亮出你的剑】视觉特效。"
+     }
+    ]
+   }
+  ],
+  "time": "2026-04-28 20:02:47",
+  "last_update": "2026-4-29"
+ }
+}

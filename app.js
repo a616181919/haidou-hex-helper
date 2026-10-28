@@ -7,6 +7,7 @@ const state = {
   currentHero: null,
   search: "",
   rankFilter: "all",        // all | prismatic | gold | silver
+  relations: null, guides: null,
 };
 
 const RARITY_CN = { prismatic: "棱彩", gold: "黄金", silver: "白银" };
@@ -16,22 +17,26 @@ async function loadJSON(p) { const r = await fetch(p); return r.json(); }
 
 async function init() {
   $app.innerHTML = '<div class="loading">召唤师数据载入中…</div>';
-  const [heroes, augments, items, rates, enums] = await Promise.all([
+  const [heroes, augments, items, rates, enums, relations, guides] = await Promise.all([
     loadJSON("data/heroes.json"),
     loadJSON("data/augments.json"),
     loadJSON("data/items.json"),
     loadJSON("data/augment-rates-snapshot.json").catch(() => null),
     loadJSON("data/enums.json").catch(() => ({})),
+    loadJSON("data/hero-relations.json").catch(() => ({})),
+    loadJSON("data/strategy-guides.json").catch(() => null),
   ]);
   state.heroes = heroes; state.augments = augments; state.items = items;
   state.rates = rates; state.enums = enums;
+  state.relations = relations; state.guides = guides;
   // 在线刷新胜率(静默, 失败用快照)
   if (rates) {
     fetch(LIVE_RATES).then(r => r.json()).then(j => {
       if (j && j.heroCount) { state.rates = j; if (state.view === "heroes") renderHeroes(); }
     }).catch(() => {});
   }
-  renderHeroes();
+  const urlHero = new URLSearchParams(location.search).get("hero");
+  if (urlHero && heroes[urlHero]) { openHero(urlHero); } else { renderHeroes(); }
 }
 
 function header() {
@@ -56,6 +61,44 @@ function changePct(v) {
   const cls = v > 0 ? "up" : v < 0 ? "down" : "";
   const sign = v > 0 ? "▲" : v < 0 ? "▼" : "";
   return `<span class="wr ${cls}">${sign}${Math.abs(v).toFixed(2)}%</span>`;
+}
+
+
+/* 搭配装备指南 + 玩法心得(从推荐海克斯的联动数据聚合) */
+function buildItemGuide(rel) {
+  const itemSet = new Map();
+  for (const sa of (rel.specialAugments || [])) {
+    const info = state.augments[sa.name] || {};
+    for (const it of (info.specialItems || [])) {
+      if (!itemSet.has(it.name)) itemSet.set(it.name, { name: it.name, reason: it.reason, from: sa.name, trap: false });
+    }
+    for (const it of (info.trapItems || [])) {
+      const key = "trap_" + it.name;
+      if (!itemSet.has(key)) itemSet.set(key, { name: it.name, reason: it.reason, from: sa.name, trap: true });
+    }
+  }
+  const arr = [...itemSet.values()];
+  if (!arr.length) return "";
+  return `<section>
+    <h3>🛡️ 搭配装备指南（基于推荐海克斯联动）</h3>
+    <div class="item-grid">
+      ${arr.map(it => `
+        <div class="item-card ${it.trap ? "trap-item" : ""}">
+          <div style="min-width:0">
+            <div class="nm">${it.trap ? "⛔" : "✅"} ${it.name}</div>
+            <div class="ds" style="font-size:11px;color:var(--muted);margin-top:2px">${it.reason || ""}${it.from ? " · " + it.from : ""}</div>
+          </div>
+        </div>`).join("")}
+    </div>
+  </section>`;
+}
+function buildTips(rel) {
+  const tips = (rel.specialAugments || []).map(x => state.augments[x.name]).filter(a => a && a.tips);
+  if (!tips.length) return "";
+  return `<section>
+    <h3>💡 玩法心得</h3>
+    ${tips.map(a => `<div class="chg"><b>【${a.name}】</b>${a.tips}</div>`).join("")}
+  </section>`;
 }
 
 /* ---------- 英雄列表 ---------- */
@@ -99,6 +142,7 @@ function openHero(name) {
   merged.sort((a, b) => (b.winRate ?? 0) - (a.winRate ?? 0) || (b.pickRate ?? 0) - (a.pickRate ?? 0));
   // 装备: 与该英雄别名相关的出装(简单关联: 从 items 全集展示常用分类)
   const items = Object.entries(state.items).slice(0, 12).map(([k, v]) => ({ name: v.name || k, icon: v.icon, total: v.total }));
+  const rel = (state.relations || {})[name] || {};
   $app.innerHTML = header() + `
     <button class="back" id="backBtn">← 返回英雄列表</button>
     <div class="detail-hero">
@@ -139,6 +183,75 @@ function openHero(name) {
           </div>`).join("")}
       </div>
     </section>
+
+    
+    <section>
+      <h3>💎 特殊海克斯联动（拿了大乱斗强度爆炸）</h3>
+      <div class="aug-list">
+        ${(rel.specialAugments || []).length ? rel.specialAugments.map(x => {
+          const info = state.augments[x.name] || {};
+          return `
+          <div class="aug-item">
+            <img src="${info.icon || ""}" loading="lazy" onerror="this.style.visibility='hidden'">
+            <div class="inf">
+              <div class="nm">${x.name} ${info.rarity ? `<span class="rarity r-${info.rarity}">${RARITY_CN[info.rarity] || info.rarity}</span>` : ""}</div>
+              ${x.reason ? `<div class="ds">${x.reason}</div>` : (info.description ? `<div class="ds">${info.description}</div>` : "")}
+            </div>
+          </div>`;
+        }).join("") : '<div class="loading">暂无数据</div>'}
+      </div>
+    </section>
+    ${(rel.trapAugments || []).length ? `<section>
+      <h3>⚠️ 陷阱海克斯（避坑）</h3>
+      <div class="aug-list">
+        ${rel.trapAugments.map(x => {
+          const info = state.augments[x.name] || {};
+          return `
+          <div class="aug-item trap">
+            <img src="${info.icon || ""}" loading="lazy" onerror="this.style.visibility='hidden'">
+            <div class="inf">
+              <div class="nm">${x.name} ${info.rarity ? `<span class="rarity r-${info.rarity}">${RARITY_CN[info.rarity] || info.rarity}</span>` : ""}</div>
+              ${x.reason ? `<div class="ds">${x.reason}</div>` : ""}
+            </div>
+          </div>`;
+        }).join("")}
+      </div>
+    </section>` : ""}
+    ${(rel.specialAugments || []).length ? (() => {
+      const itemSet = new Map();
+      for (const sa of rel.specialAugments) {
+        const info = state.augments[sa.name] || {};
+        for (const it of (info.specialItems || [])) {
+          if (!itemSet.has(it.name)) itemSet.set(it.name, { name: it.name, reason: it.reason, from: sa.name });
+        }
+        for (const it of (info.trapItems || [])) {
+          if (!itemSet.has("trap_" + it.name)) itemSet.set("trap_" + it.name, { name: it.name, reason: it.reason, trap: true, from: sa.name });
+        }
+      }
+      const arr = [...itemSet.values()];
+      if (!arr.length) return "";
+      return `<section>
+        <h3>🛡️ 搭配装备指南（基于本英雄推荐海克斯）</h3>
+        <div class="item-grid">
+          ${arr.map(it => `
+            <div class="item-card ${it.trap ? "trap-item" : ""}">
+              <div style="min-width:0">
+                <div class="nm">${it.trap ? "⛔" : "✅"} ${it.name}</div>
+                <div class="ds" style="font-size:11px;color:var(--muted);margin-top:2px">${it.reason || ""}${it.from ? " · " + it.from : ""}</div>
+              </div>
+            </div>`).join("")}
+        </div>
+      </section>`;
+    })() : ""}
+    ${(() => {
+      const tips = (rel.specialAugments || []).map(x => state.augments[x.name]).filter(a => a && a.tips);
+      if (!tips.length) return "";
+      return `<section>
+        <h3>💡 玩法心得</h3>
+        ${tips.map(a => `<div class="chg"><b>【${a.name}】</b>${a.tips}</div>`).join("")}
+      </section>`;
+    })()}
+
     ${(h.changes && h.changes.length) ? `<section><h3>📋 版本改动</h3>
       ${h.changes.map(c => `<div class="chg"><b>${c.version}</b> · ${c.changesHtml}</div>`).join("")}
     </section>` : ""}

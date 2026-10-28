@@ -1,0 +1,263 @@
+{
+ "levels": {
+  "SSS": "SSS",
+  "SS": "SS",
+  "S": "S",
+  "A": "A",
+  "B": "B"
+ },
+ "raritys": {
+  "prismatic": "棱彩",
+  "gold": "黄金",
+  "silver": "白银"
+ },
+ "itemTypes": {
+  "Health": "生命值",
+  "HealthRegen": "生命回复",
+  "Damage": "攻击力",
+  "LifeSteal": "生命偷取",
+  "SpellVamp": "全能吸血",
+  "ManaRegen": "法力回复",
+  "SpellDamage": "法术强度",
+  "Consumable": "消耗品",
+  "AbilityHaste": "技能急速",
+  "CooldownReduction": "技能急速",
+  "NonbootsMovement": "移动速度",
+  "Tenacity": "韧性",
+  "Armor": "护甲",
+  "Mana": "法力值",
+  "SpellBlock": "魔法抗性",
+  "OnHit": "攻击特效",
+  "CriticalStrike": "暴击",
+  "AttackSpeed": "攻击速度",
+  "ArmorPenetration": "护甲穿透",
+  "Aura": "光环",
+  "Slow": "减速",
+  "MagicPenetration": "法术穿透",
+  "MagicResist": "魔法抗性"
+ },
+ "commonPositions": [
+  "战士",
+  "法师",
+  "坦克",
+  "刺客",
+  "射手",
+  "辅助"
+ ],
+ "detailPositionMap": {
+  "AP": "法系输出",
+  "Tank": "坦克",
+  "ADBruiser": "物理战士",
+  "ADBruiserLethality": "穿甲战士",
+  "ADLethality": "穿甲流",
+  "AD": "物理输出",
+  "APBruiser": "法系战士",
+  "ADCrit": "暴击流",
+  "ADCritOn-Hit": "暴击特效流",
+  "ADOn-Hit": "物理特效流",
+  "BruiserTank": "重装坦克",
+  "APHeal & Shield": "软辅",
+  "Heal & ShieldTank": "硬辅",
+  "ADCritLethality": "暴击穿甲流",
+  "ADBruiserOn-Hit": "攻速战士",
+  "Hybrid": "双修",
+  "APBruiserOn-Hit": "攻速法坦",
+  "APOn-Hit": "法系特效流",
+  "ADBruiserCrit": "暴击战士",
+  "HybridOn-Hit": "双修特效流",
+  "BruiserHybrid": "双修战士"
+ },
+ "categoryPositionMap": {
+  "暴击特效流": {
+   "includesCommonPositions": [
+    "射手",
+    "普攻型"
+   ]
+  },
+  "AP灼烧流": {
+   "includesCommonPositions": [
+    "法师"
+   ],
+   "excludesCommonPositions": [
+    "射手",
+    "坦克",
+    "刺客"
+   ]
+  },
+  "法刺流": {
+   "includesCommonPositions": [
+    "法师",
+    "刺客"
+   ]
+  },
+  "法坦流": {
+   "includesCommonPositions": [
+    "魔法型",
+    "坦克"
+   ]
+  },
+  "法坦流（由心及物）": {
+   "includesCommonPositions": [
+    "魔法型",
+    "坦克",
+    "蓝条"
+   ]
+  },
+  "技能型战士流": {
+   "includesCommonPositions": [
+    "战士",
+    "物理型",
+    "技能型"
+   ]
+  },
+  "坦克流": {
+   "includesCommonPositions": [
+    "坦克"
+   ],
+   "excludesCommonPositions": [
+    "法师",
+    "魔法型"
+   ]
+  },
+  "射手流": {
+   "includesCommonPositions": [
+    "射手"
+   ]
+  },
+  "攻速战士流": {
+   "includesCommonPositions": [
+    "近战",
+    "攻速型"
+   ],
+   "excludesCommonPositions": [
+    "远程"
+   ]
+  },
+  "暴击流（亮剑）": {
+   "includesCommonPositions": [
+    "射手",
+    "暴击型"
+   ]
+  },
+  "法坦流（可回血）": {
+   "includesCommonPositions": [
+    [
+     "魔法型",
+     "自己回血"
+    ],
+    [
+     "魔法型",
+     "友军回血"
+    ]
+   ],
+   "excludesCommonPositions": [
+    "软辅",
+    "射手"
+   ]
+  },
+  "软辅流（可回血）": {
+   "includesCommonPositions": [
+    [
+     "软辅",
+     "友军回血"
+    ],
+    [
+     "软辅",
+     "自己回血"
+    ]
+   ]
+  },
+  "穿甲流": {
+   "includesCommonPositions": [
+    "刺客",
+    "物理型"
+   ]
+  },
+  "暴击穿甲流": {
+   "includesCommonPositions": [
+    "刺客",
+    "物理型",
+    "暴击型"
+   ]
+  },
+  "暴击流": {
+   "includesCommonPositions": [
+    "射手",
+    "暴击型"
+   ]
+  },
+  "特效流": {
+   "includesCommonPositions": [
+    "射手",
+    "攻速型"
+   ]
+  },
+  "战士流": {
+   "includesCommonPositions": [
+    "战士",
+    "近战",
+    "物理型",
+    "技能型"
+   ],
+   "excludesCommonPositions": [
+    "攻速型",
+    "暴击型",
+    "魔法型"
+   ]
+  },
+  "AP爆发流": {
+   "includesCommonPositions": [
+    "法师"
+   ],
+   "excludesCommonPositions": [
+    "坦克",
+    "射手",
+    "软辅"
+   ]
+  },
+  "刺客流": {
+   "includesCommonPositions": [
+    "刺客",
+    "物理型"
+   ],
+   "excludesCommonPositions": [
+    "攻速型",
+    "射手"
+   ]
+  },
+  "法师流（虚空裂隙）": {
+   "includesCommonPositions": [
+    "持续伤害",
+    "技能型",
+    "魔法型"
+   ],
+   "includesHeros": [
+    "狂暴之心"
+   ],
+   "excludesHeros": [
+    "龙血武姬",
+    "潮汐海灵"
+   ]
+  },
+  "奶盾流（有蛋白粉）": {
+   "includesCommonPositions": [
+    [
+     "友军护盾"
+    ],
+    [
+     "友军回血"
+    ]
+   ]
+  },
+  "奶盾流（无蛋白粉）": {
+   "includesCommonPositions": [
+    [
+     "友军护盾"
+    ],
+    [
+     "友军回血"
+    ]
+   ]
+  }
+ }
+}

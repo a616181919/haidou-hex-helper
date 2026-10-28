@@ -1,5 +1,6 @@
 // 海克斯大乱斗小助手 — 全免费 · 无广告 · 无会员
 const $app = document.getElementById("app");
+const DEPLOY_VER = "1793176078779";
 
 const state = {
   view: "heroes",           // heroes | hero | augments
@@ -13,7 +14,7 @@ const state = {
 const RARITY_CN = { prismatic: "棱彩", gold: "黄金", silver: "白银" };
 const LIVE_RATES = "https://lolhaidou.cn/data/hero_augment_rates.json";
 
-async function loadJSON(p) { const r = await fetch(p); return r.json(); }
+async function loadJSON(p) { const r = await fetch(p + (p.includes("?") ? "&" : "?") + "v=" + DEPLOY_VER, { cache: "no-cache" }); return r.json(); }
 
 async function init() {
   $app.innerHTML = '<div class="loading">召唤师数据载入中…</div>';

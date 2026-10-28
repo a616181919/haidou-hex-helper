@@ -14,9 +14,21 @@ const RARITY_CN = { prismatic: "棱彩", gold: "黄金", silver: "白银" };
 const LIVE_RATES = "https://lolhaidou.cn/data/hero_augment_rates.json";
 const FALLBACK_ICON = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect fill='%2316213a' width='40' height='40'/></svg>";
 
+const REF_BASE = "https://1725287913.github.io/lol-aram-augments/";
+function refFixUrls(obj) {
+  // 深度遍历: 所有以 assets/ 开头的字符串 → 参照站绝对 URL
+  if (typeof obj === "string") return obj.startsWith("assets/") ? REF_BASE + obj : obj;
+  if (Array.isArray(obj)) return obj.map(refFixUrls);
+  if (obj && typeof obj === "object") {
+    const out = {};
+    for (const [k, v] of Object.entries(obj)) out[k] = refFixUrls(v);
+    return out;
+  }
+  return obj;
+}
 async function loadRefHero(slug) {
   if (state.refHeroCache[slug]) return state.refHeroCache[slug];
-  const d = await loadJSON("data/ref/heroes/" + slug + ".json");
+  const d = refFixUrls(await loadJSON("data/ref/heroes/" + slug + ".json"));
   state.refHeroCache[slug] = d;
   return d;
 }
@@ -43,14 +55,30 @@ async function init() {
   // 懒加载英雄详情 JSON 缓存
   state.refHeroCache = {};
   if (rates) fetch(LIVE_RATES).then(r => r.json()).then(j => { if (j && j.heroCount) { state.rates = j; if (state.view === "heroes") renderHeroes(); } }).catch(() => {});
-  const urlHero = new URLSearchParams(location.search).get("hero");
-  const urlStyle = new URLSearchParams(location.search).get("style");
+  const qs = new URLSearchParams(location.search);
+  const urlHero = qs.get("hero");
+  const urlStyle = qs.get("style");
   if (urlStyle) state.currentStyle = urlStyle;
-  const urlView = new URLSearchParams(location.search).get("view");
-  if (urlHero && heroes[urlHero]) openHero(urlHero);
-  else if (urlView === "feed") renderFeed();
-  else if (urlView === "augments") renderAugments();
-  else renderHeroes();
+  const urlView = qs.get("view");
+  // hash 路由: #/hero/疾风剑豪 | #/augments | #/feed | #/heroes
+  const hash = location.hash.replace(/^#\/?/, "");
+  let routed = false;
+  if (hash) {
+    const parts = hash.split("/");
+    if (parts[0] === "hero" && parts[1] && heroes[decodeURIComponent(parts[1])]) {
+      if (parts[2]) state.currentStyle = decodeURIComponent(parts[2]);
+      openHero(decodeURIComponent(parts[1]));
+      routed = true;
+    } else if (parts[0] === "augments") { renderAugments(); routed = true; }
+    else if (parts[0] === "feed") { renderFeed(); routed = true; }
+    else if (parts[0] === "heroes") { renderHeroes(); routed = true; }
+  }
+  if (!routed) {
+    if (urlHero && heroes[urlHero]) openHero(urlHero);
+    else if (urlView === "feed") renderFeed();
+    else if (urlView === "augments") renderAugments();
+    else renderHeroes();
+  }
 }
 
 function header() {
@@ -108,6 +136,7 @@ function augCard(a, opts = {}) {
 
 /* ---------- 英雄列表 ---------- */
 function renderHeroes() {
+  if (location.hash && location.hash !== "#/heroes") history.replaceState(null, "", "#/heroes");
   const rates = state.rates?.data || {};
   const rows = Object.entries(state.heroes)
     .map(([name, h]) => ({ name, h, chg: h.winRateChange }))
@@ -162,10 +191,12 @@ async function openHero(name, scroll = true) {
   if (!h) return;
   state.currentHero = name; state.view = "hero";
   const slug = (state.nameToSlug || {})[name];
+  if (slug) { const h2 = "#/hero/" + encodeURIComponent(name) + (state.currentStyle ? "/" + encodeURIComponent(state.currentStyle) : ""); if (location.hash !== h2) history.replaceState(null, "", h2); }
   const build = (state.builds || {})[name] || {};
   const sb = (state.styleBuilds || {})[name] || { styles: [], byStyle: {} };
   // 先渲染骨架(立刻可见), ref 数据到了再填充
   const refIdx = (state.refIndex || []).find(x => x.slug === slug);
+  if (refIdx && refIdx.icon && !refIdx.icon.startsWith("http")) refIdx.icon = REF_BASE + refIdx.icon;
   const hasRef = !!refIdx;
   const items = Object.entries(state.items).slice(0, 10).map(([k, v]) => ({ name: v.name || k, icon: v.icon, total: v.total }));
   const ig = build.itemGuide || [];
@@ -300,6 +331,7 @@ function assetNode(it) {
 
 /* ---------- 海克斯图鉴 ---------- */
 function renderAugments() {
+  if (location.hash !== "#/augments") history.replaceState(null, "", "#/augments");
   const all = Object.entries(state.augments).map(([name, a]) => ({ name, ...a }));
   const filtered = all
     .filter(a => state.rankFilter === "all" || a.rarity === state.rankFilter)
@@ -324,6 +356,7 @@ function renderAugments() {
 
 /* ---------- 攻略·公告 ---------- */
 function renderFeed() {
+  if (location.hash !== "#/feed") history.replaceState(null, "", "#/feed");
   const guides = state.guides?.data ? Object.values(state.guides.data) : (Array.isArray(state.guides) ? state.guides : []);
   const changelogs = state.changelogs ? Object.values(state.changelogs) : [];
   const gn = state.generalNotes || {};
@@ -371,4 +404,14 @@ function renderFeed() {
   bindNav();
 }
 
+window.addEventListener("hashchange", () => {
+  const h2 = location.hash.replace(/^#\/?/, "");
+  const parts = h2.split("/");
+  if (parts[0] === "hero" && parts[1] && state.heroes[decodeURIComponent(parts[1])]) {
+    if (parts[2]) state.currentStyle = decodeURIComponent(parts[2]); else state.currentStyle = "";
+    openHero(decodeURIComponent(parts[1]));
+  } else if (parts[0] === "augments") renderAugments();
+  else if (parts[0] === "feed") renderFeed();
+  else if (parts[0] === "heroes") renderHeroes();
+});
 init().catch(e => { $app.innerHTML = "<pre style='color:#ff6b6b;padding:20px'>INIT ERROR: " + (e && e.stack || e) + "</pre>"; });

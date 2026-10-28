@@ -6,7 +6,7 @@ const DEPLOY_VER = "1793178161997";
 const state = {
   view: "heroes", heroes: null, augments: null, items: null, rates: null, enums: null,
   currentHero: null, search: "", rankFilter: "all",
-  relations: null, guides: null, builds: null, changelogs: null, generalNotes: null,
+  relations: null, guides: null, builds: null, changelogs: null, generalNotes: null, listScroll: 0,
 };
 const RARITY_CN = { prismatic: "棱彩", gold: "黄金", silver: "白银" };
 const LIVE_RATES = "https://lolhaidou.cn/data/hero_augment_rates.json";
@@ -112,12 +112,14 @@ function renderHeroes() {
     <div class="meta">共 ${rows.length} 位英雄 · 胜率数据 ${state.rates?.update || "本地快照"}</div>`;
   const inp = $app.querySelector(".search-input");
   inp.oninput = e => { state.search = e.target.value; renderHeroes(); const n = $app.querySelector(".search-input"); n.focus(); n.setSelectionRange(n.value.length, n.value.length); };
-  $app.querySelectorAll("[data-hero]").forEach(c => c.onclick = () => openHero(c.dataset.hero));
+  // 恢复列表滚动位置
+  if (state.listScroll) { setTimeout(() => window.scrollTo({ top: state.listScroll }), 50); }
+  $app.querySelectorAll("[data-hero]").forEach(c => c.onclick = () => { state.listScroll = window.scrollY; openHero(c.dataset.hero); });
   bindNav();
 }
 
 /* ---------- 英雄详情 ---------- */
-function openHero(name) {
+function openHero(name, scroll = true) {
   const h = state.heroes[name];
   if (!h) return;
   state.currentHero = name; state.view = "hero";
@@ -130,6 +132,16 @@ function openHero(name) {
   // 装备指南
   const ig = build.itemGuide || [];
   $app.innerHTML = header() + `
+
+    <div class="hero-switcher">
+      <div class="hs-scroll">
+        ${Object.entries(state.heroes).map(([n, hh]) => `
+          <div class="hs-item ${n === name ? "current" : ""}" data-goto="${n}" title="${n}">
+            <img src="${hh.avatar}" loading="lazy" onerror="this.src='${FALLBACK_ICON}'">
+            <span>${n.length > 5 ? n.slice(0, 5) : n}</span>
+          </div>`).join("")}
+      </div>
+    </div>
     <button class="back-btn" id="backBtn">← 返回英雄列表</button>
     <div class="hero-header">
       <img class="hero-avatar" src="${h.avatar}" onerror="this.src='${FALLBACK_ICON}'">
@@ -185,9 +197,14 @@ function openHero(name) {
       <div class="section-header">📋 版本改动</div>
       ${h.changes.map(c => `<div class="chg-box"><span class="aug-tag" style="background:rgba(56,189,248,.12);color:#38bdf8">${c.version}</span> <span style="font-size:12px;color:#8a93ad">${c.changesHtml || ""}</span></div>`).join("")}
     </section>` : ""}
-    <div class="meta">数据来源: 海斗公开数据 · ${state.rates?.update || "本地快照"}</div>`;
+    <div class="meta">数据来源: 海斗公开数据 · ${state.rates?.update || "本地快照"}</div>
+    <button class="to-top" id="toTop" title="回到顶部">↑</button>`;
   document.getElementById("backBtn").onclick = () => { state.view = "heroes"; renderHeroes(); };
+  $app.querySelectorAll("[data-goto]").forEach(el2 => el2.onclick = () => openHero(el2.dataset.goto));
   bindNav();
+  const tt = document.getElementById("toTop");
+  if (tt) tt.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  if (scroll) window.scrollTo({ top: 0 });
 }
 
 /* ---------- 海克斯图鉴 ---------- */

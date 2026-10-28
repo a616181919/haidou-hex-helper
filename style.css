@@ -396,3 +396,18 @@ a{color:#38bdf8}
 
 .to-top{position:fixed;right:18px;bottom:24px;width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#1e3a5f,#254a78);border:1px solid rgba(200,170,110,.4);color:#f0e6d2;font-size:18px;cursor:pointer;z-index:99;box-shadow:0 4px 16px rgba(0,0,0,.4);transition:.2s}
 .to-top:hover{transform:translateY(-2px);border-color:#c8aa6e}
+
+/* ==== 英雄池双栏布局 ==== */
+.main-layout{display:grid;grid-template-columns:218px 1fr;gap:14px;align-items:start}
+@media (max-width:760px){.main-layout{grid-template-columns:1fr}}
+.hero-pool{position:sticky;top:12px;background:rgba(30,41,59,.6);border:1px solid rgba(255,255,255,.05);border-radius:14px;padding:12px;max-height:calc(100vh - 24px);overflow-y:auto}
+.pool-title{font-size:13px;font-weight:800;color:#f0e6d2;margin-bottom:10px;padding-left:8px;border-left:3px solid #c8aa6e}
+.pool-styles{display:flex;flex-direction:column;gap:6px}
+.style-card{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.05);border-radius:9px;padding:8px 10px;cursor:pointer;transition:.15s}
+.style-card:hover{background:rgba(255,255,255,.06);border-color:rgba(200,170,110,.3)}
+.style-card.active{background:linear-gradient(135deg,rgba(200,170,110,.15),rgba(30,41,59,.6));border-color:#c8aa6e}
+.style-name{font-size:12px;font-weight:600;color:#e8e6f0}
+.style-card.active .style-name{color:#f0e6d2}
+.style-count{font-size:10px;color:#8a93ad;background:rgba(148,163,184,.1);padding:1px 7px;border-radius:10px}
+.mini-styles{display:flex;gap:3px;margin-top:4px;flex-wrap:wrap;justify-content:center}
+.mini-styles span{font-size:9px;color:#7ec8ff;background:rgba(56,189,248,.08);padding:0 5px;border-radius:6px;white-space:nowrap}

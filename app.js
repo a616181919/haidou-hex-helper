@@ -7,6 +7,7 @@ const state = {
   view: "heroes", heroes: null, augments: null, items: null, rates: null, enums: null,
   currentHero: null, search: "", rankFilter: "all",
   relations: null, guides: null, builds: null, changelogs: null, generalNotes: null, listScroll: 0,
+  heroStyles: null, styleFilter: "all",
 };
 const RARITY_CN = { prismatic: "棱彩", gold: "黄金", silver: "白银" };
 const LIVE_RATES = "https://lolhaidou.cn/data/hero_augment_rates.json";
@@ -19,14 +20,14 @@ async function loadJSON(p) {
 
 async function init() {
   $app.innerHTML = '<div class="loading">召唤师数据载入中…</div>';
-  const [heroes, augments, items, rates, enums, relations, guides, builds, changelogs, generalNotes] = await Promise.all([
+  const [heroes, augments, items, rates, enums, relations, guides, builds, changelogs, generalNotes, heroStyles] = await Promise.all([
     loadJSON("data/heroes.json"), loadJSON("data/augments.json"), loadJSON("data/items.json"),
     loadJSON("data/augment-rates-snapshot.json").catch(() => null), loadJSON("data/enums.json").catch(() => ({})),
     loadJSON("data/hero-relations.json").catch(() => ({})), loadJSON("data/strategy-guides.json").catch(() => null),
     loadJSON("data/hero-builds.json").catch(() => ({})), loadJSON("data/lol-changelogs.json").catch(() => ({})),
-    loadJSON("data/general-notes.json").catch(() => ({})),
+    loadJSON("data/general-notes.json").catch(() => ({})), loadJSON("data/hero-styles.json").catch(() => ({})),
   ]);
-  Object.assign(state, { heroes, augments, items, rates, enums, relations, guides, builds, changelogs, generalNotes });
+  Object.assign(state, { heroes, augments, items, rates, enums, relations, guides, builds, changelogs, generalNotes, heroStyles });
   if (rates) fetch(LIVE_RATES).then(r => r.json()).then(j => { if (j && j.heroCount) { state.rates = j; if (state.view === "heroes") renderHeroes(); } }).catch(() => {});
   const urlHero = new URLSearchParams(location.search).get("hero");
   const urlView = new URLSearchParams(location.search).get("view");
@@ -95,26 +96,47 @@ function renderHeroes() {
   const rows = Object.entries(state.heroes)
     .map(([name, h]) => ({ name, h, chg: h.winRateChange }))
     .filter(x => !state.search || x.name.includes(state.search) || (x.h.alias || []).some(a => a.toLowerCase().includes(state.search.toLowerCase())))
+    .filter(x => state.styleFilter === "all" || (state.heroStyles?.heroStyles?.[x.name] || []).includes(state.styleFilter))
     .sort((a, b) => (b.h.winRate ?? 0) - (a.h.winRate ?? 0));
   $app.innerHTML = header() + `
     <div class="search-section"><div class="search-box-wrapper">
       <input class="search-input" placeholder="搜索英雄 / 别名（亚索、快乐风男、Yasuo…）" value="${state.search}">
       <span class="search-icon">🔍</span>
     </div></div>
-    <div class="hero-grid">
-      ${rows.map(x => `
-        <div class="hero-card" data-hero="${x.name}">
-          <img src="${x.h.avatar}" loading="lazy" onerror="this.src='${FALLBACK_ICON}'">
-          <div class="nm">${x.name}</div>
-          <div class="wr">胜率 ${x.h.winRate != null ? x.h.winRate.toFixed(1) + "%" : "—"} ${changePct(x.chg)}</div>
-        </div>`).join("")}
-    </div>
-    <div class="meta">共 ${rows.length} 位英雄 · 胜率数据 ${state.rates?.update || "本地快照"}</div>`;
+    <div class="main-layout">
+      <aside class="hero-pool">
+        <div class="pool-title">🎭 流派英雄池</div>
+        <div class="pool-styles">
+          <div class="style-card ${state.styleFilter === "all" ? "active" : ""}" data-style="all">
+            <div class="style-name">全部英雄</div>
+            <div class="style-count">${Object.keys(state.heroes).length}</div>
+          </div>
+          ${Object.entries(state.heroStyles?.styleHeroes || {}).sort((a, b) => b[1].length - a[1].length).map(([s, arr]) => `
+            <div class="style-card ${state.styleFilter === s ? "active" : ""}" data-style="${s}">
+              <div class="style-name">${s}</div>
+              <div class="style-count">${arr.length} 英雄</div>
+            </div>`).join("")}
+        </div>
+      </aside>
+      <div class="pool-content">
+        <div class="hero-grid">
+          ${rows.map(x => `
+            <div class="hero-card" data-hero="${x.name}">
+              <img src="${x.h.avatar}" loading="lazy" onerror="this.src='${FALLBACK_ICON}'">
+              <div class="nm">${x.name}</div>
+              <div class="wr">胜率 ${x.h.winRate != null ? x.h.winRate.toFixed(1) + "%" : "—"} ${changePct(x.chg)}</div>
+              ${(state.heroStyles?.heroStyles?.[x.name] || []).length ? `<div class="mini-styles">${(state.heroStyles.heroStyles[x.name] || []).slice(0, 2).map(s => `<span>${s.replace(/（.*）/, "")}</span>`).join("")}</div>` : ""}
+            </div>`).join("")}
+        </div>
+        <div class="meta">${state.styleFilter === "all" ? "共 " : "流派「" + state.styleFilter + "」共 "}${rows.length} 位英雄 · 胜率数据 ${state.rates?.update || "本地快照"}</div>
+      </div>
+    </div>`;
   const inp = $app.querySelector(".search-input");
   inp.oninput = e => { state.search = e.target.value; renderHeroes(); const n = $app.querySelector(".search-input"); n.focus(); n.setSelectionRange(n.value.length, n.value.length); };
   // 恢复列表滚动位置
   if (state.listScroll) { setTimeout(() => window.scrollTo({ top: state.listScroll }), 50); }
   $app.querySelectorAll("[data-hero]").forEach(c => c.onclick = () => { state.listScroll = window.scrollY; openHero(c.dataset.hero); });
+  $app.querySelectorAll("[data-style]").forEach(c => c.onclick = () => { state.styleFilter = c.dataset.style; renderHeroes(); });
   bindNav();
 }
 
@@ -151,6 +173,10 @@ function openHero(name, scroll = true) {
         <div class="tags" style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px">
           ${(h.position || []).map(t => `<span class="aug-tag" style="background:rgba(56,189,248,.12);color:#38bdf8;height:auto;padding:2px 8px">${t}</span>`).join("")}
         </div>
+        ${(state.heroStyles?.heroStyles?.[name] || []).length ? `<div style="display:flex;flex-wrap:wrap;gap:5px;margin-top:8px;align-items:center">
+          <span style="font-size:11px;color:#8a93ad">适玩流派:</span>
+          ${state.heroStyles.heroStyles[name].map(s => `<span class="aug-tag" data-style-link="${s}" style="background:rgba(200,170,110,.12);color:#c8aa6e;height:auto;padding:2px 8px;cursor:pointer">${s}</span>`).join("")}
+        </div>` : ""}
       </div>
       <div class="wr-big">
         <div class="num">${h.winRate != null ? h.winRate.toFixed(1) + "%" : "—"}</div>
@@ -202,6 +228,7 @@ function openHero(name, scroll = true) {
   document.getElementById("backBtn").onclick = () => { state.view = "heroes"; renderHeroes(); };
   $app.querySelectorAll("[data-goto]").forEach(el2 => el2.onclick = () => openHero(el2.dataset.goto));
   bindNav();
+  $app.querySelectorAll("[data-style-link]").forEach(el3 => el3.onclick = () => { state.styleFilter = el3.dataset.styleLink; state.view = "heroes"; renderHeroes(); });
   const tt = document.getElementById("toTop");
   if (tt) tt.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
   if (scroll) window.scrollTo({ top: 0 });

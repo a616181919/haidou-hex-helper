@@ -423,3 +423,33 @@ a{color:#38bdf8}
 .pool-hero img{width:26px;height:26px;border-radius:50%;border:1px solid #3a4a6b}
 .pool-hero.current{background:rgba(200,170,110,.12);color:#f0e6d2}
 .pool-hero.current img{border-color:#c8aa6e}
+
+/* ==== 参考站风格: 流派构筑 Tab + 装备序列 ==== */
+.build-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.build-tab{background:rgba(30,41,59,.6);border:1px solid rgba(255,255,255,.08);border-radius:10px;color:#8a93ad;padding:8px 14px;cursor:pointer;text-align:left;transition:.15s;display:flex;flex-direction:column;gap:2px}
+.build-tab small{font-size:10px;opacity:.8}
+.build-tab.active{background:linear-gradient(135deg,#1e3a5f,#254a78);border-color:#c8aa6e;color:#f0e6d2}
+.build-panel{padding:14px}
+.build-sec{margin-bottom:14px}
+.build-sec:last-child{margin-bottom:0}
+.build-sec-title{font-size:13px;font-weight:700;color:#f0e6d2;margin-bottom:8px}
+.build-sec-title small{color:#8a93ad;font-weight:400;font-size:11px;margin-left:6px}
+.asset-row{display:flex;gap:10px;flex-wrap:wrap}
+.asset-node{display:flex;flex-direction:column;align-items:center;width:72px;cursor:default}
+.asset-node img{width:48px;height:48px;border-radius:8px;border:1px solid rgba(255,255,255,.12);background:#000;object-fit:cover}
+.asset-node .an-name{font-size:10px;color:#c8cede;margin-top:4px;text-align:center;line-height:1.2;max-width:72px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.asset-node .an-win{font-size:10px;color:#4fd88a;font-weight:700}
+.asset-node .an-price{font-size:9px;color:#c8aa6e}
+.tier-group{margin-bottom:10px}
+.tier-label{font-size:11px;font-weight:800;margin-bottom:6px;padding:2px 10px;border-radius:10px;display:inline-block}
+.tier-label.tier-p{background:rgba(168,85,247,.15);color:#c084fc}
+.tier-label.tier-g{background:rgba(217,119,6,.15);color:#fbbf24}
+.tier-label.tier-s{background:rgba(148,163,184,.15);color:#cbd5e1}
+.tier-augs{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:6px}
+.tier-aug{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.05);border-radius:9px;padding:6px 8px}
+.tier-aug img{width:32px;height:32px;border-radius:6px;background:#000}
+.tier-aug .ta-inf{flex:1;min-width:0}
+.tier-aug .ta-nm{font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tier-aug .ta-st{font-size:10px;color:#8a93ad}
+.ref-hero{border-color:rgba(200,170,110,.25)}
+.pool-hero-list{max-height:50vh}

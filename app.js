@@ -18,7 +18,7 @@ const state = {
   view: "heroes", heroes: null, augments: null, items: null, rates: null,
   relations: null, guides: null, builds: null, changelogs: null, generalNotes: null,
   heroStyles: null, styleBuilds: null, styleFilter: "all", listScroll: 0,
-  refIndex: null, nameToSlug: null, refHeroCache: {}, refBuildIdx: 0, itemGroups: null, itemCat: "core", heroTiers: null,
+  refIndex: null, nameToSlug: null, refHeroCache: {}, refBuildIdx: 0, itemGroups: null, itemCat: "core", heroTiers: null, headliners: null,
   currentHero: null, search: "", currentStyle: "",
 };
 const RARITY_CN = { prismatic: "棱彩", gold: "金色", silver: "银色" };
@@ -46,7 +46,7 @@ async function loadRefHero(slug) {
 
 async function init() {
   $app.innerHTML = '<div class="loading">召唤师数据载入中…</div>';
-  const [heroes, augments, items, rates, relations, guides, builds, changelogs, generalNotes, heroStyles, refIndex, nameToSlug, styleBuilds, itemGroups, heroTiers] = await Promise.all([
+  const [heroes, augments, items, rates, relations, guides, builds, changelogs, generalNotes, heroStyles, refIndex, nameToSlug, styleBuilds, itemGroups, heroTiers, headliners] = await Promise.all([
     loadJSON("data/heroes.json"), loadJSON("data/augments.json"), loadJSON("data/items.json"),
     loadJSON("data/augment-rates-snapshot.json").catch(() => null),
     loadJSON("data/hero-relations.json").catch(() => ({})),
@@ -59,7 +59,7 @@ async function init() {
     loadJSON("data/name-to-slug.json").catch(() => ({})),
     loadJSON("data/hero-style-builds.json").catch(() => ({})), loadJSON("data/item-groups.json").catch(() => ({})), loadJSON("data/hero-tiers.json").catch(() => ({})),
   ]);
-  Object.assign(state, { heroes, augments, items, rates, relations, guides, builds, changelogs, generalNotes, heroStyles, refIndex, nameToSlug, styleBuilds, itemGroups, heroTiers });
+  Object.assign(state, { heroes, augments, items, rates, relations, guides, builds, changelogs, generalNotes, heroStyles, refIndex, nameToSlug, styleBuilds, itemGroups, heroTiers, headliners });
   window.__state = state;
   if (rates) fetch(LIVE_RATES).then(r => r.json()).then(j => { if (j && j.heroCount) { state.rates = j; if (state.view === "heroes") renderHeroes(); } }).catch(() => {});
   // hash 路由
@@ -294,6 +294,32 @@ async function openHero(name, scroll = true) {
       <div class="sp-sum">${sp.sum || ""}</div>
       ${(sp.req || []).length ? `<div class="sp-lb">触发条件</div><div class="sp-augs">${sp.req.map(r => `<span class="amini"><img src="${r.ic}" loading="lazy" onerror="this.style.visibility='hidden'">${r.n}</span>`).join("")}</div>` : ""}
     </div>`).join("")}</section>`;
+  // ===== 原小程序排版: 头领卡 + 通用方案combo卡 =====
+  if ((state.headliners?.data || []).length) body += `<section class="sec"><div class="sec-head"><h3>👑 头领强化</h3><span class="sec-sub">${state.headliners.data.length} 个</span><div class="sec-line"></div></div>
+    ${state.headliners.data.map(hl => `
+      <div class="headliner-card" style="border-left:4px solid ${hl.themeColor || "#c8aa6e"}">
+        <div class="hl-top">
+          <img class="hl-icon" src="${hl.icon}" loading="lazy" onerror="this.style.visibility='hidden'">
+          <div style="flex:1;min-width:0">
+            <div class="hl-name">${hl.name} <span class="hl-en">${hl.nameEn || ""}</span></div>
+            <div class="hl-sum">${hl.summary || ""}</div>
+          </div>
+        </div>
+        <div class="hl-desc">${hl.description || ""}</div>
+        ${(hl.mechanics || []).length ? `<div class="hl-mech">${hl.mechanics.map(m => `<div class="hl-mech-row"><span class="hl-mech-lb">${m.label}</span><span class="hl-mech-tx">${m.text}</span></div>`).join("")}</div>` : ""}
+      </div>`).join("")}
+  </section>`;
+  const gnKeys2 = Object.keys(state.generalNotes || {});
+  if (gnKeys2.length) body += `<section class="sec"><div class="sec-head"><h3>🧩 通用方案海克斯联动</h3><span class="sec-sub">combo 卡排版</span><div class="sec-line"></div></div>
+    ${gnKeys2.map(k => `
+      <div class="combo-card">
+        <div class="combo-name-row"><span class="combo-name">${k}</span></div>
+        <div class="combo-groups">
+          ${Object.entries(state.generalNotes[k] || {}).map(([aug, note]) => `
+            <div class="combo-row"><span class="combo-aug-name">${aug}</span><span class="combo-note">${note}</span></div>`).join("")}
+        </div>
+      </div>`).join("")}
+  </section>`;
   // ===== 折叠区: 综合评分/装备/版本改动 =====
   if (recs.length) body += `<details class="feed-card"><summary>🎯 综合推荐海克斯(评分版) <span class="meta">${recs.length} 条</span></summary><div class="feed-body">${recs.map((a, i) => augRow(a, i + 1)).join("")}</div></details>`;
   body += `<section class="sec">

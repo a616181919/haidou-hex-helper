@@ -1,0 +1,260 @@
+{
+ "last_update": "2026-10-22",
+ "version": "26.21",
+ "data": [
+  {
+   "id": "cafe-cuties",
+   "name": "咖啡甜心",
+   "nameEn": "Cafe Cuties",
+   "summary": "【治疗圣物】获得强化！",
+   "description": "治疗圣物光环会额外回复<healing>20%已损失生命值</healing>，并提供在6秒里持续衰减的25%<speed>移动速度</speed>加成。",
+   "icon": "https://lolhaidou.cn/assets/images/headliners/cafe-cuties.png",
+   "sourceIcon": "https://raw.communitydragon.org/16.21/game/unknown/1a364aeed66f6eaf.png",
+   "themeColor": "#f3a6b8",
+   "order": 1,
+   "mechanics": [
+    {
+     "label": "触发条件",
+     "text": "治疗圣物光环生效时"
+    },
+    {
+     "label": "回复效果",
+     "text": "额外回复20%已损失生命值"
+    },
+    {
+     "label": "移动效果",
+     "text": "获得25%移动速度，并在6秒内持续衰减"
+    }
+   ]
+  },
+  {
+   "id": "command-line",
+   "name": "命令行",
+   "nameEn": "Command Line",
+   "summary": "【被黑入的刷新】会改良你的强化符文！",
+   "description": "你在每轮符文选择中的第一次刷新还会提升被刷新强化符文的稀有度。",
+   "icon": "https://lolhaidou.cn/assets/images/headliners/command-line.png",
+   "sourceIcon": "https://raw.communitydragon.org/16.21/game/unknown/418fe50586faba2b.png",
+   "themeColor": "#f2b84b",
+   "order": 2,
+   "mechanics": [
+    {
+     "label": "生效时机",
+     "text": "每轮强化符文选择期间"
+    },
+    {
+     "label": "次数限制",
+     "text": "仅本轮第一次刷新生效"
+    },
+    {
+     "label": "刷新效果",
+     "text": "提高本次刷新后强化符文的稀有度"
+    }
+   ],
+   "unknownDetails": [
+    "当前官方资源未说明稀有度提升的具体档位规则"
+   ]
+  },
+  {
+   "id": "heartsteel",
+   "name": "心之钢",
+   "nameEn": "HEARTSTEEL",
+   "summary": "一些强化符文已被这支乐队给增强了！",
+   "description": "【心之钢】成员们有一定几率给你的强化符文贴上贴纸，从而在你选择一个带贴纸的强化符文时为你提供一个加成。每个成员会提供一个独特加成。",
+   "icon": "https://lolhaidou.cn/assets/images/headliners/heartsteel.png",
+   "sourceIcon": "https://raw.communitydragon.org/16.21/game/unknown/4f4b06354f4e4f54.png",
+   "themeColor": "#f6c232",
+   "order": 3,
+   "mechanics": [
+    {
+     "label": "触发条件",
+     "text": "选择带有心之钢成员贴纸的强化符文"
+    },
+    {
+     "label": "获得效果",
+     "text": "获得贴纸对应成员提供的独特加成"
+    }
+   ],
+   "memberBonuses": [
+    {
+     "name": "厄斐琉斯",
+     "effect": "选择这个强化符文会为你提供2个<keywordMajor>属性锻造器</keywordMajor>。"
+    },
+    {
+     "name": "伊泽瑞尔",
+     "effect": "每级获得<scaleAD>4攻击力</scaleAD>和<scaleAP>4法术强度</scaleAP>"
+    },
+    {
+     "name": "凯隐",
+     "effect": "选择这个强化符文会提供<lifeSteal>5%全能吸血</lifeSteal>。"
+    },
+    {
+     "name": "奎桑提",
+     "effect": "这个强化符文会立刻为你提供<keywordMajor>1等级</keywordMajor>，并使你的<keywordMajor>等级上限</keywordMajor>提升1。"
+    },
+    {
+     "name": "瑟提",
+     "effect": "选择这个强化符文会提供<scaleHealth>每级30生命值</scaleHealth>。"
+    },
+    {
+     "name": "永恩",
+     "effect": "选择这个强化符文会提供<attackSpeed>40%攻击速度</attackSpeed>和<scaleAH>20技能急速</scaleAH>。"
+    }
+   ],
+   "unknownDetails": [
+    "当前官方资源未说明贴纸出现概率"
+   ]
+  },
+  {
+   "id": "kda",
+   "name": "K/DA",
+   "nameEn": "K/DA",
+   "summary": "集齐所有4张卡片即可获得一个符文！",
+   "description": "K/DA会时不时地投掷明星卡给她们的忠实粉丝们！集齐它们就会获得一个额外的强化符文并证明你的忠诚！",
+   "icon": "https://lolhaidou.cn/assets/images/headliners/kda.png",
+   "sourceIcon": "https://raw.communitydragon.org/16.21/game/unknown/44853984c84afdaf.png",
+   "themeColor": "#74d6ef",
+   "order": 4,
+   "mechanics": [
+    {
+     "label": "事件",
+     "text": "K/DA会不定时投放明星卡"
+    },
+    {
+     "label": "收集目标",
+     "text": "集齐全部4张明星卡"
+    },
+    {
+     "label": "完成奖励",
+     "text": "获得1个额外强化符文"
+    }
+   ],
+   "unknownDetails": [
+    "当前官方资源未说明明星卡的投放间隔和位置规则"
+   ]
+  },
+  {
+   "id": "pentakill",
+   "name": "五杀乐队",
+   "nameEn": "Pentakill",
+   "summary": "强化你的技能！",
+   "description": "<evolve>强化</evolve>你的一个基础技能，为它提供<scaleAbilityHaste>20技能急速</scaleAbilityHaste>、10%额外<silver>伤害</silver>、以及10%<healing>治疗</healing>和<shield>护盾</shield>效果。<br><br>在18级时，<evolve>强化</evolve>另一个技能——甚至可以是你的<attention>终极技能</attention>！",
+   "icon": "https://lolhaidou.cn/assets/images/headliners/pentakill.png",
+   "sourceIcon": "https://raw.communitydragon.org/16.21/game/unknown/bd23f7f44c4008ba.png",
+   "themeColor": "#ef4444",
+   "order": 5,
+   "mechanics": [
+    {
+     "label": "首次强化",
+     "text": "强化一个基础技能"
+    },
+    {
+     "label": "技能加成",
+     "text": "20技能急速、10%额外伤害、10%治疗和护盾效果"
+    },
+    {
+     "label": "18级强化",
+     "text": "再强化一个技能，此时可以选择终极技能"
+    }
+   ],
+   "abilityOptions": [
+    {
+     "augmentId": 3170,
+     "slot": "Q",
+     "name": "重型"
+    },
+    {
+     "augmentId": 3171,
+     "slot": "W",
+     "name": "力量"
+    },
+    {
+     "augmentId": 3172,
+     "slot": "E",
+     "name": "鞭挞"
+    },
+    {
+     "augmentId": 3173,
+     "slot": "R",
+     "name": "厄运"
+    }
+   ]
+  },
+  {
+   "id": "space-groove",
+   "name": "太空律动",
+   "nameEn": "Space Groove",
+   "summary": "跳起舞步跃入舞池！",
+   "description": "跳起舞步跃入舞池直到迪斯科灯球落下，从而为每个人提供1000金币！",
+   "icon": "https://lolhaidou.cn/assets/images/headliners/space-groove.png",
+   "sourceIcon": "https://raw.communitydragon.org/16.21/game/unknown/e446b83eb8889303.png",
+   "themeColor": "#a78bfa",
+   "order": 6,
+   "mechanics": [
+    {
+     "label": "触发条件",
+     "text": "进入舞池并持续跳舞，直到迪斯科灯球落下"
+    },
+    {
+     "label": "完成奖励",
+     "text": "所有玩家获得1000金币"
+    }
+   ],
+   "unknownDetails": [
+    "当前官方资源未说明需要持续跳舞的具体时间"
+   ]
+  },
+  {
+   "id": "bee-band",
+   "name": "小蜜蜂乐队",
+   "nameEn": "The Bee Band",
+   "summary": "拿走蜂蜜，躲开蜜蜂！",
+   "description": "蜂蜜和小蜜蜂会周期性地飞越地图。收集蜂蜜可为你和你的队伍提供<gold>25金币</gold>，并为你治疗<healing>20%最大生命值</healing>。被小蜜蜂击中会对你造成相当于<trueDamage>15%最大生命值</trueDamage>的伤害。",
+   "icon": "https://lolhaidou.cn/assets/images/headliners/bee-band.png",
+   "sourceIcon": "https://raw.communitydragon.org/16.21/game/unknown/4419fe8be5c0176f.png",
+   "themeColor": "#facc15",
+   "order": 7,
+   "mechanics": [
+    {
+     "label": "地图事件",
+     "text": "蜂蜜和小蜜蜂会周期性飞越地图"
+    },
+    {
+     "label": "收集蜂蜜",
+     "text": "你和队伍获得25金币，并为自己回复20%最大生命值"
+    },
+    {
+     "label": "撞到蜜蜂",
+     "text": "受到相当于15%最大生命值的真实伤害"
+    }
+   ],
+   "unknownDetails": [
+    "当前官方资源未说明蜂蜜和小蜜蜂的出现间隔"
+   ]
+  },
+  {
+   "id": "true-damage",
+   "name": "真实伤害",
+   "nameEn": "True Damage",
+   "summary": "炒热观众气氛来迎接【锻造器】之雨！",
+   "description": "多杀、终结连杀、以及摧毁防御塔都会激起小兵的干劲，使它们为提供干劲的队伍掉落锻造器！",
+   "icon": "https://lolhaidou.cn/assets/images/headliners/true-damage.png",
+   "sourceIcon": "https://raw.communitydragon.org/16.21/game/unknown/172be063b5b9a374.png",
+   "themeColor": "#84cc16",
+   "order": 8,
+   "mechanics": [
+    {
+     "label": "触发事件",
+     "text": "完成多杀、终结连杀或摧毁防御塔"
+    },
+    {
+     "label": "获得效果",
+     "text": "小兵会为制造干劲的队伍掉落锻造器"
+    }
+   ],
+   "unknownDetails": [
+    "当前官方资源未说明锻造器的类型、数量和精确掉落规则"
+   ]
+  }
+ ]
+}

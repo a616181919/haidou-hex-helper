@@ -37,6 +37,20 @@ function refFix(obj) {
   if (obj && typeof obj === "object") { const o = {}; for (const [k, v] of Object.entries(obj)) o[k] = refFix(v); return o; }
   return obj;
 }
+/* 解析英雄输入 → heroes.json key(支持称号/名字/别名) */
+function resolveHeroName(input) {
+  if (!input) return null;
+  if (state.heroes[input]) return input;
+  const slug = (state.nameToSlug || {})[input];
+  if (!slug) return null;
+  const idx = (state.refIndex || []).find(x => x.slug === slug);
+  if (!idx) return null;
+  for (const cand of [idx.title, idx.name, ...(idx.aliases || [])]) {
+    if (state.heroes[cand]) return cand;
+  }
+  return null;
+}
+
 async function loadRefHero(slug) {
   if (state.refHeroCache[slug]) return state.refHeroCache[slug];
   const d = refFix(await loadJSON("data/ref/heroes/" + slug + ".json"));
@@ -67,15 +81,15 @@ async function init() {
   const parts = hash.split("/");
   let routed = false;
   if (parts[0] === "hero" && parts[1]) {
-    const hn = decodeURIComponent(parts[1]);
-    if (heroes[hn]) { if (parts[2]) state.currentStyle = decodeURIComponent(parts[2]); openHero(hn); routed = true; }
+    const hn = resolveHeroName(decodeURIComponent(parts[1]));
+    if (hn) { if (parts[2]) state.currentStyle = decodeURIComponent(parts[2]); openHero(hn); routed = true; }
   } else if (parts[0] === "augments") { renderAugments(); routed = true; }
   else if (parts[0] === "feed") { renderFeed(); routed = true; }
   else if (parts[0] === "heroes") { renderHeroes(); routed = true; }
   if (!routed) {
     const qs = new URLSearchParams(location.search);
-    const uh = qs.get("hero");
-    if (uh && heroes[uh]) openHero(uh);
+    const uh = resolveHeroName(qs.get("hero") || "");
+    if (uh) openHero(uh);
     else if (qs.get("view") === "feed") renderFeed();
     else renderHeroes();
   }

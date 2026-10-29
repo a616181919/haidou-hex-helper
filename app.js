@@ -4,6 +4,16 @@ const $app = document.getElementById("app");
 const DEPLOY_VER = "1793184819730";
 const FALLBACK_ICON = "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'><rect fill='%23111721' width='40' height='40'/></svg>";
 
+function gearCell(it, idx, isCore) {
+  const icon = it.ic || (state.items[it.n] || {}).icon || FALLBACK_ICON;
+  return `
+    <div class="gcell ${isCore ? "is-core" : ""}" title="${it.n}${it.w != null ? " · 胜率 " + it.w.toFixed(1) + "%" : ""}${it.pr ? " · " + it.pr + "金" : ""}">
+      <img src="${icon}" loading="lazy" onerror="this.src='${FALLBACK_ICON}'">
+      ${idx != null ? `<i>${idx}</i>` : ""}
+      <span>${it.n}</span>
+    </div>`;
+}
+
 const state = {
   view: "heroes", heroes: null, augments: null, items: null, rates: null,
   relations: null, guides: null, builds: null, changelogs: null, generalNotes: null,
@@ -151,18 +161,30 @@ function augRow(a, rk) {
   const info = state.augments[a.name] || {};
   const icon = a.ic || info.icon || FALLBACK_ICON;
   const tier = a.level || a.tier || "";
+  const desc = a.reason || a.description || info.description || "";
+  const flags = [];
+  if (a.special) flags.push('<span class="mini-flag f-spec">联动</span>');
+  if (a.trap) flags.push('<span class="mini-flag f-trap">陷阱</span>');
+  if (a.hot) flags.push('<span class="mini-flag f-hot">热</span>');
+  if (a.core) flags.push('<span class="mini-flag f-core">核</span>');
   return `
-    <button class="aug r-${rarity}" data-aug="${a.name}">
-      <span class="aug-rk">${rk}</span>
-      <span class="aug-ic"><img src="${icon}" loading="lazy" onerror="this.src='${FALLBACK_ICON}'"></span>
-      <span class="aug-bd">
-        <span class="aug-nm">${a.name}<em class="rar-tag r-${rarity}">${RARITY_CN[rarity] || rarity}</em></span>
-        ${a.reason ? `<span class="aug-desc">${a.reason}</span>` : (a.description ? `<span class="aug-desc">${a.description}</span>` : "")}
-        ${tier ? `<span class="aug-tier">${tier} 级</span>` : ""}
-      </span>
-      <span class="aug-w">${a.winRate != null ? a.winRate.toFixed(1) + "%<i>胜率</i>" : ""}</span>
-      <span class="aug-p">${a.pickRate != null ? a.pickRate.toFixed(1) + "%<i>选取</i>" : ""}</span>
-    </button>`;
+    <div class="aug-row r-${rarity}">
+      <span class="ar-rk">${rk}</span>
+      <img class="ar-ic" src="${icon}" loading="lazy" onerror="this.src='${FALLBACK_ICON}'">
+      <div class="ar-bd">
+        <div class="ar-line1">
+          <span class="ar-nm">${a.name}</span>
+          <span class="ar-rar rdot-${rarity}">${RARITY_CN[rarity] || rarity}</span>
+          ${tier ? `<span class="ar-tier lt-${tier.toLowerCase()}">${tier}</span>` : ""}
+          ${flags.join("")}
+        </div>
+        ${desc ? `<div class="ar-desc">${desc}</div>` : ""}
+      </div>
+      <div class="ar-data">
+        <b>${a.winRate != null ? a.winRate.toFixed(1) + "%" : "—"}</b>
+        <span>${a.pickRate != null ? a.pickRate.toFixed(1) + "% 选取" : ""}</span>
+      </div>
+    </div>`;
 }
 
 async function openHero(name, scroll = true) {
@@ -195,27 +217,20 @@ async function openHero(name, scroll = true) {
   const ig = build.itemGuide || [];
   // ===== 英雄头 =====
   let body = `
-    <section class="hero-head">
-      <div class="hh-glow"></div>
-      <div class="hh-main">
-        <div class="hh-avatar">
-          <img src="${ref?.icon || h.avatar}" alt="${name}" onerror="this.src='${FALLBACK_ICON}'">
-          <span class="hh-frame"></span>
-          ${rank.tier ? `<span class="hh-tierline t-${rank.tier.toLowerCase()}">${rank.tier}</span>` : ""}
-        </div>
-        <div class="hh-id">
-          <div class="hh-name"><h1>${name}</h1><span class="hh-title">${ref?.title || ""}</span></div>
-          <div class="hh-tags">${(h.position || []).slice(0, 6).map(t => `<span class="hh-tag">${t}</span>`).join("")}</div>
-          <div class="hh-stats">
-            <div class="hs hs-wr"><b>${rank.win != null ? rank.win.toFixed(1) + "%" : (h.winRate != null ? h.winRate.toFixed(1) + "%" : "—")}</b><span>胜率</span></div>
-            <div class="hs"><b>${rank.pick != null ? rank.pick.toFixed(1) + "%" : "—"}</b><span>选取率</span></div>
-            ${rank.rank ? `<div class="hs"><b>#${rank.rank}</b><span>全站排名</span></div>` : ""}
-            <div class="hs"><b>${rank.sample ? (rank.sample / 10000).toFixed(0) + "万" : "—"}</b><span>对局样本</span></div>
-          </div>
-        </div>
-        <div class="hh-side">
-          ${ref?.order ? `<div class="hh-box"><span class="hb-lb">技能加点</span><div class="hb-row"><span class="order-txt">${ref.order}</span>${(ref.abil || []).map(ab => `<span class="ab-ic" title="${ab.n}"><img src="${ab.ic}" loading="lazy" onerror="this.style.visibility='hidden'"><i>${ab.k}</i></span>`).join("")}</div></div>` : ""}
-        </div>
+    <section class="hero-head compact">
+      <img class="hh-avatar-c" src="${ref?.icon || h.avatar}" alt="${name}" onerror="this.src='${FALLBACK_ICON}'">
+      <div class="hh-line">
+        <h1>${name}</h1>
+        ${rank.tier ? `<span class="tier-badge t-${rank.tier.toLowerCase()}">${rank.tier}</span>` : ""}
+        <span class="hh-title">${ref?.title || ""}</span>
+        <span class="hh-tag-inline">${(h.position || []).slice(0, 4).join(" · ")}</span>
+      </div>
+      <div class="hh-stats-row">
+        <div class="stat-c"><b>${rank.win != null ? rank.win.toFixed(1) + "%" : (h.winRate != null ? h.winRate.toFixed(1) + "%" : "—")}</b><span>胜率</span></div>
+        <div class="stat-c"><b>${rank.pick != null ? rank.pick.toFixed(1) + "%" : "—"}</b><span>选取</span></div>
+        ${rank.rank ? `<div class="stat-c"><b>#${rank.rank}</b><span>排名</span></div>` : ""}
+        <div class="stat-c"><b>${rank.sample ? (rank.sample / 10000).toFixed(0) + "万" : "—"}</b><span>样本</span></div>
+        ${ref?.order ? `<div class="stat-c skill-c"><b>${ref.order}</b><span>加点</span></div>` : ""}
       </div>
     </section>`;
   // ===== 流派 Tab =====
@@ -227,10 +242,22 @@ async function openHero(name, scroll = true) {
     </nav>`;
     // 出装
     body += `<section class="sec" id="sec-gear">
-      <div class="sec-head"><h3>推荐出装</h3><span class="sec-sub">胜率 <b>${b.win != null ? b.win.toFixed(1) + "%" : "—"}</b> · 选取 <b>${b.pick != null ? b.pick.toFixed(0) + "%" : "—"}</b> · 样本 ${b.sample ? (b.sample / 10000).toFixed(0) + "万" : "—"}</span><div class="sec-line"></div></div>
-      <div class="gear-box">
-        <div class="gear-row"><div class="gear-lb">出门装</div><div class="gear-items">${(b.start || []).map(it => assetNode(it)).join("")}</div></div>
-        <div class="gear-row"><div class="gear-lb">六件成装<i>前 3 件为核心</i></div><div class="gear-items">${(b.six || []).map((it, i) => assetNode(it, i + 1, i < 3)).join("")}</div></div>
+      <div class="sec-head"><h3>出装路线</h3><span class="sec-sub">胜率 <b>${b.win != null ? b.win.toFixed(1) + "%" : "—"}</b> · 登场 <b>${b.pick != null ? b.pick.toFixed(0) + "%" : "—"}</b> · 样本 ${b.sample ? (b.sample / 10000).toFixed(0) + "万" : "—"}</span><div class="sec-line"></div></div>
+      <div class="gear-flow">
+        <div class="gf-stage">
+          <div class="gf-lb">出门</div>
+          <div class="gf-items">${(b.start || []).map(it => gearCell(it)).join("")}</div>
+        </div>
+        <div class="gf-arrow">➜</div>
+        <div class="gf-stage">
+          <div class="gf-lb">核心三件</div>
+          <div class="gf-items">${(b.core || []).map(it => gearCell(it)).join("")}</div>
+        </div>
+        <div class="gf-arrow">➜</div>
+        <div class="gf-stage">
+          <div class="gf-lb">六神装</div>
+          <div class="gf-items">${(b.six || []).map((it, i) => gearCell(it, i + 1, i < 3)).join("")}</div>
+        </div>
       </div>
     </section>`;
     // 海克斯分级
@@ -242,14 +269,14 @@ async function openHero(name, scroll = true) {
         if (!arr.length) return "";
         return `<div class="aug-group">
           <div class="ag-lb"><span class="rar-dot r-${rar}"></span>${label}<i>${arr.length}</i></div>
-          <div class="aug-list">${arr.map((a, i) => augRow({ name: a.n, rarity: a.r, level: a.t, winRate: a.w, pickRate: a.p, ic: a.ic }, i + 1)).join("")}</div>
+          <div class="aug-rows2">${arr.map((a, i) => augRow({ name: a.n, rarity: a.r, level: a.t, winRate: a.w, pickRate: a.p, ic: a.ic }, i + 1)).join("")}</div>
         </div>`;
       }).join("")}
     </section>`;
   }
   // ===== 特殊/陷阱(海斗特色) =====
-  if (specials.length) body += `<section class="sec"><div class="sec-head"><h3>💎 特殊海克斯联动</h3><span class="sec-sub">拿到强度爆炸</span><div class="sec-line"></div></div><div class="aug-list">${specials.map((x, i) => augRow({ ...x, special: true }, i + 1)).join("")}</div></section>`;
-  if (traps.length) body += `<section class="sec"><div class="sec-head"><h3>⚠️ 陷阱海克斯</h3><span class="sec-sub">避坑</span><div class="sec-line"></div></div><div class="aug-list">${traps.map((x, i) => augRow({ ...x, trap: true }, i + 1)).join("")}</div></section>`;
+  if (specials.length) body += `<section class="sec"><div class="sec-head"><h3>💎 特殊海克斯联动</h3><span class="sec-sub">拿到强度爆炸</span><div class="sec-line"></div></div><div class="aug-rows2">${specials.map((x, i) => augRow({ ...x, special: true }, i + 1)).join("")}</div></section>`;
+  if (traps.length) body += `<section class="sec"><div class="sec-head"><h3>⚠️ 陷阱海克斯</h3><span class="sec-sub">避坑</span><div class="sec-line"></div></div><div class="aug-rows2">${traps.map((x, i) => augRow({ ...x, trap: true }, i + 1)).join("")}</div></section>`;
   if (ig.length) body += `<section class="sec"><div class="sec-head"><h3>🛡️ 搭配装备指南</h3><span class="sec-sub">${ig.filter(x => !x.trap).length} 推荐 / ${ig.filter(x => x.trap).length} 避坑</span><div class="sec-line"></div></div><div class="item-guide-grid">${ig.map(it => `<div class="item-guide-card ${it.trap ? "trap" : ""}"><div style="min-width:0"><div class="ig-name">${it.trap ? "⛔" : "✅"} ${it.name}</div><div class="ig-reason">${it.reason || ""}${it.from ? " · " + it.from : ""}</div></div></div>`).join("")}</div></section>`;
   // ===== 技能/玩法/特殊玩法 =====
   if (ref?.abil?.length) body += `<section class="sec"><div class="sec-head"><h3>📖 技能介绍</h3><span class="sec-sub">加点 ${ref.order || "—"}</span><div class="sec-line"></div></div><div class="skill-list">${ref.abil.map(ab => `<div class="skill"><img class="sk-ic" src="${ab.ic}" loading="lazy" onerror="this.style.visibility='hidden'"><div class="sk-bd"><div class="ig-name">[${ab.k}] ${ab.n}</div><div class="ig-reason">${ab.d || ""}</div></div></div>`).join("")}</div></section>`;

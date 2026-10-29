@@ -5282,3 +5282,60 @@ ul {
 .hc-wr{font-size:10px;color:var(--dim)}
 #detailBody{min-width:0}
 .hc-img{width:100%;aspect-ratio:1;border-radius:8px;object-fit:cover;background:#000}
+
+/* ==== 高密度重构(op.gg 风格) ==== */
+/* 英雄头单行压缩 */
+.hero-head.compact{display:flex;align-items:center;gap:14px;padding:14px 18px}
+.hh-avatar-c{width:64px;height:64px;border-radius:12px;border:2px solid var(--gold);object-fit:cover;background:#000}
+.hh-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.hh-line h1{font-size:20px;margin:0;font-weight:800}
+.tier-badge{font-size:12px;font-weight:900;padding:2px 9px;border-radius:6px}
+.tier-badge.t-s{background:linear-gradient(135deg,#fbbf24,#d97706);color:#0b1120}
+.tier-badge.t-a{background:linear-gradient(135deg,#38bdf8,#0284c7);color:#fff}
+.hh-title{color:var(--dim);font-size:13px}
+.hh-tag-inline{font-size:11px;color:var(--dim-2)}
+.hh-stats-row{margin-left:auto;display:flex;gap:18px}
+.stat-c{text-align:center;min-width:52px}
+.stat-c b{display:block;font-size:16px;font-weight:800;color:var(--tx)}
+.stat-c span{font-size:10px;color:var(--dim-2)}
+.stat-c.skill-c b{color:var(--acc);letter-spacing:1px}
+/* 出装路线 flow */
+.gear-flow{display:flex;align-items:center;gap:10px;overflow-x:auto;padding:4px 0}
+.gf-stage{flex-shrink:0}
+.gf-lb{font-size:11px;font-weight:700;color:var(--acc-2);margin-bottom:6px}
+.gf-items{display:flex;gap:8px}
+.gf-arrow{color:var(--acc);font-size:18px;flex-shrink:0;opacity:.7}
+.gcell{display:flex;flex-direction:column;align-items:center;width:58px;position:relative}
+.gcell img{width:46px;height:46px;border-radius:9px;border:1px solid var(--line-2);background:#000;object-fit:cover}
+.gcell.is-core img{border-color:var(--gold);box-shadow:0 0 8px rgba(255,197,61,.25)}
+.gcell i{position:absolute;top:-4px;left:-4px;width:16px;height:16px;border-radius:50%;background:var(--acc);color:#fff;font-size:10px;font-weight:800;display:flex;align-items:center;justify-content:center;font-style:normal}
+.gcell span{font-size:10px;color:var(--tx-2);margin-top:4px;text-align:center;max-width:58px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* 海克斯紧凑行 */
+.aug-rows2{display:grid;grid-template-columns:1fr 1fr;gap:5px}
+@media (max-width:900px){.aug-rows2{grid-template-columns:1fr}}
+.aug-row{display:flex;align-items:center;gap:9px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r-s);padding:6px 10px;transition:.15s}
+.aug-row:hover{border-color:var(--line-2);background:var(--panel-2)}
+.aug-row.r-prismatic{border-left:3px solid var(--prism)}
+.aug-row.r-gold{border-left:3px solid var(--gold)}
+.aug-row.r-silver{border-left:3px solid var(--silver)}
+.ar-rk{width:20px;text-align:center;font-size:11px;color:var(--dim-2);font-weight:700;flex-shrink:0}
+.ar-ic{width:38px;height:38px;border-radius:7px;flex-shrink:0;background:#000;object-fit:cover}
+.ar-bd{flex:1;min-width:0}
+.ar-line1{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.ar-nm{font-size:13px;font-weight:700;color:var(--tx)}
+.ar-rar{font-size:9px;padding:1px 6px;border-radius:8px}
+.rdot-prismatic{background:rgba(183,130,245,.15);color:var(--prism)}
+.rdot-gold{background:rgba(255,197,61,.13);color:var(--gold)}
+.rdot-silver{background:rgba(154,172,191,.13);color:var(--silver)}
+.ar-tier{font-size:10px;font-weight:900;padding:1px 7px;border-radius:6px}
+.lt-s{background:linear-gradient(135deg,#fbbf24,#d97706);color:#0b1120}
+.lt-a{background:linear-gradient(135deg,#38bdf8,#0284c7);color:#fff}
+.ar-desc{font-size:11px;color:var(--dim);margin-top:2px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.mini-flag{font-size:9px;padding:1px 6px;border-radius:6px;font-weight:700}
+.f-spec{background:rgba(56,189,248,.13);color:var(--acc)}
+.f-trap{background:rgba(240,113,106,.13);color:var(--down)}
+.f-hot{background:rgba(251,146,60,.13);color:#fb923c}
+.f-core{background:rgba(61,220,132,.13);color:var(--up)}
+.ar-data{text-align:right;flex-shrink:0}
+.ar-data b{display:block;font-size:14px;font-weight:800;color:var(--tx)}
+.ar-data span{font-size:10px;color:var(--dim-2)}

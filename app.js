@@ -57,7 +57,7 @@ async function init() {
     loadJSON("data/hero-styles.json").catch(() => ({})),
     loadJSON("data/ref/index.json").catch(() => null),
     loadJSON("data/name-to-slug.json").catch(() => ({})),
-    loadJSON("data/hero-style-builds.json").catch(() => ({})), loadJSON("data/item-groups.json").catch(() => ({})), loadJSON("data/hero-tiers.json").catch(() => ({})),
+    loadJSON("data/hero-style-builds.json").catch(() => ({})), loadJSON("data/item-groups.json").catch(() => ({})), loadJSON("data/hero-tiers.json").catch(() => ({})), loadJSON("data/headliners.json").catch(() => null),
   ]);
   Object.assign(state, { heroes, augments, items, rates, relations, guides, builds, changelogs, generalNotes, heroStyles, refIndex, nameToSlug, styleBuilds, itemGroups, heroTiers, headliners });
   window.__state = state;

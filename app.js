@@ -18,8 +18,8 @@ const state = {
   view: "heroes", heroes: null, augments: null, items: null, rates: null,
   relations: null, guides: null, builds: null, changelogs: null, generalNotes: null,
   heroStyles: null, styleBuilds: null, styleFilter: "all", listScroll: 0,
-  refIndex: null, nameToSlug: null, refHeroCache: {}, refBuildIdx: 0,
-  currentHero: null, search: "",
+  refIndex: null, nameToSlug: null, refHeroCache: {}, refBuildIdx: 0, itemGroups: null, itemCat: "core",
+  currentHero: null, search: "", currentStyle: "",
 };
 const RARITY_CN = { prismatic: "棱彩", gold: "金色", silver: "银色" };
 const LIVE_RATES = "https://lolhaidou.cn/data/hero_augment_rates.json";
@@ -46,7 +46,7 @@ async function loadRefHero(slug) {
 
 async function init() {
   $app.innerHTML = '<div class="loading">召唤师数据载入中…</div>';
-  const [heroes, augments, items, rates, relations, guides, builds, changelogs, generalNotes, heroStyles, refIndex, nameToSlug] = await Promise.all([
+  const [heroes, augments, items, rates, relations, guides, builds, changelogs, generalNotes, heroStyles, refIndex, nameToSlug, styleBuilds, itemGroups] = await Promise.all([
     loadJSON("data/heroes.json"), loadJSON("data/augments.json"), loadJSON("data/items.json"),
     loadJSON("data/augment-rates-snapshot.json").catch(() => null),
     loadJSON("data/hero-relations.json").catch(() => ({})),
@@ -57,8 +57,9 @@ async function init() {
     loadJSON("data/hero-styles.json").catch(() => ({})),
     loadJSON("data/ref/index.json").catch(() => null),
     loadJSON("data/name-to-slug.json").catch(() => ({})),
+    loadJSON("data/hero-style-builds.json").catch(() => ({})), loadJSON("data/item-groups.json").catch(() => ({})),
   ]);
-  Object.assign(state, { heroes, augments, items, rates, relations, guides, builds, changelogs, generalNotes, heroStyles, refIndex, nameToSlug });
+  Object.assign(state, { heroes, augments, items, rates, relations, guides, builds, changelogs, generalNotes, heroStyles, refIndex, nameToSlug, styleBuilds, itemGroups });
   window.__state = state;
   if (rates) fetch(LIVE_RATES).then(r => r.json()).then(j => { if (j && j.heroCount) { state.rates = j; if (state.view === "heroes") renderHeroes(); } }).catch(() => {});
   // hash 路由
@@ -289,7 +290,32 @@ async function openHero(name, scroll = true) {
     </div>`).join("")}</section>`;
   // ===== 折叠区: 综合评分/装备/版本改动 =====
   if (recs.length) body += `<details class="feed-card"><summary>🎯 综合推荐海克斯(评分版) <span class="meta">${recs.length} 条</span></summary><div class="feed-body">${recs.map((a, i) => augRow(a, i + 1)).join("")}</div></details>`;
-  body += `<details class="feed-card"><summary>⚔️ 热门装备</summary><div class="feed-body"><div class="item-guide-grid" style="grid-template-columns:repeat(auto-fill,minmax(150px,1fr))">${Object.entries(state.items).slice(0, 12).map(([k, v]) => `<div class="item-guide-card"><img src="${v.icon || FALLBACK_ICON}" style="width:32px;height:32px;border-radius:6px" loading="lazy" onerror="this.src='${FALLBACK_ICON}'"><div><div class="ig-name">${v.name || k}</div><div class="ig-reason">${v.total ? "💰 " + v.total : ""}</div></div></div>`).join("")}</div></div></details>`;
+  body += `<section class="sec">
+        <div class="sec-head"><h3>⚔️ 装备库</h3><span class="sec-sub">按功能分类</span><div class="sec-line"></div>
+        <div class="chips">
+          <button class="chip ${state.itemCat === "core" ? "on" : ""}" data-icat="core">本局核心</button>
+          ${Object.entries(state.itemGroups || {}).map(([k, g]) => `<button class="chip ${state.itemCat === k ? "on" : ""}" data-icat="${k}">${g.name}<i>${(g.items || []).length}</i></button>`).join("")}
+        </div></div>
+        <div class="gear-grid">
+          ${(() => {
+            let list = [];
+            if (state.itemCat === "core") {
+              const seen = new Set();
+              for (const it of ig.filter(x => !x.trap)) { if (!seen.has(it.name)) { seen.add(it.name); const full = state.items[it.name] || {}; list.push({ name: it.name, icon: it.icon || full.icon, total: full.total, reason: it.reason }); } }
+              for (const it of (build.start || [])) { if (!seen.has(it.n)) { seen.add(it.n); list.push({ name: it.n, icon: it.ic }); } }
+              for (const it of ((state.styleBuilds || {})[name] || {}).byStyle && state.currentStyle ? (((state.styleBuilds || {})[name] || {}).byStyle[state.currentStyle] || {}).itemGuide || [] : []) { if (!seen.has(it.name)) { seen.add(it.name); list.push({ name: it.name, icon: it.icon, reason: it.reason }); } }
+            } else {
+              list = ((state.itemGroups || {})[state.itemCat] || {}).items || [];
+            }
+            if (!list.length) return '<div class="loading">暂无</div>';
+            return list.map(x => `
+              <div class="gear-item">
+                <img src="${x.icon || FALLBACK_ICON}" loading="lazy" onerror="this.src='${FALLBACK_ICON}'">
+                <div class="gi-meta"><div class="gi-nm2">${x.name}</div>${x.total ? `<div class="gi-pr">💰 ${x.total}</div>` : ""}${x.reason ? `<div class="gi-reason">${x.reason}</div>` : ""}</div>
+              </div>`).join("");
+          })()}
+        </div>
+      </section>`;
   if ((h.changes || []).length) body += `<details class="feed-card"><summary>📋 版本改动</summary><div class="feed-body">${h.changes.map(c => `<div class="chg"><b>${c.version}</b> ${c.changesHtml || ""}</div>`).join("")}</div></details>`;
   body += `<div class="meta">真实对局数据 · ${state.rates?.update || ""} · 全免费无广告</div>`;
   const bodyEl = document.getElementById("detailBody");

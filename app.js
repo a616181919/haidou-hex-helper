@@ -240,60 +240,42 @@ async function openHero(name, scroll = true) {
         ${ref?.order ? `<div class="stat-c skill-c"><b>${ref.order}</b><span>加点</span></div>` : ""}
       </div>
     </section>`;
-  // ===== 流派 Tab =====
+  // ===== 流派构筑: 全流派并列卡片(每流派一卡: 出门/核心/六神 + 海克斯分级) =====
   if (refBuilds.length) {
-    if (state.refBuildIdx >= refBuilds.length) state.refBuildIdx = 0;
-    const b = refBuilds[state.refBuildIdx];
-    body += `<nav class="play-tabs" id="playTabs">
-      ${refBuilds.map((bb, i) => `<button class="pt ${i === state.refBuildIdx ? "on" : ""}" data-bidx="${i}"><span class="pt-n">${bb.n}</span><span class="pt-w">${bb.win != null ? bb.win.toFixed(1) + "%" : ""}</span></button>`).join("")}
-    </nav>`;
-    // 出装
-    body += `<section class="sec" id="sec-gear">
-      <div class="sec-head"><h3>出装路线</h3><span class="sec-sub">胜率 <b>${b.win != null ? b.win.toFixed(1) + "%" : "—"}</b> · 登场 <b>${b.pick != null ? b.pick.toFixed(0) + "%" : "—"}</b> · 样本 ${b.sample ? (b.sample / 10000).toFixed(0) + "万" : "—"}</span><div class="sec-line"></div></div>
-      <div class="gear-flow">
-        <div class="gf-stage">
-          <div class="gf-lb">出门</div>
-          <div class="gf-items">${(b.start || []).map(it => gearCell(it)).join("")}</div>
-        </div>
-        <div class="gf-arrow">➜</div>
-        <div class="gf-stage">
-          <div class="gf-lb">核心三件</div>
-          <div class="gf-items">${(b.core || []).map(it => gearCell(it)).join("")}</div>
-        </div>
-        <div class="gf-arrow">➜</div>
-        <div class="gf-stage">
-          <div class="gf-lb">六神装</div>
-          <div class="gf-items">${(b.six || []).map((it, i) => gearCell(it, i + 1, i < 3)).join("")}</div>
-        </div>
-      </div>
-    </section>`;
-    // 海克斯分级
-    const tiers = [["p", "棱彩", "prismatic"], ["g", "金色", "gold"], ["s", "银色", "silver"]];
-    body += `<section class="sec" id="sec-aug">
-      <div class="sec-head"><h3>海克斯推荐</h3><span class="sec-sub">按本英雄胜率排序</span><div class="sec-line"></div></div>
-      ${tiers.map(([t, label, rar]) => {
-        const arr = b.augs?.[t] || [];
-        if (!arr.length) return "";
-        return `<div class="aug-group">
-          <div class="ag-lb"><span class="rar-dot r-${rar}"></span>${label}<i>${arr.length}</i></div>
-          <div class="aug-rows2">${arr.map((a, i) => augRow({ name: a.n, rarity: a.r, level: a.t, winRate: a.w, pickRate: a.p, ic: a.ic }, i + 1)).join("")}</div>
+    body += `<section class="sec" id="sec-builds">
+      <div class="sec-head"><h3>⚔️ 流派出装构筑</h3><span class="sec-sub">${refBuilds.length} 套流派 · 点卡片头部展开</span><div class="sec-line"></div></div>
+      ${refBuilds.map((b, bi) => {
+        const isOn = bi === state.refBuildIdx;
+        return `
+        <div class="style-build-card ${isOn ? "open" : ""}">
+          <div class="sbc-head" data-btoggle="${bi}">
+            <div class="sbc-title">${bi + 1}. ${b.n}</div>
+            <div class="sbc-stats">胜率 ${b.win != null ? b.win.toFixed(1) + "%" : "—"} · 登场 ${b.pick != null ? b.pick.toFixed(0) + "%" : "—"} · 样本 ${b.sample ? (b.sample / 10000).toFixed(0) + "万" : "—"}</div>
+          </div>
+          ${isOn ? `
+          <div class="sbc-body">
+            <div class="gear-flow">
+              <div class="gf-stage"><div class="gf-lb">出门装</div><div class="gf-items">${(b.start || []).map(it => gearCell(it)).join("")}</div></div>
+              <div class="gf-arrow">➜</div>
+              <div class="gf-stage"><div class="gf-lb">核心三件</div><div class="gf-items">${(b.core || []).map(it => gearCell(it)).join("")}</div></div>
+              <div class="gf-arrow">➜</div>
+              <div class="gf-stage"><div class="gf-lb">六神装</div><div class="gf-items">${(b.six || []).map((it, i) => gearCell(it, i + 1, i < 3)).join("")}</div></div>
+            </div>
+            <div class="tier-groups">
+              ${[["p", "棱彩", "prismatic"], ["g", "金色", "gold"], ["s", "银色", "silver"]].map(([t, label, rar]) => {
+                const arr = b.augs?.[t] || [];
+                if (!arr.length) return "";
+                return `<div class="aug-group">
+                  <div class="ag-lb"><span class="rar-dot r-${rar}"></span>${label}<i>${arr.length}</i></div>
+                  <div class="aug-rows2">${arr.map((a, i) => augRow({ name: a.n, rarity: a.r, level: a.t, winRate: a.w, pickRate: a.p, ic: a.ic }, i + 1)).join("")}</div>
+                </div>`;
+              }).join("")}
+            </div>
+          </div>` : ""}
         </div>`;
       }).join("")}
     </section>`;
   }
-  // ===== 特殊/陷阱(海斗特色) =====
-  if (specials.length) body += `<section class="sec"><div class="sec-head"><h3>💎 特殊海克斯联动</h3><span class="sec-sub">拿到强度爆炸</span><div class="sec-line"></div></div><div class="aug-rows2">${specials.map((x, i) => augRow({ ...x, special: true }, i + 1)).join("")}</div></section>`;
-  if (traps.length) body += `<section class="sec"><div class="sec-head"><h3>⚠️ 陷阱海克斯</h3><span class="sec-sub">避坑</span><div class="sec-line"></div></div><div class="aug-rows2">${traps.map((x, i) => augRow({ ...x, trap: true }, i + 1)).join("")}</div></section>`;
-  if (ig.length) body += `<section class="sec"><div class="sec-head"><h3>🛡️ 搭配装备指南</h3><span class="sec-sub">${ig.filter(x => !x.trap).length} 推荐 / ${ig.filter(x => x.trap).length} 避坑</span><div class="sec-line"></div></div><div class="item-guide-grid">${ig.map(it => `<div class="item-guide-card ${it.trap ? "trap" : ""}"><div style="min-width:0"><div class="ig-name">${it.trap ? "⛔" : "✅"} ${it.name}</div><div class="ig-reason">${it.reason || ""}${it.from ? " · " + it.from : ""}</div></div></div>`).join("")}</div></section>`;
-  // ===== 技能/玩法/特殊玩法 =====
-  if (ref?.abil?.length) body += `<section class="sec"><div class="sec-head"><h3>📖 技能介绍</h3><span class="sec-sub">加点 ${ref.order || "—"}</span><div class="sec-line"></div></div><div class="skill-list">${ref.abil.map(ab => `<div class="skill"><img class="sk-ic" src="${ab.ic}" loading="lazy" onerror="this.style.visibility='hidden'"><div class="sk-bd"><div class="ig-name">[${ab.k}] ${ab.n}</div><div class="ig-reason">${ab.d || ""}</div></div></div>`).join("")}</div></section>`;
-  if ((ref?.game || []).length) body += `<section class="sec"><div class="sec-head"><h3>💡 常规玩法</h3><div class="sec-line"></div></div><div class="game-list">${ref.game.map(g => `<div class="tip">• ${g}</div>`).join("")}</div></section>`;
-  if ((ref?.special || []).length) body += `<section class="sec"><div class="sec-head"><h3>🎪 特殊玩法</h3><span class="sec-sub">${ref.special.length} 套</span><div class="sec-line"></div></div>${ref.special.map(sp => `
-    <div class="sp-card">
-      <div class="sp-hd"><span class="sp-cat">${sp.cat || "特殊玩法"}</span><b>${sp.n}</b></div>
-      <div class="sp-sum">${sp.sum || ""}</div>
-      ${(sp.req || []).length ? `<div class="sp-lb">触发条件</div><div class="sp-augs">${sp.req.map(r => `<span class="amini"><img src="${r.ic}" loading="lazy" onerror="this.style.visibility='hidden'">${r.n}</span>`).join("")}</div>` : ""}
-    </div>`).join("")}</section>`;
   // ===== 原小程序排版: 头领卡 + 通用方案combo卡 =====
   if ((state.headliners?.data || []).length) body += `<section class="sec"><div class="sec-head"><h3>👑 头领强化</h3><span class="sec-sub">${state.headliners.data.length} 个</span><div class="sec-line"></div></div>
     ${state.headliners.data.map(hl => `
@@ -352,7 +334,7 @@ async function openHero(name, scroll = true) {
   body += `<div class="meta">真实对局数据 · ${state.rates?.update || ""} · 全免费无广告</div>`;
   const bodyEl = document.getElementById("detailBody");
   if (bodyEl) bodyEl.innerHTML = body;
-  bodyEl.querySelectorAll("[data-bidx]").forEach(btn => btn.onclick = () => { state.refBuildIdx = +btn.dataset.bidx; openHero(name, false); });
+  bodyEl.querySelectorAll("[data-btoggle]").forEach(btn => btn.onclick = () => { const i = +btn.dataset.btoggle; state.refBuildIdx = state.refBuildIdx === i ? -1 : i; openHero(name, false); });
   $app.querySelectorAll("[data-hero]").forEach(c => c.onclick = () => openHero(c.dataset.hero));
   $app.querySelectorAll("[data-style-jump]").forEach(el3 => el3.onclick = () => { state.styleFilter = el3.dataset.styleJump; state.view = "heroes"; renderHeroes(); });
   const tt = document.getElementById("toTop");

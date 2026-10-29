@@ -1,0 +1,867 @@
+{
+ "疾风剑豪": {
+  "tier": "SSS",
+  "winRate": 58.04,
+  "rank": 1
+ },
+ "卡牌大师": {
+  "tier": "SSS",
+  "winRate": 56.77,
+  "rank": 2
+ },
+ "灵罗娃娃": {
+  "tier": "SSS",
+  "winRate": 56.27,
+  "rank": 3
+ },
+ "无双剑姬": {
+  "tier": "SSS",
+  "winRate": 56.13,
+  "rank": 4
+ },
+ "德邦总管": {
+  "tier": "SSS",
+  "winRate": 55.77,
+  "rank": 5
+ },
+ "封魔剑魂": {
+  "tier": "SSS",
+  "winRate": 55.58,
+  "rank": 6
+ },
+ "无极剑圣": {
+  "tier": "SSS",
+  "winRate": 55.41,
+  "rank": 7
+ },
+ "虚空女皇": {
+  "tier": "SSS",
+  "winRate": 55.37,
+  "rank": 8
+ },
+ "正义天使": {
+  "tier": "SSS",
+  "winRate": 54.94,
+  "rank": 9
+ },
+ "战争之影": {
+  "tier": "SSS",
+  "winRate": 54.61,
+  "rank": 10
+ },
+ "迅捷斥候": {
+  "tier": "SSS",
+  "winRate": 54.43,
+  "rank": 11
+ },
+ "不落魔锋": {
+  "tier": "SSS",
+  "winRate": 54.41,
+  "rank": 12
+ },
+ "含羞蓓蕾": {
+  "tier": "SSS",
+  "winRate": 54.06,
+  "rank": 13
+ },
+ "时间刺客": {
+  "tier": "SS",
+  "winRate": 54.05,
+  "rank": 14
+ },
+ "影流之镰": {
+  "tier": "SS",
+  "winRate": 53.55,
+  "rank": 15
+ },
+ "武器大师": {
+  "tier": "SS",
+  "winRate": 53.5,
+  "rank": 16
+ },
+ "河流之王": {
+  "tier": "SS",
+  "winRate": 53.35,
+  "rank": 17
+ },
+ "堕落天使": {
+  "tier": "SS",
+  "winRate": 53.32,
+  "rank": 18
+ },
+ "铁血狼母": {
+  "tier": "SS",
+  "winRate": 53.2,
+  "rank": 19
+ },
+ "龙血武姬": {
+  "tier": "SS",
+  "winRate": 53.13,
+  "rank": 20
+ },
+ "破败之王": {
+  "tier": "SS",
+  "winRate": 53.06,
+  "rank": 21
+ },
+ "镕铁少女": {
+  "tier": "SS",
+  "winRate": 52.83,
+  "rank": 22
+ },
+ "异画师": {
+  "tier": "SS",
+  "winRate": 52.66,
+  "rank": 23
+ },
+ "琴瑟仙女": {
+  "tier": "SS",
+  "winRate": 52.46,
+  "rank": 24
+ },
+ "符文法师": {
+  "tier": "SS",
+  "winRate": 51.95,
+  "rank": 25
+ },
+ "魔法猫咪": {
+  "tier": "SS",
+  "winRate": 51.91,
+  "rank": 26
+ },
+ "虚空行者": {
+  "tier": "SS",
+  "winRate": 51.78,
+  "rank": 27
+ },
+ "九尾妖狐": {
+  "tier": "SS",
+  "winRate": 51.73,
+  "rank": 28
+ },
+ "狂厄蔷薇": {
+  "tier": "SS",
+  "winRate": 51.73,
+  "rank": 29
+ },
+ "奥术先驱": {
+  "tier": "SS",
+  "winRate": 51.67,
+  "rank": 30
+ },
+ "腕豪": {
+  "tier": "SS",
+  "winRate": 51.6,
+  "rank": 31
+ },
+ "星籁歌姬": {
+  "tier": "SS",
+  "winRate": 51.55,
+  "rank": 32
+ },
+ "不羁之悦": {
+  "tier": "SS",
+  "winRate": 51.53,
+  "rank": 33
+ },
+ "时光守护者": {
+  "tier": "SS",
+  "winRate": 51.5,
+  "rank": 34
+ },
+ "蛮族之王": {
+  "tier": "S",
+  "winRate": 51.47,
+  "rank": 35
+ },
+ "圣锤之毅": {
+  "tier": "S",
+  "winRate": 51.46,
+  "rank": 36
+ },
+ "风暴之怒": {
+  "tier": "S",
+  "winRate": 51.42,
+  "rank": 37
+ },
+ "瓦洛兰之盾": {
+  "tier": "S",
+  "winRate": 51.42,
+  "rank": 38
+ },
+ "齐天大圣": {
+  "tier": "S",
+  "winRate": 51.26,
+  "rank": 39
+ },
+ "巨魔之王": {
+  "tier": "S",
+  "winRate": 51.25,
+  "rank": 40
+ },
+ "虚空先知": {
+  "tier": "S",
+  "winRate": 51.24,
+  "rank": 41
+ },
+ "不灭狂雷": {
+  "tier": "S",
+  "winRate": 51.16,
+  "rank": 42
+ },
+ "圣枪游侠": {
+  "tier": "S",
+  "winRate": 51.13,
+  "rank": 43
+ },
+ "法外狂徒": {
+  "tier": "S",
+  "winRate": 51.09,
+  "rank": 44
+ },
+ "牛头酋长": {
+  "tier": "S",
+  "winRate": 51.03,
+  "rank": 45
+ },
+ "赏金猎人": {
+  "tier": "S",
+  "winRate": 50.96,
+  "rank": 46
+ },
+ "英勇投弹手": {
+  "tier": "S",
+  "winRate": 50.89,
+  "rank": 47
+ },
+ "正义巨像": {
+  "tier": "S",
+  "winRate": 50.87,
+  "rank": 48
+ },
+ "不屈之枪": {
+  "tier": "S",
+  "winRate": 50.87,
+  "rank": 49
+ },
+ "翠神": {
+  "tier": "S",
+  "winRate": 50.82,
+  "rank": 50
+ },
+ "潮汐海灵": {
+  "tier": "S",
+  "winRate": 50.8,
+  "rank": 51
+ },
+ "暮光之眼": {
+  "tier": "S",
+  "winRate": 50.75,
+  "rank": 52
+ },
+ "暗黑元首": {
+  "tier": "S",
+  "winRate": 50.6,
+  "rank": 53
+ },
+ "亡灵战神": {
+  "tier": "S",
+  "winRate": 50.53,
+  "rank": 54
+ },
+ "铸星龙王": {
+  "tier": "S",
+  "winRate": 50.49,
+  "rank": 55
+ },
+ "暴怒骑士": {
+  "tier": "S",
+  "winRate": 50.49,
+  "rank": 56
+ },
+ "曙光女神": {
+  "tier": "S",
+  "winRate": 50.48,
+  "rank": 57
+ },
+ "魂锁典狱长": {
+  "tier": "S",
+  "winRate": 50.47,
+  "rank": 58
+ },
+ "刀锋舞者": {
+  "tier": "S",
+  "winRate": 50.45,
+  "rank": 59
+ },
+ "虚空之眼": {
+  "tier": "S",
+  "winRate": 50.44,
+  "rank": 60
+ },
+ "双界灵兔": {
+  "tier": "S",
+  "winRate": 50.41,
+  "rank": 61
+ },
+ "祖安狂人": {
+  "tier": "S",
+  "winRate": 50.4,
+  "rank": 62
+ },
+ "海洋之灾": {
+  "tier": "S",
+  "winRate": 50.39,
+  "rank": 63
+ },
+ "皮城女警": {
+  "tier": "S",
+  "winRate": 50.39,
+  "rank": 64
+ },
+ "大发明家": {
+  "tier": "S",
+  "winRate": 50.37,
+  "rank": 65
+ },
+ "炼金男爵": {
+  "tier": "S",
+  "winRate": 50.36,
+  "rank": 66
+ },
+ "沙漠死神": {
+  "tier": "S",
+  "winRate": 50.26,
+  "rank": 67
+ },
+ "荣耀行刑官": {
+  "tier": "S",
+  "winRate": 50.25,
+  "rank": 68
+ },
+ "虚空遁地兽": {
+  "tier": "S",
+  "winRate": 50.2,
+  "rank": 69
+ },
+ "愁云使者": {
+  "tier": "A",
+  "winRate": 50.14,
+  "rank": 70
+ },
+ "傲之追猎者": {
+  "tier": "A",
+  "winRate": 50.11,
+  "rank": 71
+ },
+ "暗夜猎手": {
+  "tier": "A",
+  "winRate": 50.02,
+  "rank": 72
+ },
+ "祖安怒兽": {
+  "tier": "A",
+  "winRate": 50.01,
+  "rank": 73
+ },
+ "荆棘之兴": {
+  "tier": "A",
+  "winRate": 50,
+  "rank": 74
+ },
+ "刀锋之影": {
+  "tier": "A",
+  "winRate": 49.88,
+  "rank": 75
+ },
+ "不祥之刃": {
+  "tier": "A",
+  "winRate": 49.85,
+  "rank": 76
+ },
+ "众星之子": {
+  "tier": "A",
+  "winRate": 49.84,
+  "rank": 77
+ },
+ "机械公敌": {
+  "tier": "A",
+  "winRate": 49.67,
+  "rank": 78
+ },
+ "炼金术士": {
+  "tier": "A",
+  "winRate": 49.59,
+  "rank": 79
+ },
+ "解脱者": {
+  "tier": "A",
+  "winRate": 49.59,
+  "rank": 80
+ },
+ "邪恶小法师": {
+  "tier": "A",
+  "winRate": 49.53,
+  "rank": 81
+ },
+ "不破之誓": {
+  "tier": "A",
+  "winRate": 49.52,
+  "rank": 82
+ },
+ "虚空之女": {
+  "tier": "A",
+  "winRate": 49.51,
+  "rank": 83
+ },
+ "永恒梦魇": {
+  "tier": "A",
+  "winRate": 49.47,
+  "rank": 84
+ },
+ "诺克萨斯之手": {
+  "tier": "A",
+  "winRate": 49.42,
+  "rank": 85
+ },
+ "影流之主": {
+  "tier": "A",
+  "winRate": 49.41,
+  "rank": 86
+ },
+ "扭曲树精": {
+  "tier": "A",
+  "winRate": 49.34,
+  "rank": 87
+ },
+ "远古巫灵": {
+  "tier": "A",
+  "winRate": 49.23,
+  "rank": 88
+ },
+ "唤潮鲛姬": {
+  "tier": "A",
+  "winRate": 49.23,
+  "rank": 89
+ },
+ "残月之肃": {
+  "tier": "A",
+  "winRate": 49.17,
+  "rank": 90
+ },
+ "酒桶": {
+  "tier": "A",
+  "winRate": 49.13,
+  "rank": 91
+ },
+ "黑暗之女": {
+  "tier": "A",
+  "winRate": 49.07,
+  "rank": 92
+ },
+ "诺克萨斯统领": {
+  "tier": "A",
+  "winRate": 49.01,
+  "rank": 93
+ },
+ "明烛": {
+  "tier": "A",
+  "winRate": 48.95,
+  "rank": 94
+ },
+ "青钢影": {
+  "tier": "A",
+  "winRate": 48.92,
+  "rank": 95
+ },
+ "复仇焰魂": {
+  "tier": "A",
+  "winRate": 48.9,
+  "rank": 96
+ },
+ "炽炎雏龙": {
+  "tier": "A",
+  "winRate": 48.83,
+  "rank": 97
+ },
+ "深海泰坦": {
+  "tier": "A",
+  "winRate": 48.81,
+  "rank": 98
+ },
+ "放逐之刃": {
+  "tier": "A",
+  "winRate": 48.8,
+  "rank": 99
+ },
+ "虚空掠夺者": {
+  "tier": "A",
+  "winRate": 48.8,
+  "rank": 100
+ },
+ "狂战士": {
+  "tier": "A",
+  "winRate": 48.77,
+  "rank": 101
+ },
+ "兽灵行者": {
+  "tier": "A",
+  "winRate": 48.7,
+  "rank": 102
+ },
+ "痛苦之拥": {
+  "tier": "A",
+  "winRate": 48.63,
+  "rank": 103
+ },
+ "深渊巨口": {
+  "tier": "A",
+  "winRate": 48.6,
+  "rank": 104
+ },
+ "天启者": {
+  "tier": "A",
+  "winRate": 48.59,
+  "rank": 105
+ },
+ "爆破鬼才": {
+  "tier": "A",
+  "winRate": 48.59,
+  "rank": 106
+ },
+ "岩雀": {
+  "tier": "A",
+  "winRate": 48.58,
+  "rank": 107
+ },
+ "暴走萝莉": {
+  "tier": "A",
+  "winRate": 48.57,
+  "rank": 108
+ },
+ "殇之木乃伊": {
+  "tier": "A",
+  "winRate": 48.53,
+  "rank": 109
+ },
+ "熔岩巨兽": {
+  "tier": "A",
+  "winRate": 48.47,
+  "rank": 110
+ },
+ "戏命师": {
+  "tier": "A",
+  "winRate": 48.45,
+  "rank": 111
+ },
+ "发条魔灵": {
+  "tier": "A",
+  "winRate": 48.37,
+  "rank": 112
+ },
+ "恶魔小丑": {
+  "tier": "B",
+  "winRate": 48.28,
+  "rank": 113
+ },
+ "光辉女郎": {
+  "tier": "B",
+  "winRate": 48.26,
+  "rank": 114
+ },
+ "蜘蛛女皇": {
+  "tier": "B",
+  "winRate": 48.22,
+  "rank": 115
+ },
+ "复仇之矛": {
+  "tier": "B",
+  "winRate": 48.21,
+  "rank": 116
+ },
+ "上古领主": {
+  "tier": "B",
+  "winRate": 48.17,
+  "rank": 117
+ },
+ "皮城执法官": {
+  "tier": "B",
+  "winRate": 48.15,
+  "rank": 118
+ },
+ "沙漠皇帝": {
+  "tier": "B",
+  "winRate": 48.14,
+  "rank": 119
+ },
+ "死亡颂唱者": {
+  "tier": "B",
+  "winRate": 48.13,
+  "rank": 120
+ },
+ "北地之怒": {
+  "tier": "B",
+  "winRate": 48.13,
+  "rank": 121
+ },
+ "逆羽": {
+  "tier": "B",
+  "winRate": 48.12,
+  "rank": 122
+ },
+ "远古恐惧": {
+  "tier": "B",
+  "winRate": 48.07,
+  "rank": 123
+ },
+ "仙灵女巫": {
+  "tier": "B",
+  "winRate": 48.03,
+  "rank": 124
+ },
+ "惩戒之箭": {
+  "tier": "B",
+  "winRate": 48.01,
+  "rank": 125
+ },
+ "血港鬼影": {
+  "tier": "B",
+  "winRate": 47.78,
+  "rank": 126
+ },
+ "暮光星灵": {
+  "tier": "B",
+  "winRate": 47.6,
+  "rank": 127
+ },
+ "猩红收割者": {
+  "tier": "B",
+  "winRate": 47.59,
+  "rank": 128
+ },
+ "沙漠玫瑰": {
+  "tier": "B",
+  "winRate": 47.58,
+  "rank": 129
+ },
+ "瘟疫之源": {
+  "tier": "B",
+  "winRate": 47.46,
+  "rank": 130
+ },
+ "弗雷尔卓德之心": {
+  "tier": "B",
+  "winRate": 47.39,
+  "rank": 131
+ },
+ "皎月女神": {
+  "tier": "B",
+  "winRate": 47.37,
+  "rank": 132
+ },
+ "未来守护者": {
+  "tier": "B",
+  "winRate": 47.35,
+  "rank": 133
+ },
+ "祖安花火": {
+  "tier": "B",
+  "winRate": 47.24,
+  "rank": 134
+ },
+ "探险家": {
+  "tier": "B",
+  "winRate": 47.19,
+  "rank": 135
+ },
+ "狂野女猎手": {
+  "tier": "B",
+  "winRate": 47.14,
+  "rank": 136
+ },
+ "冰霜女巫": {
+  "tier": "B",
+  "winRate": 47.14,
+  "rank": 137
+ },
+ "德玛西亚皇子": {
+  "tier": "B",
+  "winRate": 47.11,
+  "rank": 138
+ },
+ "山隐之焰": {
+  "tier": "B",
+  "winRate": 47.03,
+  "rank": 139
+ },
+ "虚空恐惧": {
+  "tier": "B",
+  "winRate": 47,
+  "rank": 140
+ },
+ "暗裔剑魔": {
+  "tier": "B",
+  "winRate": 46.92,
+  "rank": 141
+ },
+ "幻翎": {
+  "tier": "B",
+  "winRate": 46.87,
+  "rank": 142
+ },
+ "海兽祭司": {
+  "tier": "B",
+  "winRate": 46.86,
+  "rank": 143
+ },
+ "麦林炮手": {
+  "tier": "B",
+  "winRate": 46.78,
+  "rank": 144
+ },
+ "战争女神": {
+  "tier": "B",
+  "winRate": 46.71,
+  "rank": 145
+ },
+ "流光镜影": {
+  "tier": "B",
+  "winRate": 46.68,
+  "rank": 146
+ },
+ "迷失之牙": {
+  "tier": "B",
+  "winRate": 46.63,
+  "rank": 147
+ },
+ "元素女皇": {
+  "tier": "B",
+  "winRate": 46.57,
+  "rank": 148
+ },
+ "披甲龙龟": {
+  "tier": "B",
+  "winRate": 46.5,
+  "rank": 149
+ },
+ "铁铠冥魂": {
+  "tier": "B",
+  "winRate": 46.48,
+  "rank": 150
+ },
+ "德玛西亚之力": {
+  "tier": "B",
+  "winRate": 46.48,
+  "rank": 151
+ },
+ "蒸汽机器人": {
+  "tier": "B",
+  "winRate": 46.38,
+  "rank": 152
+ },
+ "荒漠屠夫": {
+  "tier": "B",
+  "winRate": 46.36,
+  "rank": 153
+ },
+ "永猎双子": {
+  "tier": "B",
+  "winRate": 46.34,
+  "rank": 154
+ },
+ "灰烬驱魔人": {
+  "tier": "B",
+  "winRate": 46.34,
+  "rank": 155
+ },
+ "雪原双子": {
+  "tier": "B",
+  "winRate": 46.11,
+  "rank": 156
+ },
+ "万花通灵": {
+  "tier": "B",
+  "winRate": 46.04,
+  "rank": 157
+ },
+ "无畏战车": {
+  "tier": "B",
+  "winRate": 46,
+  "rank": 158
+ },
+ "魔蛇之拥": {
+  "tier": "B",
+  "winRate": 45.97,
+  "rank": 159
+ },
+ "涤魂圣枪": {
+  "tier": "B",
+  "winRate": 45.92,
+  "rank": 160
+ },
+ "星界游神": {
+  "tier": "B",
+  "winRate": 45.87,
+  "rank": 161
+ },
+ "百裂冥犬": {
+  "tier": "B",
+  "winRate": 45.79,
+  "rank": 162
+ },
+ "德玛西亚之翼": {
+  "tier": "B",
+  "winRate": 45.65,
+  "rank": 163
+ },
+ "影哨": {
+  "tier": "B",
+  "winRate": 45.55,
+  "rank": 164
+ },
+ "盲僧": {
+  "tier": "B",
+  "winRate": 45.37,
+  "rank": 165
+ },
+ "冰晶凤凰": {
+  "tier": "B",
+  "winRate": 45.32,
+  "rank": 166
+ },
+ "牧魂人": {
+  "tier": "B",
+  "winRate": 45.07,
+  "rank": 167
+ },
+ "狂暴之心": {
+  "tier": "B",
+  "winRate": 44.88,
+  "rank": 168
+ },
+ "生化魔人": {
+  "tier": "B",
+  "winRate": 44.83,
+  "rank": 169
+ },
+ "离群之刺": {
+  "tier": "B",
+  "winRate": 44.82,
+  "rank": 170
+ },
+ "寒冰射手": {
+  "tier": "B",
+  "winRate": 44.51,
+  "rank": 171
+ },
+ "诡术妖姬": {
+  "tier": "B",
+  "winRate": 44.4,
+  "rank": 172
+ },
+ "纳祖芒荣耀": {
+  "tier": "B",
+  "winRate": 44.33,
+  "rank": 173
+ }
+}

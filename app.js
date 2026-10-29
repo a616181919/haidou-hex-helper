@@ -18,7 +18,7 @@ const state = {
   view: "heroes", heroes: null, augments: null, items: null, rates: null,
   relations: null, guides: null, builds: null, changelogs: null, generalNotes: null,
   heroStyles: null, styleBuilds: null, styleFilter: "all", listScroll: 0,
-  refIndex: null, nameToSlug: null, refHeroCache: {}, refBuildIdx: 0, itemGroups: null, itemCat: "core",
+  refIndex: null, nameToSlug: null, refHeroCache: {}, refBuildIdx: 0, itemGroups: null, itemCat: "core", heroTiers: null,
   currentHero: null, search: "", currentStyle: "",
 };
 const RARITY_CN = { prismatic: "棱彩", gold: "金色", silver: "银色" };
@@ -46,7 +46,7 @@ async function loadRefHero(slug) {
 
 async function init() {
   $app.innerHTML = '<div class="loading">召唤师数据载入中…</div>';
-  const [heroes, augments, items, rates, relations, guides, builds, changelogs, generalNotes, heroStyles, refIndex, nameToSlug, styleBuilds, itemGroups] = await Promise.all([
+  const [heroes, augments, items, rates, relations, guides, builds, changelogs, generalNotes, heroStyles, refIndex, nameToSlug, styleBuilds, itemGroups, heroTiers] = await Promise.all([
     loadJSON("data/heroes.json"), loadJSON("data/augments.json"), loadJSON("data/items.json"),
     loadJSON("data/augment-rates-snapshot.json").catch(() => null),
     loadJSON("data/hero-relations.json").catch(() => ({})),
@@ -57,9 +57,9 @@ async function init() {
     loadJSON("data/hero-styles.json").catch(() => ({})),
     loadJSON("data/ref/index.json").catch(() => null),
     loadJSON("data/name-to-slug.json").catch(() => ({})),
-    loadJSON("data/hero-style-builds.json").catch(() => ({})), loadJSON("data/item-groups.json").catch(() => ({})),
+    loadJSON("data/hero-style-builds.json").catch(() => ({})), loadJSON("data/item-groups.json").catch(() => ({})), loadJSON("data/hero-tiers.json").catch(() => ({})),
   ]);
-  Object.assign(state, { heroes, augments, items, rates, relations, guides, builds, changelogs, generalNotes, heroStyles, refIndex, nameToSlug, styleBuilds, itemGroups });
+  Object.assign(state, { heroes, augments, items, rates, relations, guides, builds, changelogs, generalNotes, heroStyles, refIndex, nameToSlug, styleBuilds, itemGroups, heroTiers });
   window.__state = state;
   if (rates) fetch(LIVE_RATES).then(r => r.json()).then(j => { if (j && j.heroCount) { state.rates = j; if (state.view === "heroes") renderHeroes(); } }).catch(() => {});
   // hash 路由
@@ -127,6 +127,7 @@ function heroGridHTML() {
     .sort((a, b) => (b.h.winRate ?? 0) - (a.h.winRate ?? 0));
   return rows.map(x => `
     <button class="hcard" data-hero="${x.name}">
+      <span class="hc-tier tier-${((state.heroTiers || {})[x.name] || {}).tier || "B"}">${((state.heroTiers || {})[x.name] || {}).tier || "B"}</span>
       <img class="hc-img" src="${x.h.avatar}" loading="lazy" onerror="this.src='${FALLBACK_ICON}'">
       <span class="hc-nm">${x.name}</span>
       <span class="hc-wr">${x.h.winRate != null ? x.h.winRate.toFixed(1) + "%" : "—"}</span>
@@ -200,6 +201,11 @@ async function openHero(name, scroll = true) {
     <div class="layout">
       <aside class="sidebar" id="sidebar">
         <div class="side-head"><span>切换英雄</span><span class="count">${Object.keys(state.heroes).length}</span></div>
+        ${(state.heroStyles?.heroStyles?.[name] || []).length ? `
+        <div class="pool-title" style="font-size:12px;font-weight:800;color:var(--tx);margin:2px 0 6px">🎭 适玩流派</div>
+        <div class="chips" style="padding:0 0 10px">
+          ${state.heroStyles.heroStyles[name].map(s => `<button class="chip" data-style-jump="${s}">${s}</button>`).join("")}
+        </div>` : ""}
         <div class="hero-grid" id="heroGrid">${heroGridHTML()}</div>
       </aside>
       <main class="content" id="detailBody"><div class="loading">构筑数据载入中…</div></main>
@@ -322,6 +328,7 @@ async function openHero(name, scroll = true) {
   if (bodyEl) bodyEl.innerHTML = body;
   bodyEl.querySelectorAll("[data-bidx]").forEach(btn => btn.onclick = () => { state.refBuildIdx = +btn.dataset.bidx; openHero(name, false); });
   $app.querySelectorAll("[data-hero]").forEach(c => c.onclick = () => openHero(c.dataset.hero));
+  $app.querySelectorAll("[data-style-jump]").forEach(el3 => el3.onclick = () => { state.styleFilter = el3.dataset.styleJump; state.view = "heroes"; renderHeroes(); });
   const tt = document.getElementById("toTop");
   if (tt) tt.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
   if (scroll) window.scrollTo({ top: 0 });
